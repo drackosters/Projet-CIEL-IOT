@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MQTT Messages</title>
+    <style>
+        #messages {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div id="messages"></div>
+    <script>
+    var eventSource = new EventSource('gestion.php');
+    var messageCount = 0;
+    var messagesDiv = document.getElementById('messages');
+
+    eventSource.onmessage = function(event) {
+    var data = JSON.parse(event.data);
+    
+    // Ajouter le nouveau message
+    messagesDiv.innerHTML += '<p><strong>Topic:</strong> ' + data.topic + '<br><strong>Message:</strong> ' + data.message + '</p>';
+    
+    messageCount++;
+    
+    // Supprimer le message le plus ancien si on a plus de 4 messages
+    if (messageCount > 4) {
+        messagesDiv.removeChild(messagesDiv.firstChild);
+    }
+};
+    </script>
+</body>
+</html>
