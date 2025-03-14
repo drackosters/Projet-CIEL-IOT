@@ -7,7 +7,7 @@ header('Content-Type: text/event-stream');
 header('Cache-Control: no-cache');
 header('Connection: keep-alive');
 
-$server = '44.204.178.27';
+$server = '54.173.114.33';
 $port = 1883;
 $clientId = uniqid();
 $mqtt = new MqttClient($server, $port, $clientId);
