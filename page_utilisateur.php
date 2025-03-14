@@ -1,3 +1,29 @@
+
+<?php
+session_start();
+
+//Connexion à la BDD
+$servername = "3.82.221.126";
+$username = "admin";
+$password = "admin";
+$dbname = "plage_iot";
+
+try {
+    $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erreur de connexion à la base de données : " . $e->getMessage());
+}
+
+// Vérifier si la variable de session d'authentification est définie
+if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
+    // L'utilisateur n'est pas connecté, le rediriger vers la page de connexion
+    header("Location: Connexion.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
