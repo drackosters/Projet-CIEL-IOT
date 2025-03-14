@@ -45,7 +45,7 @@ body {
     padding: 20px;
     position: absolute;
     top: 100px;
-    right: -250px; /* Caché initialement à droite */
+    right: -250px;
     transition: right 0.2s ease-in-out; /* Transition sur la propriété 'right' */
     border-radius: 20px;
 }
