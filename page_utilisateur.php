@@ -1,9 +1,7 @@
-
 <?php
 session_start();
 
-//Connexion à la BDD
-$servername = "3.82.221.126";
+$servername = "Adresse_IP_du_serveur";
 $username = "admin";
 $password = "admin";
 $dbname = "plage_iot";
@@ -15,13 +13,12 @@ try {
     die("Erreur de connexion à la base de données : " . $e->getMessage());
 }
 
-// Vérifier si la variable de session d'authentification est définie
 if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
-    // L'utilisateur n'est pas connecté, le rediriger vers la page de connexion
     header("Location: Connexion.php");
     exit();
 }
 
+$nom_utilisateur = isset($_SESSION['nom_utilisateur']) ? $_SESSION['nom_utilisateur'] : "Utilisateur inconnu";
 ?>
 
 <!DOCTYPE html>
@@ -33,10 +30,34 @@ if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte
     <link rel="stylesheet" href="page_utilisateur.css">
 </head>
 <body>
-
     <div class="conteneur-haut">
+
+        <!-- Logo de la page qui ramène au site de citeconnect -->
+        <a href="https://www.citeconnect.com/citecaas/" target="_blank">
+            <img src="297f7e763fcbb4896d13120c4c8e3a2b365880689c0e614028de1f3637e0852d.png" alt="Logo" class="logo">
+        </a>
+
+        <!-- Titre de la page -->
         <h1 class="titre-iot">Gestion des IoT</h1>
-        <p class="nom-utilisateur">nom d'utilisateur</p>
+
+        <div class="conteneur-utilisateur">
+    <button class="bouton-utilisateur" onclick="togglePanneauDeconnexion()">
+        <?php echo htmlspecialchars($nom_utilisateur); ?>
+    </button>
+    <div id="panneau-deconnexion" class="panneau-deconnexion">
+        <form action="deconnexion.php" method="post">
+            <button type="submit" name="deconnexion" class="bouton-deconnexion">Déconnexion</button>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePanneauDeconnexion() {
+            var panneauDeconnexion = document.getElementById('panneau-deconnexion');
+            panneauDeconnexion.style.display = (panneauDeconnexion.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+
         <button class="bouton-alerte" onclick="toggleConteneur()"></button>
     </div>
 
@@ -47,9 +68,9 @@ if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte
     <script>
         function toggleConteneur() {
             var conteneurDroit = document.getElementById('conteneur-droit');
-            conteneurDroit.classList.toggle('ouvert'); // Utilise toggle pour ajouter/supprimer la classe
+            conteneurDroit.classList.toggle('ouvert');
         }
     </script>
-
-    </body>
+<iframe src="http://localhost:3000/d-solo/cegam49i6el1ce/apower?orgId=1&from=1742367841475&to=1742378641475&timezone=browser&panelId=1&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
+</body>
 </html>
