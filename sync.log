@@ -6245,4 +6245,46 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+<<<<<<< Updated upstream
+=======
+[Thu Apr 10 09:45:37 UTC 2025] Changements détectés. Commit en cours.
+[main 858bdcf] Auto commit - 2025-04-10 09:45:37
+ 1 file changed, 17 insertions(+)
+To github.com:drackosters/Projet-CIEL-IOT.git
+   c5c9dd0..858bdcf  main -> main
+[Thu Apr 10 09:45:40 UTC 2025] Début de synchronisation
+error: insufficient permission for adding an object to repository database .git/objects
+Cannot save the current worktree state
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+error: Your local changes to the following files would be overwritten by merge:
+	sync.log
+Please commit your changes or stash them before you merge.
+Aborting
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sync.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+The stash entry is kept in case you need it again.
+error: insufficient permission for adding an object to repository database .git/objects
+error: sync.log: failed to insert into database
+error: unable to index file 'sync.log'
+fatal: updating files failed
+[Thu Apr 10 09:45:40 UTC 2025] Changements détectés. Commit en cours.
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sync.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Everything up-to-date
+>>>>>>> Stashed changes
 [Thu Apr 10 09:45:42 UTC 2025] Début de synchronisation
