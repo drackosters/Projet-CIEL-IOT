@@ -9027,4 +9027,22 @@ error: cannot pull with rebase: You have unstaged changes.
 error: Please commit or stash them.
 The stash entry is kept in case you need it again.
 [Thu Apr 10 09:53:27 UTC 2025] Changements détectés. Commit en cours.
+<<<<<<< Updated upstream
+=======
+fatal: Unable to create '/var/www/html/Projet-CIEL-IOT/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[Thu Apr 10 09:53:27 UTC 2025] Changements détectés. Commit en cours.
+[main 19f4871] Auto commit - 2025-04-10 09:53:27
+ 1 file changed, 51 insertions(+)
+To github.com:drackosters/Projet-CIEL-IOT.git
+   8cc88bf..58b7af9  main -> main
+To github.com:drackosters/Projet-CIEL-IOT.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 58b7af96babd96646b8ce7718c3e4d685cb070c9 but expected 8cc88bf1c1f3bd212147ead275a5194959915df8)
+error: failed to push some refs to 'github.com:drackosters/Projet-CIEL-IOT.git'
+>>>>>>> Stashed changes
 [Thu Apr 10 09:53:30 UTC 2025] Début de synchronisation
