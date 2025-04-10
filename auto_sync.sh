@@ -1,4 +1,6 @@
 #!/bin/bash
+export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
+
 cd /var/www/html/Projet-CIEL-IOT || exit
 
 echo "[`date`] Début de synchronisation" >> sync.log
