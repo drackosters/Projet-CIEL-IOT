@@ -1904,3 +1904,24 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+[Thu Apr 10 09:20:51 UTC 2025] Début de synchronisation
+[Thu Apr 10 09:20:52 UTC 2025] Changements détectés. Commit en cours.
+error: insufficient permission for adding an object to repository database .git/objects
+fatal: failed to write commit object
+error: Your local changes to the following files would be overwritten by merge:
+	sync.log
+Please commit your changes or stash them before you merge.
+Aborting
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   sync.log
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sync.log
+
+The stash entry is kept in case you need it again.
