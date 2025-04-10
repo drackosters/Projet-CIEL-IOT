@@ -12,4 +12,11 @@ try {
     echo "La connexion a échoué : " . $e->getMessage();
     die();
 }
+
+//Connexion InfluxDB
+$influx_url = 'http://132.220.210.127:8086'; // URL de ton instance InfluxDB
+$org = 'ton_organisation';
+$bucket = 'ton_bucket';
+$token = 'TON_TOKEN_INFLUXDB';
+
 ?>
