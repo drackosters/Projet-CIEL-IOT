@@ -4682,4 +4682,13 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+<<<<<<< Updated upstream
 [Thu Apr 10 09:40:12 UTC 2025] Début de synchronisation
+=======
+[Thu Apr 10 09:40:10 UTC 2025] Changements détectés. Commit en cours.
+[main fa25f1f] Auto commit - 2025-04-10 09:40:10
+ 1 file changed, 17 insertions(+)
+To github.com:drackosters/Projet-CIEL-IOT.git
+   12d9939..fa25f1f  main -> main
+[Thu Apr 10 09:40:11 UTC 2025] Début de synchronisation
+>>>>>>> Stashed changes
