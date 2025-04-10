@@ -8449,4 +8449,61 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+<<<<<<< Updated upstream
 [Thu Apr 10 09:52:24 UTC 2025] Début de synchronisation
+=======
+[Thu Apr 10 09:52:23 UTC 2025] Changements détectés. Commit en cours.
+fatal: Unable to create '/var/www/html/Projet-CIEL-IOT/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[Thu Apr 10 09:52:23 UTC 2025] Changements détectés. Commit en cours.
+[main efc0f42] Auto commit - 2025-04-10 09:52:23
+ 1 file changed, 40 insertions(+)
+[Thu Apr 10 09:52:23 UTC 2025] Début de synchronisation
+>>>>>>> Stashed changes
+[Thu Apr 10 09:52:26 UTC 2025] Début de synchronisation
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+[Thu Apr 10 09:52:26 UTC 2025] Changements détectés. Commit en cours.
+fatal: Unable to create '/var/www/html/Projet-CIEL-IOT/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+error: Your local changes to the following files would be overwritten by merge:
+	sync.log
+Please commit your changes or stash them before you merge.
+Aborting
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Last commands done (4 commands done):
+   pick a45cc7a Auto commit - 2025-04-10 09:11:03
+   pick 0bce909 Auto commit - 2025-04-10 09:11:05
+  (see more in file /var/www/html/Projet-CIEL-IOT/.git/rebase-merge/done)
+Next commands to do (3 remaining commands):
+   pick 8fd8f57 Auto commit - 2025-04-10 09:33:35
+   pick d550b7d Auto commit - 2025-04-10 09:33:38
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'main' on '43bccc0'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   sync.log
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sync.log
+
+The stash entry is kept in case you need it again.
