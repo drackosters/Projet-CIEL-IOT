@@ -5625,4 +5625,8 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+<<<<<<< Updated upstream
 The stash entry is kept in case you need it again.
+=======
+[Thu Apr 10 09:43:20 UTC 2025] Début de synchronisation
+>>>>>>> Stashed changes
