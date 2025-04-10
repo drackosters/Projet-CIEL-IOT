@@ -1,27 +1,31 @@
 #!/bin/bash
-export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
-
 cd /var/www/html/Projet-CIEL-IOT || exit
 
-echo "[`date`] Début de synchronisation" >> sync.log
+# Configuration SSH explicite
+export GIT_SSH_COMMAND="ssh -i /home/azureuser/.ssh/id_ed25519 -F /dev/null"
 
-# On stash les modifs (même les fichiers non suivis)
-git stash push -u -m "temp-sync" >> sync.log 2>&1
+# Nettoyage des modifications résiduelles
+git reset --hard HEAD
+git clean -fd
 
-# On récupère depuis GitHub
-git pull origin main --rebase >> sync.log 2>&1
+echo "[$(date)] Début de synchronisation" | tee -a sync.log
 
-# On remet les fichiers en place
-git stash pop >> sync.log 2>&1
+# Synchronisation sécurisée
+git stash push -u -m "temp_$(date +%s)" 2>&1 | tee -a sync.log
+git pull origin main --rebase 2>&1 | tee -a sync.log
+git stash pop 2>&1 | tee -a sync.log
 
-# On ajoute tout
-git add . >> sync.log 2>&1
+# Gestion des conflits
+find . -name "*.orig" -delete
 
-# S'il y a des modifications, on commit
-if [[ $(git status --porcelain) ]]; then
-  echo "[`date`] Changements détectés. Commit en cours." >> sync.log
-  git commit -m "Auto commit - $(date '+%Y-%m-%d %H:%M:%S')" >> sync.log 2>&1
-  git push origin main >> sync.log 2>&1
+# Commit intelligent
+if git diff-index --quiet HEAD --; then
+  echo "[$(date)] Aucun changement détecté" | tee -a sync.log
 else
-  echo "[`date`] Aucun changement à commit." >> sync.log
+  git add . 2>&1 | tee -a sync.log
+  git commit -m "Auto-sync: $(date '+%Y-%m-%d %H:%M:%S')" 2>&1 | tee -a sync.log
+  git push origin main 2>&1 | tee -a sync.log
 fi
+
+# Nettoyage final
+git gc --auto 2>&1 | tee -a sync.log
