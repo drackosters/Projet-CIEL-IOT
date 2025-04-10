@@ -9,6 +9,28 @@ if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte
 }
 
 $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateur'] : "Utilisateur inconnu";
+
+//requête MQTT + Message erreur
+$response = @file_get_contents($url);
+$data = json_decode($response, true);
+
+// Vérification des données
+$values = $data['results'][0]['series'][0]['values'] ?? null;
+
+if (!$values) {
+    http_response_code(500);
+    echo json_encode(["error" => "Pas de données trouvées ou requête invalide."]);
+    exit;
+}
+
+// Formatage Chart.js
+$result = array_map(fn($point) => [
+    'time' => $point[0],
+    'value' => $point[1]
+], $values);
+
+header('Content-Type: application/json');
+echo json_encode($result);
 ?>
 
 <!DOCTYPE html>
@@ -63,9 +85,42 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
         }
     </script>
 
-<div class="centre-graphique">
-    <canvas id="Graphique_IOT"></canvas>
-</div>
+<h2>Consommation (apower) - Dernière heure</h2>
+  <canvas id="myChart" width="800" height="400"></canvas>
+
+  <script>
+    fetch('data.php')
+      .then(response => response.json())
+      .then(data => {
+        const labels = data.map(point => new Date(point.time).toLocaleTimeString());
+        const values = data.map(point => point.value);
+
+        new Chart(document.getElementById('myChart'), {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'apower (W)',
+              data: values,
+              borderColor: 'rgb(75, 192, 192)',
+              tension: 0.3,
+              fill: false
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              x: {
+                title: { display: true, text: 'Heure' }
+              },
+              y: {
+                title: { display: true, text: 'Puissance (W)' }
+              }
+            }
+          }
+        });
+      });
+  </script>
 
 </body>
 </html>
