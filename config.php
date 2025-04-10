@@ -1,4 +1,5 @@
 <?php
+//Connexion BDD MySQL
 $servername = "132.220.210.127";
 $username = "admin";
 $password = "password";
@@ -12,4 +13,5 @@ try {
     echo "La connexion a échoué : " . $e->getMessage();
     die();
 }
+
 ?>
