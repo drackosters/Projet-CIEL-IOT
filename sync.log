@@ -12871,3 +12871,24 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+From github.com:drackosters/Projet-CIEL-IOT
+ * branch            main       -> FETCH_HEAD
+   50492dc..1b622d5  main       -> origin/main
+Updating 50492dc..1b622d5
+Fast-forward
+ auto_sync.sh | 42 +++++++++++++++++-------------------------
+ 1 file changed, 17 insertions(+), 25 deletions(-)
+error: Your local changes to the following files would be overwritten by merge:
+	sync.log
+Please commit your changes or stash them before you merge.
+Aborting
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sync.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+The stash entry is kept in case you need it again.
