@@ -9477,4 +9477,14 @@ To github.com:drackosters/Projet-CIEL-IOT.git
    eeb550e..9d3d526  main -> main
 >>>>>>> Stashed changes
 [Thu Apr 10 09:54:54 UTC 2025] Début de synchronisation
+<<<<<<< Updated upstream
 [Thu Apr 10 09:54:59 UTC 2025] Début de synchronisation
+=======
+[Thu Apr 10 09:54:56 UTC 2025] Changements détectés. Commit en cours.
+[main da3eea1] Auto commit - 2025-04-10 09:54:56
+ 1 file changed, 8 insertions(+)
+To github.com:drackosters/Projet-CIEL-IOT.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at dc0373bf82ef1e6dd26310b2e39071c4363f4bb4 but expected 9d3d5266ee24aaa728fc8c75bb977d423bef54e2)
+error: failed to push some refs to 'github.com:drackosters/Projet-CIEL-IOT.git'
+[Thu Apr 10 09:54:58 UTC 2025] Début de synchronisation
+>>>>>>> Stashed changes
