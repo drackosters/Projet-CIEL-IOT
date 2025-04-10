@@ -2,6 +2,6 @@
 // Redirection vers Connexion.php
 header("Location: Connexion.php");
 //phpinfo();
-//test
+//test2
 exit(); // Arrête l'exécution du script
 ?>
