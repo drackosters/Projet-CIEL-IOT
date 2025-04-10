@@ -11990,3 +11990,23 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+From github.com:drackosters/Projet-CIEL-IOT
+ * branch            main       -> FETCH_HEAD
+error: cannot rebase: You have unstaged changes.
+error: Please commit or stash them.
+error: Your local changes to the following files would be overwritten by merge:
+	sync.log
+Please commit your changes or stash them before you merge.
+Aborting
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 17 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sync.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+The stash entry is kept in case you need it again.
