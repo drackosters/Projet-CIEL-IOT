@@ -15,9 +15,9 @@ try {
 }
 
 //Connexion InfluxDB
-$influx_url = 'http://132.220.210.127:8086'; // URL de ton instance InfluxDB
-$org = 'ton_organisation';
-$bucket = 'ton_bucket';
-$token = 'TON_TOKEN_INFLUXDB';
+$host = "http://localhost:8086";
+$db = "iot_data";
+$query = "SELECT apower FROM mqtt_consumer WHERE time > now() - 1h";
+$url = "$host/query?db=$db&q=" . urlencode($query);
   
 ?>
