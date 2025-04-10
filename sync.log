@@ -9343,4 +9343,11 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+<<<<<<< Updated upstream
 [Thu Apr 10 09:54:28 UTC 2025] Début de synchronisation
+=======
+[Thu Apr 10 09:54:26 UTC 2025] Changements détectés. Commit en cours.
+[main c665d05] Auto commit - 2025-04-10 09:54:26
+ 1 file changed, 29 insertions(+)
+[Thu Apr 10 09:54:27 UTC 2025] Début de synchronisation
+>>>>>>> Stashed changes
