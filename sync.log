@@ -8976,3 +8976,54 @@ error: failed to push some refs to 'github.com:drackosters/Projet-CIEL-IOT.git'
 [Thu Apr 10 09:53:23 UTC 2025] Début de synchronisation
 Saved working directory and index state On main: temp-sync
 >>>>>>> Stashed changes
+From github.com:drackosters/Projet-CIEL-IOT
+ * branch            main       -> FETCH_HEAD
+[Thu Apr 10 09:53:27 UTC 2025] Début de synchronisation
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+	git rebase (--continue | --abort | --skip)
+If that is not the case, please
+	rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+error: Your local changes to the following files would be overwritten by merge:
+	sync.log
+Please commit your changes or stash them before you merge.
+Aborting
+Saved working directory and index state On main: temp-sync
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Last commands done (4 commands done):
+   pick a45cc7a Auto commit - 2025-04-10 09:11:03
+   pick 0bce909 Auto commit - 2025-04-10 09:11:05
+  (see more in file /var/www/html/Projet-CIEL-IOT/.git/rebase-merge/done)
+Next commands to do (3 remaining commands):
+   pick 8fd8f57 Auto commit - 2025-04-10 09:33:35
+   pick d550b7d Auto commit - 2025-04-10 09:33:38
+  (use "git rebase --edit-todo" to view and edit)
+You are currently editing a commit while rebasing branch 'main' on '43bccc0'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sync.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+The stash entry is kept in case you need it again.
+fatal: Unable to create '/var/www/html/Projet-CIEL-IOT/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+The stash entry is kept in case you need it again.
+[Thu Apr 10 09:53:27 UTC 2025] Changements détectés. Commit en cours.
