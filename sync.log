@@ -43,3 +43,7 @@ From github.com:drackosters/Projet-CIEL-IOT
 Already up to date.
 [main 5a4d25d] Auto commit - 2025-04-10 07:13:00
  1 file changed, 3 insertions(+)
+To github.com:drackosters/Projet-CIEL-IOT.git
+   3a5547e..5a4d25d  main -> main
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
