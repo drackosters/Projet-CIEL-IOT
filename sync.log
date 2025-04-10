@@ -8921,6 +8921,7 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+<<<<<<< Updated upstream
 From github.com:drackosters/Projet-CIEL-IOT
  * branch            main       -> FETCH_HEAD
 From github.com:drackosters/Projet-CIEL-IOT
@@ -8953,3 +8954,25 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+=======
+[Thu Apr 10 09:53:19 UTC 2025] Changements détectés. Commit en cours.
+fatal: Unable to create '/var/www/html/Projet-CIEL-IOT/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[Thu Apr 10 09:53:19 UTC 2025] Changements détectés. Commit en cours.
+[main 4ee2acc] Auto commit - 2025-04-10 09:53:19
+ 1 file changed, 13 insertions(+)
+To github.com:drackosters/Projet-CIEL-IOT.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 2e1abfde8965f6376643e86b185a3b5a435f8a4a but expected cc615300e57ccb876a1447f5222b51d00045b98e)
+error: failed to push some refs to 'github.com:drackosters/Projet-CIEL-IOT.git'
+To github.com:drackosters/Projet-CIEL-IOT.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 2e1abfde8965f6376643e86b185a3b5a435f8a4a but expected cc615300e57ccb876a1447f5222b51d00045b98e)
+error: failed to push some refs to 'github.com:drackosters/Projet-CIEL-IOT.git'
+[Thu Apr 10 09:53:23 UTC 2025] Début de synchronisation
+[Thu Apr 10 09:53:23 UTC 2025] Début de synchronisation
+Saved working directory and index state On main: temp-sync
+>>>>>>> Stashed changes
