@@ -19,3 +19,5 @@ Already up to date.
  1 file changed, 3 insertions(+)
 To github.com:drackosters/Projet-CIEL-IOT.git
    974ff21..fe4bba2  main -> main
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
