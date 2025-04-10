@@ -9373,6 +9373,7 @@ To github.com:drackosters/Projet-CIEL-IOT.git
 error: failed to push some refs to 'github.com:drackosters/Projet-CIEL-IOT.git'
 >>>>>>> Stashed changes
 [Thu Apr 10 09:54:33 UTC 2025] Début de synchronisation
+<<<<<<< Updated upstream
 From github.com:drackosters/Projet-CIEL-IOT
  * branch            main       -> FETCH_HEAD
 error: Your local changes to the following files would be overwritten by merge:
@@ -9402,3 +9403,6 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+=======
+[Thu Apr 10 09:54:37 UTC 2025] Début de synchronisation
+>>>>>>> Stashed changes
