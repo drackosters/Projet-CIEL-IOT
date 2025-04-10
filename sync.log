@@ -9519,8 +9519,11 @@ no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [Thu Apr 10 09:55:03 UTC 2025] Début de synchronisation
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 [Thu Apr 10 09:55:02 UTC 2025] Changements détectés. Commit en cours.
@@ -9528,6 +9531,9 @@ The stash entry is kept in case you need it again.
  1 file changed, 29 insertions(+)
 [Thu Apr 10 09:55:02 UTC 2025] Début de synchronisation
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
