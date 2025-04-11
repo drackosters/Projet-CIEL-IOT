@@ -108,7 +108,6 @@
         }
 
         .bouton-modification {
-            
             background: linear-gradient(45deg, #2196F3, #64B5F6);
         }
 
@@ -117,13 +116,49 @@
         }
 
         .bouton-creationTopic {
-            
             background: linear-gradient(45deg, #4CAF50, #66BB6A);
         }
 
         .bouton-action:hover {
             transform: scale(1.1);
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Conteneur en bas de la page */
+        .conteneur-bas {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+            z-index: 1000;
+        }
+
+        .conteneur-bas iframe {
+            width: 90%;
+            height: 100%;
+            border: none;
+        }
+
+        .fermer {
+            background: #ff4d4d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .fermer:hover {
+            background: #ff1a1a;
         }
     </style>
 </head>
@@ -143,13 +178,40 @@
     <div class="conteneur-principal">
         <h2>Gestion des IoT</h2>
         <div class="boutons-container">
-            <button class="bouton-action bouton-creationIoT" onclick="alert('Redirection vers la page de création IoT')">Création d'un IoT</button>
-            <button class="bouton-action bouton-creationTopic" onclick="window.location.href='topics.php'">Ajout d'un Topic</button>
-
+            <button class="bouton-action bouton-creationIoT" onclick="ouvrirConteneur('Création d\'un IoT')">Création d'un IoT</button>
+            <button class="bouton-action bouton-creationTopic" onclick="ouvrirConteneurAvecIframe('topics.php')">Ajout d'un Topic</button>
         </div>
         <div class="boutons-container">
-            <button class="bouton-action bouton-modification" onclick="alert('Redirection vers la page de modification')">Modification d'un IoT</button>
-            <button class="bouton-action bouton-suppression" onclick="alert('Redirection vers la page de suppression')">Suppression d'un IoT</button>
+            <button class="bouton-action bouton-modification" onclick="ouvrirConteneur('Modification d\'un IoT')">Modification d'un IoT</button>
+            <button class="bouton-action bouton-suppression" onclick="ouvrirConteneur('Suppression d\'un IoT')">Suppression d'un IoT</button>
+        </div>
     </div>
+
+    <!-- Conteneur en bas de la page -->
+    <div class="conteneur-bas" id="conteneurBas">
+        <button class="fermer" onclick="fermerConteneur()">Fermer</button>
+        <div id="contenuBas"></div>
+    </div>
+
+    <script>
+        function ouvrirConteneur(message) {
+            const conteneurBas = document.getElementById('conteneurBas');
+            const contenuBas = document.getElementById('contenuBas');
+            contenuBas.innerHTML = `<p>${message}</p>`;
+            conteneurBas.style.display = 'flex';
+        }
+
+        function ouvrirConteneurAvecIframe(url) {
+            const conteneurBas = document.getElementById('conteneurBas');
+            const contenuBas = document.getElementById('contenuBas');
+            contenuBas.innerHTML = `<iframe src="${url}"></iframe>`;
+            conteneurBas.style.display = 'flex';
+        }
+
+        function fermerConteneur() {
+            const conteneurBas = document.getElementById('conteneurBas');
+            conteneurBas.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
