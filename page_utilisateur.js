@@ -16,6 +16,8 @@ optionsPanneau.forEach(option => {
     });
 });
 
+//------------PAGE DE DECONNEXION-----------------
+
 //panneau de déconnexion
 function togglePanneauDeconnexion() {
     var panneauDeconnexion = document.getElementById('panneau-deconnexion');
