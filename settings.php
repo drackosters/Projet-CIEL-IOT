@@ -126,8 +126,7 @@
 
 /* Conteneur en bas de la page */
 /* Conteneur en bas de la page */
-.conteneur-bas {
-    position: fixed; /* Fixé en haut comme le conteneur-haut */
+.conteneur-bas { /* Fixé en haut comme le conteneur-haut */
     top: 0; /* Aligné en haut */
     left: 0;
     right: 0;
