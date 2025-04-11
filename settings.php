@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color:rgb(0, 0, 0);
+            color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -131,7 +131,7 @@
     top: 0; /* Aligné en haut */
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.9); /* Fond similaire au conteneur-haut */
+    background: rgba(10, 6, 6, 0.9); /* Fond similaire au conteneur-haut */
     color: #000; /* Texte noir pour contraste */
     display: none; /* Masqué par défaut */
     flex-direction: column;
