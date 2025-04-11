@@ -132,19 +132,24 @@
             right: 0;
             background: rgba(0, 0, 0, 0.8);
             color: #fff;
-            padding: 20px;
             display: none;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 50%;
+            justify-content: flex-start;
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             z-index: 1000;
         }
 
         .conteneur-bas iframe {
-            width: 90%;
+            width: 100%;
             height: 100%;
             border: none;
+            border-radius: 15px;
         }
 
         .fermer {
