@@ -127,11 +127,11 @@
 /* Conteneur en bas de la page */
 /* Conteneur en bas de la page */
 .conteneur-bas {
-    position: flex /* Fixé en haut comme le conteneur-haut */
+    position: fixed; /* Fixé en haut comme le conteneur-haut */
     top: 0; /* Aligné en haut */
     left: 0;
     right: 0;
-    background: rgba(81, 80, 80, 0.9); /* Fond similaire au conteneur-haut */
+    background: rgba(121, 120, 120, 0.9); /* Fond similaire au conteneur-haut */
     color: #000; /* Texte noir pour contraste */
     display: none; /* Masqué par défaut */
     flex-direction: column;
@@ -146,7 +146,7 @@
 .conteneur-bas iframe {
     width: 100%; /* Prend toute la largeur */
     height: 100%; /* Prend toute la hauteur disponible */
-
+    border: none;
 }
 
 
