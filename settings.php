@@ -124,33 +124,29 @@
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
         }
 
-        /* Conteneur en bas de la page */
-        .conteneur-bas {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            width: 80%;
-            max-width: 800px;
-            height: auto;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-        }
+/* Conteneur en bas de la page */
+.conteneur-bas {
+    position: fixed; /* Fixé en haut comme le conteneur-haut */
+    top: 0; /* Aligné en haut */
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9); /* Fond similaire au conteneur-haut */
+    color: #000; /* Texte noir pour contraste */
+    display: none; /* Masqué par défaut */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; /* Prend toute la largeur */
+    height: 100%; /* Prend toute la hauteur */
+    padding: 0; /* Supprime les marges internes */
+    z-index: 1001; /* Au-dessus du conteneur-haut */
+}
 
-        .conteneur-bas iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 15px;
-        }
+.conteneur-bas iframe {
+    width: 100%; /* Prend toute la largeur */
+    height: calc(100% - 50px); /* Prend toute la hauteur moins l'espace du bouton "Fermer" */
+    border: none;
+}
 
         .fermer {
             background: #ff4d4d;
