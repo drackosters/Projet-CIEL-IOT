@@ -41,6 +41,7 @@ echo json_encode($result);
     <title>Gestion des IoT</title>
     <link rel="stylesheet" href="page_utilisateur.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="page_utilisateur.js"></script>
 </head>
 <body>
     <div class="conteneur-haut">
