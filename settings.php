@@ -131,7 +131,7 @@
     top: 0; /* Aligné en haut */
     left: 0;
     right: 0;
-    background: rgba(10, 6, 6, 0.9); /* Fond similaire au conteneur-haut */
+    background: rgba(81, 80, 80, 0.9); /* Fond similaire au conteneur-haut */
     color: #000; /* Texte noir pour contraste */
     display: none; /* Masqué par défaut */
     flex-direction: column;
