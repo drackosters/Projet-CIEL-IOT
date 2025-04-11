@@ -126,7 +126,8 @@
 
 /* Conteneur en bas de la page */
 /* Conteneur en bas de la page */
-.conteneur-bas { /* Fixé en haut comme le conteneur-haut */
+.conteneur-bas {
+    position: flex /* Fixé en haut comme le conteneur-haut */
     top: 0; /* Aligné en haut */
     left: 0;
     right: 0;
@@ -145,7 +146,7 @@
 .conteneur-bas iframe {
     width: 100%; /* Prend toute la largeur */
     height: 100%; /* Prend toute la hauteur disponible */
-    border: none;
+
 }
 
 
