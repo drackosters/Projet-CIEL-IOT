@@ -125,6 +125,7 @@
         }
 
 /* Conteneur en bas de la page */
+/* Conteneur en bas de la page */
 .conteneur-bas {
     position: fixed; /* Fixé en haut comme le conteneur-haut */
     top: 0; /* Aligné en haut */
@@ -144,9 +145,10 @@
 
 .conteneur-bas iframe {
     width: 100%; /* Prend toute la largeur */
-    height: calc(100% - 50px); /* Prend toute la hauteur moins l'espace du bouton "Fermer" */
+    height: 100%; /* Prend toute la hauteur disponible */
     border: none;
 }
+
 
         .fermer {
             background: #ff4d4d;
@@ -201,18 +203,24 @@
             contenuBas.innerHTML = `<p>${message}</p>`;
             conteneurBas.style.display = 'flex';
         }
-
         function ouvrirConteneurAvecIframe(url) {
     const conteneurBas = document.getElementById('conteneurBas');
     const contenuBas = document.getElementById('contenuBas');
-    contenuBas.innerHTML = `<iframe src="${url}"></iframe>`;
-    conteneurBas.style.display = 'flex'; // Affiche le conteneur
+    
+    // Insérer l'iframe avec une largeur et hauteur maximales
+    contenuBas.innerHTML = `<iframe src="${url}" style="width:100%; height:100%;"></iframe>`;
+    
+    // Afficher le conteneur
+    conteneurBas.style.display = 'flex';
 }
 
 function fermerConteneur() {
     const conteneurBas = document.getElementById('conteneurBas');
-    conteneurBas.style.display = 'none'; // Masque le conteneur
+    
+    // Masquer le conteneur
+    conteneurBas.style.display = 'none';
 }
+
 
     </script>
 </body>
