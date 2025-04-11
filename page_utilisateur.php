@@ -1,36 +1,16 @@
 <?php
 session_start();
 
-require 'config.php'; // Inclure le fichier de configuration pour la connexion à la base de données
+// Fichier de config pour connexion BDD
+require 'config.php';
 
+//Retour sur la page de connexion si utilisateur non connecter dans la session
 if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
     header("Location: Connexion.php");
     exit();
 }
 
 $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateur'] : "Utilisateur inconnu";
-
-//requête MQTT + Message erreur
-$response = @file_get_contents($url);
-$data = json_decode($response, true);
-
-// Vérification des données
-$values = $data['results'][0]['series'][0]['values'] ?? null;
-
-if (!$values) {
-    http_response_code(500);
-    echo json_encode(["error" => "Pas de données trouvées ou requête invalide."]);
-    exit;
-}
-
-// Formatage Chart.js
-$result = array_map(fn($point) => [
-    'time' => $point[0],
-    'value' => $point[1]
-], $values);
-
-header('Content-Type: application/json');
-echo json_encode($result);
 ?>
 
 <!DOCTYPE html>
