@@ -203,16 +203,17 @@
         }
 
         function ouvrirConteneurAvecIframe(url) {
-            const conteneurBas = document.getElementById('conteneurBas');
-            const contenuBas = document.getElementById('contenuBas');
-            contenuBas.innerHTML = `<iframe src="${url}"></iframe>`;
-            conteneurBas.style.display = 'flex';
-        }
+    const conteneurBas = document.getElementById('conteneurBas');
+    const contenuBas = document.getElementById('contenuBas');
+    contenuBas.innerHTML = `<iframe src="${url}"></iframe>`;
+    conteneurBas.style.display = 'flex'; // Affiche le conteneur
+}
 
-        function fermerConteneur() {
-            const conteneurBas = document.getElementById('conteneurBas');
-            conteneurBas.style.display = 'none';
-        }
+function fermerConteneur() {
+    const conteneurBas = document.getElementById('conteneurBas');
+    conteneurBas.style.display = 'none'; // Masque le conteneur
+}
+
     </script>
 </body>
 </html>
