@@ -70,9 +70,11 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
   <canvas id="myChart" width="800" height="400"></canvas>
 
   <script>
-    fetch('data.php')
+    fetch('Projet-CIEL-IOT/data.php')
       .then(response => response.json())
-      .then(data => {
+      .then(data =>
+       { 
+        console.log(data);
         const labels = data.map(point => new Date(point.time).toLocaleTimeString());
         const values = data.map(point => point.value);
 
