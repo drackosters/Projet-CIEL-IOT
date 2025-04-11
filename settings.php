@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #ffffff;
+            color:rgb(0, 0, 0);
             display: flex;
             flex-direction: column;
             align-items: center;
