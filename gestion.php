@@ -26,13 +26,20 @@ try {
         echo "data: $data\n\n";
         ob_flush();
         flush();
-        file_put_contents('messages.log', "[$topic] $message\n", FILE_APPEND);
-
+    
+        // Chemin absolu pour le fichier
+        $filePath = __DIR__ . '/messages.log';
+    
+        // Écriture dans le fichier avec gestion des erreurs
+        if (file_put_contents($filePath, "[$topic] $message\n", FILE_APPEND) === false) {
+            error_log("Erreur : Impossible d'écrire dans le fichier $filePath");
+        }
+    
         // Vérifier si le topic existe déjà
         $stmt = $conn->prepare("SELECT COUNT(*) FROM unique_topics WHERE topic = ?");
         $stmt->execute([$topic]);
         $count = $stmt->fetchColumn();
-
+    
         if ($count == 0) {
             // Préparer et lier pour insérer le nouveau topic dans la table unique_topics
             $stmt = $conn->prepare("INSERT INTO unique_topics (topic) VALUES (?)");
