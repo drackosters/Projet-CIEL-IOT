@@ -1,0 +1,2 @@
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":853.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1744463639},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1744463639}}
+[shelly/watt/online] true
