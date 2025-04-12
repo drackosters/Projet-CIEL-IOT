@@ -1,8 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-file_put_contents(__DIR__ . '/test.log', "Test d'écriture\n", FILE_APPEND);
+
 
 set_time_limit(0);
 require 'vendor/autoload.php';
