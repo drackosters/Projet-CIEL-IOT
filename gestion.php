@@ -22,6 +22,8 @@ try {
     $mqtt->connect();
     //souscription à tous les topics
     $mqtt->subscribe('#', function ($topic, $message) use ($conn) {
+        error_log("Message reçu : [$topic] $message");
+    
         $data = json_encode(['topic' => $topic, 'message' => $message]);
         echo "data: $data\n\n";
         ob_flush();
@@ -33,6 +35,8 @@ try {
         // Écriture dans le fichier avec gestion des erreurs
         if (file_put_contents($filePath, "[$topic] $message\n", FILE_APPEND) === false) {
             error_log("Erreur : Impossible d'écrire dans le fichier $filePath");
+        } else {
+            error_log("Message écrit dans le fichier : $filePath");
         }
     
         // Vérifier si le topic existe déjà
