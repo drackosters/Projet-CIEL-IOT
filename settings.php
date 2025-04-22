@@ -143,8 +143,8 @@
 }
 
 .conteneur-bas iframe {
-    width: 0%; /* Prend toute la largeur */
-    height: 0%; /* Prend toute la hauteur disponible */
+    width: 10px; /* Prend toute la largeur */
+    height: 10px; /* Prend toute la hauteur disponible */
     border: none;
 }
 
