@@ -146,6 +146,7 @@
     width: 10px; /* Prend toute la largeur */
     height: 10px; /* Prend toute la hauteur disponible */
     border: none;
+    display: block;
 }
 
 
