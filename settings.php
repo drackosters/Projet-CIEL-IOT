@@ -140,7 +140,7 @@
         }
 
         .iframe-container iframe {
-            width: calc(75% - 50px);
+            width: calc(85% - 50px);
             height: calc(100% - 50px); /* Ajuste la hauteur pour laisser de la place au bouton "Fermer" */
             border: none;
         }
