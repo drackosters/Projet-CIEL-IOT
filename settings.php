@@ -137,7 +137,7 @@
     align-items: center;
     justify-content: flex-start;
     width: 100%; /* Prend toute la largeur */
-    height: 10px; /* Prend toute la hauteur */
+    height: 100%; /* Prend toute la hauteur */
     padding: 0; /* Supprime les marges internes */
     z-index: 1001; /* Au-dessus du conteneur-haut */
 }
@@ -207,8 +207,8 @@
     const conteneurBas = document.getElementById('conteneurBas');
     const contenuBas = document.getElementById('contenuBas');
     
-    // Insérer l'iframe avec une largeur et hauteur maximales
-    contenuBas.innerHTML = `<iframe src="${url}" style="width:100%; height:100%;"></iframe>`;
+    // Insérer l'iframe avec des dimensions correctes
+    contenuBas.innerHTML = `<iframe src="${url}" style="width: 100%; height: 100%; border: none;"></iframe>`;
     
     // Afficher le conteneur
     conteneurBas.style.display = 'flex';
