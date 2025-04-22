@@ -127,7 +127,7 @@
         /* Texte en bas */
         .texte-bas {
             position: fixed;
-            bottom: -10px;
+            bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
             color: #ffffff;
@@ -190,7 +190,7 @@
         <h2>Gestion des IoT</h2>
         <div class="boutons-container">
             <button class="bouton-action bouton-creationIoT" 
-                    onmouseover="afficherTexteBas('Cliquez pour ajouter un IoT')" 
+                    onmouseover="afficherTexteBas('Cliquez pour ajouter un IoT lllllllllllllllllllllllllllllll')" 
                     onmouseout="cacherTexteBas()" 
                     onclick="ouvrirIframe('Création d\'un IoT')">Création d'un IoT</button>
             <button class="bouton-action bouton-creationTopic" 
