@@ -136,6 +136,41 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
+
+        /* Styles pour l'iframe */
+        .iframe-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(121, 120, 120, 0.9);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            z-index: 1001;
+        }
+
+        .iframe-container iframe {
+            width: calc(85% - 50px);
+            height: calc(95% - 50px); /* Ajuste la hauteur pour laisser de la place au bouton "Fermer" */
+            border: none;
+        }
+
+        .iframe-container .fermer {
+            background: #ff4d4d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .iframe-container .fermer:hover {
+            background: #ff1a1a;
+        }
     </style>
 </head>
 <body>
