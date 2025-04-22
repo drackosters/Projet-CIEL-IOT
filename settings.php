@@ -126,20 +126,20 @@
 
 /* Conteneur en bas de la page */
 .conteneur-bas {
-    position: fixed; /* Fixé en haut comme le conteneur-haut */
-    top: 0; /* Aligné en haut */
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    background: rgba(121, 120, 120, 0.9); /* Fond similaire au conteneur-haut */
-    color: #000; /* Texte noir pour contraste */
-    display: none; /* Masqué par défaut */
+    background: rgba(121, 120, 120, 0.9);
+    color: #000;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 100%; /* Prend toute la largeur */
-    height: 100%; /* Prend toute la hauteur */
-    padding: 0; /* Supprime les marges internes */
-    z-index: 1001; /* Au-dessus du conteneur-haut */
+    width: 100%;
+    height: 100vh; /* Définit une hauteur explicite */
+    padding: 0;
+    z-index: 1001;
 }
 
 .conteneur-bas iframe {
