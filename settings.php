@@ -127,7 +127,7 @@
         /* Texte en bas */
         .texte-bas {
             position: fixed;
-            bottom: 1000px;
+            bottom: 0px;
             left: 50%;
             transform: translateX(-50%);
             color: #ffffff;
