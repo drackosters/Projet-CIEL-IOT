@@ -156,23 +156,33 @@
         <div class="boutons-container">
             <button class="bouton-action bouton-creationIoT" 
                     onmouseover="afficherTexteBas('Cliquez pour ajouter un IoT')" 
-                    onmouseout="cacherTexteBas()">Création d'un IoT</button>
+                    onmouseout="cacherTexteBas()" 
+                    onclick="ouvrirIframe('Création d\'un IoT')">Création d'un IoT</button>
             <button class="bouton-action bouton-creationTopic" 
                     onmouseover="afficherTexteBas('Cliquez pour ajouter un Topic')" 
-                    onmouseout="cacherTexteBas()">Ajout d'un Topic</button>
+                    onmouseout="cacherTexteBas()" 
+                    onclick="ouvrirIframe('topics.php')">Ajout d'un Topic</button>
         </div>
         <div class="boutons-container">
             <button class="bouton-action bouton-modification" 
                     onmouseover="afficherTexteBas('Cliquez pour modifier un IoT')" 
-                    onmouseout="cacherTexteBas()">Modification d'un IoT</button>
+                    onmouseout="cacherTexteBas()" 
+                    onclick="ouvrirIframe('Modification d\'un IoT')">Modification d'un IoT</button>
             <button class="bouton-action bouton-suppression" 
                     onmouseover="afficherTexteBas('Cliquez pour supprimer un IoT')" 
-                    onmouseout="cacherTexteBas()">Suppression d'un IoT</button>
+                    onmouseout="cacherTexteBas()" 
+                    onclick="ouvrirIframe('Suppression d\'un IoT')">Suppression d'un IoT</button>
         </div>
     </div>
 
     <!-- Texte en bas -->
     <div class="texte-bas" id="texteBas"></div>
+
+    <!-- Iframe -->
+    <div class="iframe-container" id="iframeContainer">
+        <button class="fermer" onclick="fermerIframe()">Fermer</button>
+        <iframe id="iframe" src=""></iframe>
+    </div>
 
     <script>
         function afficherTexteBas(texte) {
@@ -184,6 +194,20 @@
         function cacherTexteBas() {
             const texteBas = document.getElementById('texteBas');
             texteBas.style.opacity = '0';
+        }
+
+        function ouvrirIframe(url) {
+            const iframeContainer = document.getElementById('iframeContainer');
+            const iframe = document.getElementById('iframe');
+            iframe.src = url;
+            iframeContainer.style.display = 'flex';
+        }
+
+        function fermerIframe() {
+            const iframeContainer = document.getElementById('iframeContainer');
+            const iframe = document.getElementById('iframe');
+            iframe.src = '';
+            iframeContainer.style.display = 'none';
         }
     </script>
 </body>
