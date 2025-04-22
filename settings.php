@@ -190,11 +190,7 @@
         <h2>Gestion des IoT</h2>
         <div class="boutons-container">
             <button class="bouton-action bouton-creationIoT" 
-                    onmouseover="afficherTexteBas('Cliquez pour ajouter un IoT')" 
-                    onmouseover="afficherTexteBas('Cliquez pour ajouter un IoT')" 
-                    onmouseover="afficherTexteBas('Cliquez pour ajouter un IoT')" 
-                    onmouseover="afficherTexteBas('Cliquez pour ajouter un IoT')" 
-
+                    onmouseover="afficherTexteBas('Cliquez pour a'<br>'jouter un IoT')" 
                     onmouseout="cacherTexteBas()" 
                     onclick="ouvrirIframe('Création d\'un IoT')">Création d'un IoT</button>
             <button class="bouton-action bouton-creationTopic" 
