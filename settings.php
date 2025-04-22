@@ -124,39 +124,17 @@
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
         }
 
-        /* Styles pour l'iframe */
-        .iframe-container {
+        /* Texte en bas */
+        .texte-bas {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(121, 120, 120, 0.9);
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            z-index: 1001;
-        }
-
-        .iframe-container iframe {
-            width: calc(85% - 50px);
-            height: calc(95% - 50px); /* Ajuste la hauteur pour laisser de la place au bouton "Fermer" */
-            border: none;
-        }
-
-        .iframe-container .fermer {
-            background: #ff4d4d;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-
-        .iframe-container .fermer:hover {
-            background: #ff1a1a;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
         }
     </style>
 </head>
@@ -176,40 +154,36 @@
     <div class="conteneur-principal">
         <h2>Gestion des IoT</h2>
         <div class="boutons-container">
-            <button class="bouton-action bouton-creationIoT" onclick="ouvrirIframe('Création d\'un IoT')">Création d'un IoT</button>
-            <button class="bouton-action bouton-creationTopic" onclick="ouvrirIframe('topics.php')">Ajout d'un Topic</button>
+            <button class="bouton-action bouton-creationIoT" 
+                    onmouseover="afficherTexteBas('Cliquez pour ajouter un IoT')" 
+                    onmouseout="cacherTexteBas()">Création d'un IoT</button>
+            <button class="bouton-action bouton-creationTopic" 
+                    onmouseover="afficherTexteBas('Cliquez pour ajouter un Topic')" 
+                    onmouseout="cacherTexteBas()">Ajout d'un Topic</button>
         </div>
         <div class="boutons-container">
-            <button class="bouton-action bouton-modification" onclick="ouvrirIframe('Modification d\'un IoT')">Modification d'un IoT</button>
-            <button class="bouton-action bouton-suppression" onclick="ouvrirIframe('Suppression d\'un IoT')">Suppression d'un IoT</button>
+            <button class="bouton-action bouton-modification" 
+                    onmouseover="afficherTexteBas('Cliquez pour modifier un IoT')" 
+                    onmouseout="cacherTexteBas()">Modification d'un IoT</button>
+            <button class="bouton-action bouton-suppression" 
+                    onmouseover="afficherTexteBas('Cliquez pour supprimer un IoT')" 
+                    onmouseout="cacherTexteBas()">Suppression d'un IoT</button>
         </div>
     </div>
 
-    <!-- Iframe -->
-    <div class="iframe-container" id="iframeContainer">
-        <button class="fermer" onclick="fermerIframe()">Fermer</button>
-        <iframe id="iframe" src=""></iframe>
-    </div>
+    <!-- Texte en bas -->
+    <div class="texte-bas" id="texteBas"></div>
 
     <script>
-        function ouvrirIframe(url) {
-            const iframeContainer = document.getElementById('iframeContainer');
-            const iframe = document.getElementById('iframe');
-            
-            // Mettre à jour la source de l'iframe
-            iframe.src = url;
-            
-            // Afficher le conteneur
-            iframeContainer.style.display = 'flex';
+        function afficherTexteBas(texte) {
+            const texteBas = document.getElementById('texteBas');
+            texteBas.textContent = texte;
+            texteBas.style.opacity = '1';
         }
 
-        function fermerIframe() {
-            const iframeContainer = document.getElementById('iframeContainer');
-            const iframe = document.getElementById('iframe');
-            
-            // Masquer le conteneur et réinitialiser la source de l'iframe
-            iframeContainer.style.display = 'none';
-            iframe.src = '';
+        function cacherTexteBas() {
+            const texteBas = document.getElementById('texteBas');
+            texteBas.style.opacity = '0';
         }
     </script>
 </body>
