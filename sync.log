@@ -1999,6 +1999,7 @@ Aborting
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -2009,6 +2010,8 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
