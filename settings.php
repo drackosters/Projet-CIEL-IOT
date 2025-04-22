@@ -136,15 +136,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    /*width: 100%; /* Prend toute la largeur */
-    /*height: 100%; /* Prend toute la hauteur */
+    width: 100%; /* Prend toute la largeur */
+    height: 100%; /* Prend toute la hauteur */
     padding: 0; /* Supprime les marges internes */
     z-index: 1001; /* Au-dessus du conteneur-haut */
 }
 
 .conteneur-bas iframe {
-    width: 100%; /* Prend toute la largeur */
-    height: 100%; /* Prend toute la hauteur disponible */
+    width: 0%; /* Prend toute la largeur */
+    height: 0%; /* Prend toute la hauteur disponible */
     border: none;
 }
 
