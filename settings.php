@@ -124,43 +124,38 @@
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
         }
 
-/* Conteneur en bas de la page */
-.conteneur-bas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(121, 120, 120, 0.9);
-    color: #000;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 100vh; /* Définit une hauteur explicite */
-    padding: 0;
-    z-index: 1001;
-}
+        /* Styles pour l'iframe */
+        .iframe-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(121, 120, 120, 0.9);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            z-index: 1001;
+        }
 
-.conteneur-bas iframe {
-    width: 10px; /* Prend toute la largeur */
-    height: 10px; /* Prend toute la hauteur disponible */
-    border: none;
-    display: block;
-}
+        .iframe-container iframe {
+            width: 100%;
+            height: calc(100% - 50px); /* Ajuste la hauteur pour laisser de la place au bouton "Fermer" */
+            border: none;
+        }
 
-
-        .fermer {
+        .iframe-container .fermer {
             background: #ff4d4d;
             color: #fff;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            margin-bottom: 10px;
+            margin: 10px;
         }
 
-        .fermer:hover {
+        .iframe-container .fermer:hover {
             background: #ff1a1a;
         }
     </style>
@@ -181,48 +176,41 @@
     <div class="conteneur-principal">
         <h2>Gestion des IoT</h2>
         <div class="boutons-container">
-            <button class="bouton-action bouton-creationIoT" onclick="ouvrirConteneur('Création d\'un IoT')">Création d'un IoT</button>
-            <button class="bouton-action bouton-creationTopic" onclick="ouvrirConteneurAvecIframe('topics.php')">Ajout d'un Topic</button>
+            <button class="bouton-action bouton-creationIoT" onclick="ouvrirIframe('Création d\'un IoT')">Création d'un IoT</button>
+            <button class="bouton-action bouton-creationTopic" onclick="ouvrirIframe('topics.php')">Ajout d'un Topic</button>
         </div>
         <div class="boutons-container">
-            <button class="bouton-action bouton-modification" onclick="ouvrirConteneur('Modification d\'un IoT')">Modification d'un IoT</button>
-            <button class="bouton-action bouton-suppression" onclick="ouvrirConteneur('Suppression d\'un IoT')">Suppression d'un IoT</button>
+            <button class="bouton-action bouton-modification" onclick="ouvrirIframe('Modification d\'un IoT')">Modification d'un IoT</button>
+            <button class="bouton-action bouton-suppression" onclick="ouvrirIframe('Suppression d\'un IoT')">Suppression d'un IoT</button>
         </div>
     </div>
 
-    <!-- Conteneur en bas de la page -->
-    <div class="conteneur-bas" id="conteneurBas">
-        <button class="fermer" onclick="fermerConteneur()">Fermer</button>
-        <div id="contenuBas"></div>
+    <!-- Iframe -->
+    <div class="iframe-container" id="iframeContainer">
+        <button class="fermer" onclick="fermerIframe()">Fermer</button>
+        <iframe id="iframe" src=""></iframe>
     </div>
 
     <script>
-        function ouvrirConteneur(message) {
-            const conteneurBas = document.getElementById('conteneurBas');
-            const contenuBas = document.getElementById('contenuBas');
-            contenuBas.innerHTML = `<p>${message}</p>`;
-            conteneurBas.style.display = 'flex';
+        function ouvrirIframe(url) {
+            const iframeContainer = document.getElementById('iframeContainer');
+            const iframe = document.getElementById('iframe');
+            
+            // Mettre à jour la source de l'iframe
+            iframe.src = url;
+            
+            // Afficher le conteneur
+            iframeContainer.style.display = 'flex';
         }
-        function ouvrirConteneurAvecIframe(url) {
-    const conteneurBas = document.getElementById('conteneurBas');
-    const contenuBas = document.getElementById('contenuBas');
-    
-    // Insérer l'iframe avec des dimensions correctes
-    contenuBas.innerHTML = `<iframe src="${url}" style="width: 100%; height: 100%; border: none;"></iframe>`;
-    
-    // Afficher le conteneur
-    conteneurBas.style.display = 'flex';
-}
 
-function fermerConteneur() {
-    const conteneurBas = document.getElementById('conteneurBas');
-    
-    // Masquer le conteneur
-    conteneurBas.style.display = 'none';
-}
-
-
-
+        function fermerIframe() {
+            const iframeContainer = document.getElementById('iframeContainer');
+            const iframe = document.getElementById('iframe');
+            
+            // Masquer le conteneur et réinitialiser la source de l'iframe
+            iframeContainer.style.display = 'none';
+            iframe.src = '';
+        }
     </script>
 </body>
 </html>
