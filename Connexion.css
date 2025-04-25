@@ -60,9 +60,9 @@ button:hover {
 
 .cookie-popup {
     position: fixed;
-    bottom: 30px;
     left: 50%;
-    transform: translateX(-50%) translateY(100%);
+    bottom: -300px; /* très en bas au départ */
+    transform: translateX(-50%);
     width: 90%;
     max-width: 400px;
     background: white;
@@ -71,10 +71,10 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: all 0.5s ease;
     z-index: 1000;
     text-align: center;
-  }
+}
   
   .cookie-popup button {
     margin: 10px 10px 0;
@@ -97,8 +97,9 @@ button:hover {
     color: white;
   }
   
-  .cookie-popup.show {
-    transform: translateX(-50%) translateY(0);
+/* Quand la pop-up est visible */
+.cookie-popup.show {
+    bottom: 100px; /* ici, plus haut sur l'écran */
     opacity: 1;
 }
 
