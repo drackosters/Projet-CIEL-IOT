@@ -68,14 +68,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
             <?php endif; ?>
         </form>
         </div>
-        
-        <div class="container-cookie">
 
         <!-- Pop-up de consentement pour les cookies -->
 <div id="cookie-popup" class="cookie-popup">
     <p>Ce site utilise des cookies pour stocker vos informations. Acceptez-vous de stocker vos données d'utilisateur ?</p>
-    <button onclick="accepterCookies()">Oui</button>
-    <button onclick="refuserCookies()">Non</button>
+    <button onclick="handleCookies(true)">Oui</button>
+    <button onclick="handleCookies(false)">Non</button>
 </div>
         
 </body>

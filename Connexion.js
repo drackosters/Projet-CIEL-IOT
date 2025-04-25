@@ -1,23 +1,15 @@
 //------------COOKIE PAGE USER--------------------
 
  // Vérifier si l'utilisateur a deja fait un choix
- document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", () => {
     if (!localStorage.getItem("cookieChoix")) {
-        document.getElementById("cookie-popup").style.display = "block";
+        const popup = document.getElementById("cookie-popup");
+        popup.style.display = "block";
+        setTimeout(() => {
+            popup.classList.add('show');
+        }, 100);
     }
 });
-
- const popup = document.getElementById('cookie-popup');
-
-  document.addEventListener("DOMContentLoaded", () => {
-    if (!localStorage.getItem("cookieChoix")) {
-      popup.style.display = "block";
-      setTimeout(() => {
-        popup.classList.add('show');
-      }, 100);
-    }
-  });
-
   function handleCookies(accepted) {
     popup.classList.remove('show');
     popup.classList.add('hide');
