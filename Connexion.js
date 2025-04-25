@@ -10,6 +10,7 @@
         }, 100);
     }
 });
+
   function handleCookies(accepted) {
     popup.classList.remove('show');
     popup.classList.add('hide');
