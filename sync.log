@@ -1,0 +1,9 @@
+<<<<<<< Updated upstream
+=======
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+error: Your local changes to the following files would be overwritten by merge:
+	sync.log
+Please commit your changes or stash them before you merge.
+Aborting
+>>>>>>> Stashed changes
