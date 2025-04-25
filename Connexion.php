@@ -53,8 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
         <img src="image/297f7e763fcbb4896d13120c4c8e3a2b365880689c0e614028de1f3637e0852d.png" alt="Logo" class="logo">
         <h2>Connexion</h2>
 
-        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>
-        " style="display: flex; flex-direction: column; width: 300px; margin: auto;">
+        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> " style="display: flex; flex-direction: column; width: 300px; margin: auto;">
 
             <input type="text" name="login" placeholder="Nom d'utilisateur ou adresse e-mail"
              required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
