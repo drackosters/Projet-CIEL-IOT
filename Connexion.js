@@ -7,18 +7,30 @@
     }
 });
 
-function acceptCookies() {
-    localStorage.setItem("cookieChoix", "accepter");
-    document.getElementById("cookie-popup").style.display = "none";
+ const popup = document.getElementById('cookie-popup');
 
-    // Si accepter, stocker le cookie
-    fetch('cookie_handler.php?action=set');
-}
+  document.addEventListener("DOMContentLoaded", () => {
+    if (!localStorage.getItem("cookieChoix")) {
+      popup.style.display = "block";
+      setTimeout(() => {
+        popup.classList.add('show');
+      }, 100);
+    }
+  });
 
-function declineCookies() {
-    localStorage.setItem("cookieChoix", "refuser");
-    document.getElementById("cookie-popup").style.display = "none";
+  function handleCookies(accepted) {
+    popup.classList.remove('show');
+    popup.classList.add('hide');
 
-    // Si refus, supprimer cookie
-    fetch('cookie_handler.php?action=delete');
-}
+    // Sauvegarde du choix
+    localStorage.setItem("cookieChoix", accepted ? "accepter" : "refuser");
+
+    // Appel au serveur
+    fetch(`cookie_handler.php?action=${accepted ? "set" : "delete"}`);
+
+    // Attendre la fin de l'animation avant de masquer le popup
+    setTimeout(() => {
+      popup.style.display = "none";
+      popup.classList.remove('hide'); // reset classes pour un futur affichage
+    }, 500);
+  }
