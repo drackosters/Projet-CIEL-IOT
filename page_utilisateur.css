@@ -39,7 +39,7 @@ body {
 .bouton-alerte {
     width: 40px;
     height: 40px;
-    background-image: url('../image/notification.png');
+    background-image: url('image/notification.png');
     background-size: cover;
     border: none;
     cursor: pointer;
