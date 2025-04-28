@@ -25,8 +25,6 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
 </head>
 <body>
 
-<div class ="conteneur-principal">
-
     <div class="conteneur-haut">
 
         <!-- Logo de la page qui ramène au site de citeconnect -->
@@ -37,15 +35,20 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
         <!-- Titre de la page -->
         <h1 class="titre-iot">Gestion des IoT</h1>
 
-        <div class="conteneur-utilisateur">
+    <div class="conteneur-utilisateur">
+      
+        <!-- bouton utilisateur -->
         <button class="bouton-utilisateur" onclick="togglePanneauDeconnexion()">
-        <?php echo htmlspecialchars($nom_utilisateur); ?>
+            <?php echo htmlspecialchars($nom_utilisateur); ?>
         </button>
+
+        <!-- panneau de déconnexion -->
         <div id="panneau-deconnexion" class="panneau-deconnexion">
           <form action="deconnexion.php" method="post">
             <button type="submit" name="deconnexion" class="bouton-deconnexion">Déconnexion</button>
           </form>
-          </div>
+        </div>
+
     </div>
 
         <button class="bouton-alerte" onclick="toggleConteneur()"></button>
@@ -97,8 +100,5 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
         });
       });
   </script>
-
-
-</div>
 </body>
 </html>
