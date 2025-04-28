@@ -1,8 +1,8 @@
 <?php
-require 'config.php'; // Garde si tu veux pour la connexion, sinon inutile
+require 'config.php'; // Si besoin, sinon tu peux le virer
 
-// Construction de l'URL d'interrogation
-$url = "http://localhost:8086/query?db=metrics&q=" . urlencode("SELECT apower FROM mqtt_consumer ORDER BY time DESC LIMIT 10");
+// Construction de l'URL vers InfluxDB
+$url = "http://132.220.210.127:8086/query?db=iot_data&q=" . urlencode("SELECT apower FROM mqtt_consumer ORDER BY time DESC LIMIT 10");
 
 // Appel API
 $response = @file_get_contents($url);
