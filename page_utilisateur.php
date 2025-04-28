@@ -66,8 +66,10 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
         }
     </script>
 
-<h2>Consommation (apower) - Dernière heure</h2>
-  <canvas id="myChart" width="800" height="400"></canvas>
+<div class="graphique">
+    <h2 class="titre-graphique">Consommation électrice - Dernière heure</h2>
+    <canvas id="myChart"></canvas>
+</div>
 
   <script>
     fetch('data.php')
