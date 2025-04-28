@@ -70,7 +70,7 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
   <canvas id="myChart" width="800" height="400"></canvas>
 
   <script>
-    fetch('Projet-CIEL-IOT/data.php')
+    fetch('data.php')
       .then(response => response.json())
       .then(data =>
        { 
