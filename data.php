@@ -33,6 +33,9 @@ if (!$values) {
     exit;
 }
 
+//Avoir les données dans l'ordre passé -> futur
+$values = array_reverse($values);
+
 // Formatage des données
 $result = array_map(function($point) {
     return [
