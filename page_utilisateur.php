@@ -73,16 +73,19 @@ function chargerGraphique() {
         .then(response => response.json())
         .then(data => {
             console.log(data);
+
             const labels = data.map(point => {
+                const date = new Date(point.time);
                 if (intervalle === 'minute') {
-                    return new Date(point.time).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    return date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
                 } else if (intervalle === 'heure') {
-                    return new Date(point.heure).toLocaleTimeString([], {hour: '2-digit'});
+                    return date.toLocaleTimeString([], {hour: '2-digit'});
                 } else { // jour
-                    return new Date(point.jour).toLocaleDateString();
+                    return date.toLocaleDateString();
                 }
             });
-            const values = data.map(point => point.valeur);
+
+            const values = data.map(point => point.value);
 
             const ctx = document.getElementById('myChart').getContext('2d');
 
@@ -117,6 +120,6 @@ function chargerGraphique() {
             });
         });
 }
-  </script>
+</script>
 </body>
 </html>
