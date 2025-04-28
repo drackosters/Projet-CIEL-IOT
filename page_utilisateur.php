@@ -44,6 +44,7 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
 
         <!-- panneau de déconnexion -->
         <div id="panneau-deconnexion" class="panneau-deconnexion">
+
           <form action="deconnexion.php" method="post">
             <button type="submit" name="deconnexion" class="bouton-deconnexion">Déconnexion</button>
           </form>
@@ -66,60 +67,39 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
 </div>
 
   <script>
-function chargerGraphique() {
-    const intervalle = document.getElementById('choix-intervalle').value;
+    fetch('data.php')
+      .then(response => response.json())
+      .then(data =>
+       { 
+        console.log(data);
+        const labels = data.map(point => new Date(point.time).toLocaleTimeString());
+        const values = data.map(point => point.value);
 
-    fetch('data.php?intervalle=' + intervalle)
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-
-            const labels = data.map(point => {
-                const date = new Date(point.time);
-                if (intervalle === 'minute') {
-                    return date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-                } else if (intervalle === 'heure') {
-                    return date.toLocaleTimeString([], {hour: '2-digit'});
-                } else { // jour
-                    return date.toLocaleDateString();
-                }
-            });
-
-            const values = data.map(point => point.value);
-
-            const ctx = document.getElementById('myChart').getContext('2d');
-
-            // Détruire l'ancien graphique s'il existe
-            if (window.myChartInstance) {
-                window.myChartInstance.destroy();
+        new Chart(document.getElementById('myChart'), {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'apower (W)',
+              data: values,
+              borderColor: 'rgb(75, 192, 192)',
+              tension: 0.3,
+              fill: false
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              x: {
+                title: { display: true, text: 'Heure' }
+              },
+              y: {
+                title: { display: true, text: 'Puissance (W)' }
+              }
             }
-
-            window.myChartInstance = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Consommation',
-                        data: values,
-                        borderColor: 'rgb(75, 192, 192)',
-                        tension: 0.3,
-                        fill: false
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: {
-                        x: {
-                            title: { display: true, text: 'Temps' }
-                        },
-                        y: {
-                            title: { display: true, text: 'Puissance (W)' }
-                        }
-                    }
-                }
-            });
+          }
         });
-}
-</script>
+      });
+  </script>
 </body>
 </html>
