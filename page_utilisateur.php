@@ -24,6 +24,9 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
     <script src="page_utilisateur.js"></script>
 </head>
 <body>
+
+<div class ="conteneur-principal">
+
     <div class="conteneur-haut">
 
         <!-- Logo de la page qui ramène au site de citeconnect -->
@@ -35,22 +38,15 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
         <h1 class="titre-iot">Gestion des IoT</h1>
 
         <div class="conteneur-utilisateur">
-    <button class="bouton-utilisateur" onclick="togglePanneauDeconnexion()">
+        <button class="bouton-utilisateur" onclick="togglePanneauDeconnexion()">
         <?php echo htmlspecialchars($nom_utilisateur); ?>
-    </button>
-    <div id="panneau-deconnexion" class="panneau-deconnexion">
-        <form action="deconnexion.php" method="post">
+        </button>
+        <div id="panneau-deconnexion" class="panneau-deconnexion">
+          <form action="deconnexion.php" method="post">
             <button type="submit" name="deconnexion" class="bouton-deconnexion">Déconnexion</button>
-        </form>
-        </div>
+          </form>
+          </div>
     </div>
-
-    <script>
-        function togglePanneauDeconnexion() {
-            var panneauDeconnexion = document.getElementById('panneau-deconnexion');
-            panneauDeconnexion.style.display = (panneauDeconnexion.style.display === 'block') ? 'none' : 'block';
-        }
-    </script>
 
         <button class="bouton-alerte" onclick="toggleConteneur()"></button>
     </div>
@@ -59,13 +55,6 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
         <p>Gestion des alertes</p>
     </div>
 
-    <script>
-        function toggleConteneur() {
-            var conteneurDroit = document.getElementById('conteneur-droit');
-            conteneurDroit.classList.toggle('ouvert');
-        }
-    </script>
-
 <div class="cadre-graph1">
     <div class="titre-graphique">Consommation d'énergie - Dernière heure</div>
     <div class="conteneur-canvas">
@@ -73,41 +62,6 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
     </div>
 </div>
 
-  <script>
-    fetch('data.php')
-      .then(response => response.json())
-      .then(data =>
-       { 
-        console.log(data);
-        const labels = data.map(point => new Date(point.time).toLocaleTimeString());
-        const values = data.map(point => point.value);
-
-        new Chart(document.getElementById('myChart'), {
-          type: 'line',
-          data: {
-            labels: labels,
-            datasets: [{
-              label: 'apower (W)',
-              data: values,
-              borderColor: 'rgb(75, 192, 192)',
-              tension: 0.3,
-              fill: false
-            }]
-          },
-          options: {
-            responsive: true,
-            scales: {
-              x: {
-                title: { display: true, text: 'Heure' }
-              },
-              y: {
-                title: { display: true, text: 'Puissance (W)' }
-              }
-            }
-          }
-        });
-      });
-  </script>
-
+</div>
 </body>
 </html>
