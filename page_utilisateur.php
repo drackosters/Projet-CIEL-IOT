@@ -67,7 +67,7 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
     </script>
 
 <div class="cadre-graph1">
-    <div class="titre-graphique">Consommation (apower) - Dernière heure</div>
+    <div class="titre-graphique">Consommation d'énergie - Dernière heure</div>
     <div class="conteneur-canvas">
         <canvas id="myChart"></canvas>
     </div>
