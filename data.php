@@ -1,8 +1,22 @@
 <?php
-require 'config.php'; // Si besoin, sinon tu peux le virer
+require 'config.php'; // garde si nécessaire
 
-// Construction de l'URL vers InfluxDB
-$url = "http://132.220.210.127:8086/query?db=iot_data&q=" . urlencode("SELECT apower FROM mqtt_consumer ORDER BY time DESC LIMIT 10");
+header('Content-Type: application/json');
+
+// Récupère l'intervalle choisi par l'utilisateur
+$intervalle = isset($_GET['intervalle']) ? $_GET['intervalle'] : 'minute';
+
+// Construction de la requête InfluxDB selon l'intervalle
+if ($intervalle === 'heure') {
+    $query = "SELECT MEAN(apower) FROM mqtt_consumer WHERE time >= now() - 24h GROUP BY time(1h) fill(none)";
+} elseif ($intervalle === 'jour') {
+    $query = "SELECT MEAN(apower) FROM mqtt_consumer WHERE time >= now() - 7d GROUP BY time(1d) fill(none)";
+} else { // minute (par défaut)
+    $query = "SELECT apower FROM mqtt_consumer ORDER BY time DESC LIMIT 60";
+}
+
+// Construction de l'URL InfluxDB
+$url = "http://132.220.210.127:8086/query?db=iot_data&q=" . urlencode($query);
 
 // Appel API
 $response = @file_get_contents($url);
@@ -34,13 +48,12 @@ if (!$values) {
 }
 
 // Formatage des données
-$result = array_map(function($point) {
+$result = array_map(function($point) use ($intervalle) {
     return [
         'time' => $point[0],
-        'value' => $point[1]
+        'value' => is_array($point[1]) ? null : $point[1] // Parfois Influx renvoie des nulls
     ];
 }, $values);
 
-header('Content-Type: application/json');
 echo json_encode($result);
 ?>

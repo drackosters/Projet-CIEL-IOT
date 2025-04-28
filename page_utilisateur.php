@@ -36,7 +36,7 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
         <h1 class="titre-iot">Gestion des IoT</h1>
 
     <div class="conteneur-utilisateur">
-      
+
         <!-- bouton utilisateur -->
         <button class="bouton-utilisateur" onclick="togglePanneauDeconnexion()">
             <?php echo htmlspecialchars($nom_utilisateur); ?>
@@ -66,39 +66,57 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
 </div>
 
   <script>
-    fetch('data.php')
-      .then(response => response.json())
-      .then(data =>
-       { 
-        console.log(data);
-        const labels = data.map(point => new Date(point.time).toLocaleTimeString());
-        const values = data.map(point => point.value);
+function chargerGraphique() {
+    const intervalle = document.getElementById('choix-intervalle').value;
 
-        new Chart(document.getElementById('myChart'), {
-          type: 'line',
-          data: {
-            labels: labels,
-            datasets: [{
-              label: 'apower (W)',
-              data: values,
-              borderColor: 'rgb(75, 192, 192)',
-              tension: 0.3,
-              fill: false
-            }]
-          },
-          options: {
-            responsive: true,
-            scales: {
-              x: {
-                title: { display: true, text: 'Heure' }
-              },
-              y: {
-                title: { display: true, text: 'Puissance (W)' }
-              }
+    fetch('data.php?intervalle=' + intervalle)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            const labels = data.map(point => {
+                if (intervalle === 'minute') {
+                    return new Date(point.time).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                } else if (intervalle === 'heure') {
+                    return new Date(point.heure).toLocaleTimeString([], {hour: '2-digit'});
+                } else { // jour
+                    return new Date(point.jour).toLocaleDateString();
+                }
+            });
+            const values = data.map(point => point.valeur);
+
+            const ctx = document.getElementById('myChart').getContext('2d');
+
+            // Détruire l'ancien graphique s'il existe
+            if (window.myChartInstance) {
+                window.myChartInstance.destroy();
             }
-          }
+
+            window.myChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Consommation',
+                        data: values,
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.3,
+                        fill: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            title: { display: true, text: 'Temps' }
+                        },
+                        y: {
+                            title: { display: true, text: 'Puissance (W)' }
+                        }
+                    }
+                }
+            });
         });
-      });
+}
   </script>
 </body>
 </html>
