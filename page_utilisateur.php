@@ -62,6 +62,43 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
     </div>
 </div>
 
+  <script>
+    fetch('data.php')
+      .then(response => response.json())
+      .then(data =>
+       { 
+        console.log(data);
+        const labels = data.map(point => new Date(point.time).toLocaleTimeString());
+        const values = data.map(point => point.value);
+
+        new Chart(document.getElementById('myChart'), {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'apower (W)',
+              data: values,
+              borderColor: 'rgb(75, 192, 192)',
+              tension: 0.3,
+              fill: false
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              x: {
+                title: { display: true, text: 'Heure' }
+              },
+              y: {
+                title: { display: true, text: 'Puissance (W)' }
+              }
+            }
+          }
+        });
+      });
+  </script>
+
+
 </div>
 </body>
 </html>
