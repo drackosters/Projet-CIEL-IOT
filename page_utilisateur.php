@@ -4,7 +4,7 @@ session_start();
 // Fichier de config pour connexion BDD
 require 'config.php';
 
-//Retour sur la page de connexion si utilisateur non connecter dans la session
+//Retour sur la page de connexion si utilisateur non connecté dans la session
 if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
     header("Location: Connexion.php");
     exit();
@@ -20,7 +20,6 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des IoT</title>
     <link rel="stylesheet" href="page_utilisateur.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="page_utilisateur.js"></script>
 </head>
 <body>
@@ -35,22 +34,22 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
         <h1 class="titre-iot">Gestion des IoT</h1>
 
         <div class="conteneur-utilisateur">
-    <button class="bouton-utilisateur" onclick="togglePanneauDeconnexion()">
-        <?php echo htmlspecialchars($nom_utilisateur); ?>
-    </button>
-    <div id="panneau-deconnexion" class="panneau-deconnexion">
-        <form action="deconnexion.php" method="post">
-            <button type="submit" name="deconnexion" class="bouton-deconnexion">Déconnexion</button>
-        </form>
+            <button class="bouton-utilisateur" onclick="togglePanneauDeconnexion()">
+                <?php echo htmlspecialchars($nom_utilisateur); ?>
+            </button>
+            <div id="panneau-deconnexion" class="panneau-deconnexion">
+                <form action="deconnexion.php" method="post">
+                    <button type="submit" name="deconnexion" class="bouton-deconnexion">Déconnexion</button>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <script>
-        function togglePanneauDeconnexion() {
-            var panneauDeconnexion = document.getElementById('panneau-deconnexion');
-            panneauDeconnexion.style.display = (panneauDeconnexion.style.display === 'block') ? 'none' : 'block';
-        }
-    </script>
+        <script>
+            function togglePanneauDeconnexion() {
+                var panneauDeconnexion = document.getElementById('panneau-deconnexion');
+                panneauDeconnexion.style.display = (panneauDeconnexion.style.display === 'block') ? 'none' : 'block';
+            }
+        </script>
 
         <button class="bouton-alerte" onclick="toggleConteneur()"></button>
     </div>
@@ -65,45 +64,6 @@ $nom_utilisateur = isset($_COOKIE['nom_utilisateur']) ? $_COOKIE['nom_utilisateu
             conteneurDroit.classList.toggle('ouvert');
         }
     </script>
-
-<h2>Consommation (apower) - Dernière heure</h2>
-  <canvas id="myChart" width="800" height="400"></canvas>
-
-  <script>
-    fetch('Projet-CIEL-IOT/data.php')
-      .then(response => response.json())
-      .then(data =>
-       { 
-        console.log(data);
-        const labels = data.map(point => new Date(point.time).toLocaleTimeString());
-        const values = data.map(point => point.value);
-
-        new Chart(document.getElementById('myChart'), {
-          type: 'line',
-          data: {
-            labels: labels,
-            datasets: [{
-              label: 'apower (W)',
-              data: values,
-              borderColor: 'rgb(75, 192, 192)',
-              tension: 0.3,
-              fill: false
-            }]
-          },
-          options: {
-            responsive: true,
-            scales: {
-              x: {
-                title: { display: true, text: 'Heure' }
-              },
-              y: {
-                title: { display: true, text: 'Puissance (W)' }
-              }
-            }
-          }
-        });
-      });
-  </script>
 
 </body>
 </html>
