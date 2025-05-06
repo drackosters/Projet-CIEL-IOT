@@ -13575,6 +13575,7 @@ The stash entry is kept in case you need it again.
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 From github.com:drackosters/Projet-CIEL-IOT
  * branch            main       -> FETCH_HEAD
 Already up to date.
@@ -13593,6 +13594,9 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
 [Thu Apr 10 17:59:11 CEST 2025] Début de synchronisation
+=======
+[Thu Apr 10 17:59:09 CEST 2025] Début de synchronisation
+>>>>>>> Stashed changes
 =======
 [Thu Apr 10 17:59:09 CEST 2025] Début de synchronisation
 >>>>>>> Stashed changes
