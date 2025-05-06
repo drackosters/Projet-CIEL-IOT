@@ -41,7 +41,7 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
         </button>
 
         <!-- Ajout IoT -->
-        <button class="bouton-ajout-iot">
+        <button class="bouton-ajout-iot" onclick="toggleAjoutIot()">
             <img src="image/ajout_iot.png" alt="Ajouter un IoT" class="icone-ajout-iot">
         </button>
 
