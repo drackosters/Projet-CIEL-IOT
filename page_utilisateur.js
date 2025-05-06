@@ -1,33 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Initialisation
-    gererOptionsPanneau();
     observerConteneur();
+    observerAjoutIot(); // Nouvelle fonction pour observer conteneur-ajout-iot
     fermerAjoutIotSiClickExterieur();
     attacherEvenements();
 
-    // Rendre les fonctions accessibles globalement si nécessaire
+    // Rendre les fonctions accessibles globalement
     window.togglePanneauDeconnexion = togglePanneauDeconnexion;
     window.toggleConteneur = toggleConteneur;
     window.toggleAjoutIot = toggleAjoutIot;
-
-    // Fonction pour gérer les clics sur les options du panneau
-    function gererOptionsPanneau() {
-        const optionsPanneau = document.querySelectorAll('.option-panneau');
-        optionsPanneau.forEach(option => {
-            option.addEventListener('click', () => {
-                const value = option.dataset.value;
-                console.log(`Option du panneau sélectionnée : ${value}`);
-
-                if (value === 'optionA') {
-                    alert('Option A sélectionnée !');
-                } else if (value === 'optionB') {
-                    alert('Option B sélectionnée !');
-                }
-
-                document.getElementById('panneau-options').style.display = 'none';
-            });
-        });
-    }
 
     // Fonction pour basculer le panneau de déconnexion
     function togglePanneauDeconnexion() {
@@ -42,6 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const conteneurDroit = document.getElementById('conteneur-droit');
         if (conteneurDroit) {
             conteneurDroit.classList.toggle('ouvert');
+        }
+    }
+
+    // Nouvelle fonction pour basculer le conteneur de sélection de graphique
+    function toggleAjoutIot() {
+        const conteneurAjout = document.getElementById('conteneur-ajout-iot');
+        if (conteneurAjout) {
+            conteneurAjout.classList.toggle('ouvert');
         }
     }
 
@@ -67,15 +56,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Fonction pour ouvrir ou fermer le formulaire d’ajout IoT
-    function toggleAjoutIot() {
-        const formulaire = document.getElementById('conteneur-ajout-iot');
-        if (!formulaire) {
-            console.error("conteneur-ajout-iot introuvable dans le DOM");
-            return;
+    // Nouvelle fonction pour observer les changements dans conteneur-ajout-iot (optionnel pour l'instant)
+    function observerAjoutIot() {
+        const conteneur = document.getElementById('conteneur-ajout-iot');
+        const boutonAjout = document.querySelector('.bouton-ajout-iot');
+    
+        if (conteneur && boutonAjout) {
+            // Pour l'instant, pas de logique complexe, juste une observation
+            console.log("observerAjoutIot actif");
+        } else {
+            console.warn("conteneur-ajout-iot ou bouton-ajout-iot est introuvable dans le DOM.");
         }
-
-        formulaire.classList.toggle('ouvert');
     }
 
     // Fermer le panneau d'ajout IoT si clic à l'extérieur

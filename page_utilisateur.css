@@ -64,12 +64,12 @@ body {
 }
 
 .bouton-ajout-iot {
-    background: none;
+    width: 48px;
+    height: 48px;
+    background: transparent url('/Projet-CIEL-IOT/image/ajout_iot.png') center/contain no-repeat;
     border: none;
     cursor: pointer;
     padding: 0;
-    margin-top: 10px;
-    margin-right: 15px; /* éloigné du bouton cloche */
 }
 
 .icone-ajout-iot {
@@ -134,12 +134,18 @@ body {
 /* ========== PANNEAU LATÉRAL AJOUT IOT ========== */
 
 .conteneur-ajout-iot {
-    right: -300px; /* masqué */
-    transition: right 0.3s ease-in-out;
+    display: none; /* Caché par défaut */
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+    right: 10px;
+    top: 100px; /* Position différente pour éviter le chevauchement avec conteneur-droit */
 }
 
 .conteneur-ajout-iot.ouvert {
-    right: 70px; /* affiché */
+    display: block;
 }
 
 

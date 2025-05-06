@@ -44,10 +44,10 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
             <img src="image/ajout_iot.png" alt="Sélectionner un graphique" class="icone-ajout-iot">
         </button>
 
-        <!-- Panneau de sélection de graphique -->
-        <div id="conteneur-ajout-iot" class="conteneur-ajout-iot">
-            <h3>Sélectionner un graphique</h3>
-            <!-- Contenu à compléter plus tard avec des cases à cocher -->
+        <!-- Panneau de sélection de graphique (copie de conteneur-droit) -->
+        <div id="conteneur-ajout-iot" class="conteneur-droit">
+            <p>Sélectionner un graphique</p>
+            <div id="message-ajout-iot"></div> <!-- Placeholder pour futur contenu -->
         </div>
 
         <!-- Cloche notification -->
