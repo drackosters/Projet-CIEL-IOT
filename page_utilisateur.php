@@ -16,7 +16,7 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des IoT</title>
     <link rel="icon" href="image/logo.png" type="image/png">
-    <link rel="stylesheet" href="page_utilisateur.css?v=29">
+    <link rel="stylesheet" href="page_utilisateur.css?v=32"> <!-- Incrémenter la version pour forcer le rechargement -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="page_utilisateur.js" defer></script>
 </head>
@@ -40,22 +40,24 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
         </button>
 
         <!-- Bouton pour ouvrir le panneau de sélection de graphique -->
-        <button class="bouton-ajout-iot">
+        <button class="bouton-ajout-iot" onclick="toggleAjoutIot()">
             <img src="image/ajout_iot.png" alt="Sélectionner un graphique" class="icone-ajout-iot">
         </button>
 
-        <!-- Panneau de sélection de graphique (copie de conteneur-droit) -->
+        <!-- Panneau de sélection de graphique -->
         <div id="conteneur-ajout-iot" class="conteneur-droit">
             <p>Sélectionner un graphique</p>
             <div id="message-ajout-iot">
                 <label>
-                    <input type="checkbox" name="graphique" value="energie"> Consommateur d'énergie
+                    <input type="checkbox" name="graphique" value="energie" id="checkbox-energie" checked> Consommateur d'énergie
                 </label>
             </div>
         </div>
 
         <!-- Cloche notification -->
-        <button id="bouton-alerte" class="bouton-alerte" onclick="toggleConteneur()"></button>
+        <button id="bouton-alerte" class="bouton-alerte" onclick="toggleConteneur()">
+            <img src="/Projet-CIEL-IOT/image/notification_1.png" alt="Notifications">
+        </button>
 
         <!-- Panneau de déconnexion -->
         <div id="panneau-deconnexion" class="panneau-deconnexion">
@@ -184,6 +186,45 @@ function ajouterAlerte(message) {
         container.appendChild(p);
     }
 }
+
+function toggleConteneur() {
+    console.log("toggleConteneur appelé");
+    const conteneurDroit = document.getElementById('conteneur-droit');
+    if (conteneurDroit) {
+        conteneurDroit.classList.toggle('ouvert');
+        console.log("Classe 'ouvert' pour conteneur-droit :", conteneurDroit.classList.contains('ouvert'));
+    }
+}
+
+function toggleAjoutIot() {
+    console.log("toggleAjoutIot appelé");
+    const conteneurAjout = document.getElementById('conteneur-ajout-iot');
+    if (conteneurAjout) {
+        conteneurAjout.classList.toggle('ouvert');
+        console.log("Classe 'ouvert' pour conteneur-ajout-iot :", conteneurAjout.classList.contains('ouvert'));
+    } else {
+        console.error("conteneur-ajout-iot introuvable dans le DOM");
+    }
+}
+
+// Ajout de l'écouteur pour la case à cocher
+document.addEventListener('DOMContentLoaded', () => {
+    const checkboxEnergie = document.getElementById('checkbox-energie');
+    const graphiqueEnergie = document.querySelector('.cadre-graph1');
+
+    if (checkboxEnergie && graphiqueEnergie) {
+        // Initialisation : le graphique est visible si la case est cochée
+        graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
+
+        // Écouteur pour les changements
+        checkboxEnergie.addEventListener('change', () => {
+            graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
+            console.log("Graphique 'Consommateur d'énergie' :", checkboxEnergie.checked ? "visible" : "masqué");
+        });
+    } else {
+        console.error("checkbox-energie ou cadre-graph1 introuvable dans le DOM");
+    }
+});
 
 // Initialisation
 fetchAndUpdateChart();

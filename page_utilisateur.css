@@ -172,6 +172,7 @@ body {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    display: block; /* Par défaut visible, sera contrôlé par JS */
 }
 
 .titre-graphique {
