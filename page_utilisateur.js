@@ -49,16 +49,18 @@ document.addEventListener("DOMContentLoaded", function () {
     function observerConteneur() {
         const conteneur = document.getElementById('conteneur-droit');
         const boutonAlerte = document.getElementById('bouton-alerte');
-
+    
         if (conteneur && boutonAlerte) {
             const observer = new MutationObserver(mutations => {
-                for (const mutation of mutations) {
-                    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-                        boutonAlerte.style.backgroundImage = "url('/Projet-CIEL-IOT/image/notification_2.png')";
-                    }
+                const messageAlerte = conteneur.querySelector('#message-alerte');
+                if (messageAlerte) {
+                    const hasAlerts = messageAlerte.children.length > 0;
+                    boutonAlerte.style.backgroundImage = hasAlerts
+                        ? "url('/Projet-CIEL-IOT/image/notification_2.png')"
+                        : "url('/Projet-CIEL-IOT/image/notification_1.png')";
                 }
             });
-
+    
             observer.observe(conteneur, { childList: true, subtree: true });
         } else {
             console.warn("conteneur-droit ou bouton-alerte est introuvable dans le DOM.");

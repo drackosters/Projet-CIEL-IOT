@@ -165,10 +165,23 @@ function fetchAlertes() {
 }
 
 function ajouterAlerte(message) {
-    const p = document.createElement('p');
-    p.textContent = message;
-    p.style.color = 'red';
-    document.getElementById('message-alerte').appendChild(p);
+    const container = document.getElementById('message-alerte');
+    if (!Array.from(container.children).some(p => p.textContent === message)) {
+        const p = document.createElement('p');
+        p.textContent = message;
+        p.style.color = 'red';
+        p.style.cursor = 'pointer'; // Indique que c'est cliquable
+        p.addEventListener('click', () => {
+            p.remove(); // Supprime la notification au clic
+            // Mettre à jour l'icône si plus aucune alerte
+            const hasAlerts = container.children.length === 0;
+            const boutonAlerte = document.getElementById('bouton-alerte');
+            if (boutonAlerte && hasAlerts) {
+                boutonAlerte.style.backgroundImage = "url('/Projet-CIEL-IOT/image/notification_1.png')";
+            }
+        });
+        container.appendChild(p);
+    }
 }
 
 // Initialisation
