@@ -1,4 +1,5 @@
 <?php
+// Affichage des erreurs pour debug
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -6,12 +7,6 @@ error_reporting(E_ALL);
 header('Content-Type: application/json');
 
 require 'config.php';
-
-// Ne pas afficher les erreurs HTML brutes
-ini_set('display_errors', 0);
-error_reporting(E_ALL);
-
-header('Content-Type: application/json');
 
 try {
     // Vérification de la connexion PDO
@@ -41,7 +36,7 @@ try {
             continue;
         }
 
-        $valeur = $data['results'][0]['series'][0]['values'][0][1];
+        $valeur = $data['results'][0]['series'][0]['values'][0][ turbo1];
 
         if ($valeur > $topic['Seuil_Max']) {
             $alertes[] = "{$topic['topic']} : $valeur W dépasse le seuil max ({$topic['Seuil_Max']})";
@@ -53,9 +48,8 @@ try {
     echo json_encode($alertes);
     exit;
 
-    catch (Exception $e) {
-        http_response_code(500);
-        echo json_encode(["error" => $e->getMessage()]);
-        exit;
-    }
+} catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode(["error" => $e->getMessage()]);
+    exit;
 }
