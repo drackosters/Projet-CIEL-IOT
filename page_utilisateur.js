@@ -46,16 +46,30 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("conteneur-droit ou bouton-alerte est introuvable dans le DOM.");
     }
   
-    // panneau latéral droit ajout IoT
+//Fonction pour ouvrir le panneau d'IoT
     window.toggleAjoutIot = function () {
-      const formulaire = document.getElementById('conteneur-ajout-iot');
-      if (!formulaire) {
-          console.error("conteneur-ajout-iot introuvable dans le DOM");
-          return;
-      }
-  
-      formulaire.style.display = (formulaire.style.display === 'none' || formulaire.style.display === '') ? 'block' : 'none';
-  };
+        const formulaire = document.getElementById('conteneur-ajout-iot');
+        if (!formulaire) {
+            console.error("conteneur-ajout-iot introuvable dans le DOM");
+            return;
+        }
+    
+        formulaire.classList.toggle('ouvert');
+    };
+    
+//Si clique en dehors du panneau, fermer fenêtre
+    document.addEventListener('click', function(event) {
+        const panneau = document.getElementById('conteneur-ajout-iot');
+        const boutonAjout = document.querySelector('.bouton-ajout-iot');
+    
+        if (!panneau || !boutonAjout) return;
+    
+        const isClickInside = panneau.contains(event.target) || boutonAjout.contains(event.target);
+    
+        if (!isClickInside) {
+            panneau.classList.remove('ouvert');
+        }
+    });    
   
   // Attache l'événement au clic du bouton
   const boutonAjout = document.querySelector('.bouton-ajout-iot');
