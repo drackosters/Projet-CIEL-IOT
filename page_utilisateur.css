@@ -133,18 +133,18 @@ body {
 
 /* ========== PANNEAU LATÉRAL AJOUT IOT ========== */
 
-.conteneur-ajout-iot {
-    display: none; /* Caché par défaut */
+#conteneur-ajout-iot.conteneur-droit {
+    display: none;
     position: absolute;
     background: white;
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 10;
     right: 10px;
-    top: 100px; /* Position différente pour éviter le chevauchement avec conteneur-droit */
+    top: 100px; /* Ajustez pour éviter le chevauchement */
 }
 
-.conteneur-ajout-iot.ouvert {
+#conteneur-ajout-iot.conteneur-droit.ouvert {
     display: block;
 }
 
