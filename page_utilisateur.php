@@ -47,7 +47,11 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
         <!-- Panneau de sélection de graphique (copie de conteneur-droit) -->
         <div id="conteneur-ajout-iot" class="conteneur-droit">
             <p>Sélectionner un graphique</p>
-            <div id="message-ajout-iot"></div> <!-- Placeholder pour futur contenu -->
+            <div id="message-ajout-iot">
+                <label>
+                    <input type="checkbox" name="graphique" value="energie"> Consommateur d'énergie
+                </label>
+            </div>
         </div>
 
         <!-- Cloche notification -->
