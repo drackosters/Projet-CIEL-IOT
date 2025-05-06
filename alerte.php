@@ -1,11 +1,18 @@
 <?php
-
 require 'config.php';
 
+// Ne pas afficher les erreurs HTML brutes
 ini_set('display_errors', 0);
 error_reporting(E_ALL);
 
+header('Content-Type: application/json');
+
 try {
+    // Vérification de la connexion PDO
+    if (!isset($pdo)) {
+        throw new Exception("Connexion PDO manquante.");
+    }
+
     $stmt = $pdo->query("SELECT topic, Seuil_Min, Seuil_Max FROM TOPICS");
     $topics = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -18,32 +25,28 @@ try {
         $response = @file_get_contents($url);
 
         if ($response === false) {
-            $alertes[] = "⚠️ Impossible d'accéder à InfluxDB pour le topic {$topic['topic']}";
+            $alertes[] = "Erreur : InfluxDB inaccessible pour le topic {$topic['topic']}";
             continue;
         }
 
         $data = json_decode($response, true);
-
         if (!isset($data['results'][0]['series'][0]['values'][0][1])) {
-            $alertes[] = "⚠️ Aucune donnée trouvée pour le topic {$topic['topic']}";
+            $alertes[] = "Erreur : Donnée manquante pour le topic {$topic['topic']}";
             continue;
         }
 
-        $value = $data['results'][0]['series'][0]['values'][0][1];
+        $valeur = $data['results'][0]['series'][0]['values'][0][1];
 
-        if ($value > $topic['Seuil_Max']) {
-            $alertes[] = "⚠️ {$topic['topic']} : $value W > Seuil Max ({$topic['Seuil_Max']} W)";
-        } elseif ($value < $topic['Seuil_Min']) {
-            $alertes[] = "⚠️ {$topic['topic']} : $value W < Seuil Min ({$topic['Seuil_Min']} W)";
+        if ($valeur > $topic['Seuil_Max']) {
+            $alertes[] = "{$topic['topic']} : $valeur W dépasse le seuil max ({$topic['Seuil_Max']})";
+        } elseif ($valeur < $topic['Seuil_Min']) {
+            $alertes[] = "{$topic['topic']} : $valeur W en dessous du seuil min ({$topic['Seuil_Min']})";
         }
     }
 
-    // Test manuel
-    $alertes[] = "⚠️ [TEST] Seuil dépassé pour test manuel";
-
-    header('Content-Type: application/json');
     echo json_encode($alertes);
     exit;
+
 } catch (Exception $e) {
     http_response_code(500);
     echo json_encode(["error" => "Erreur serveur : " . $e->getMessage()]);
