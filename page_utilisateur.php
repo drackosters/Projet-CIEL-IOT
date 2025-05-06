@@ -19,7 +19,6 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
     <link rel="stylesheet" href="page_utilisateur.css?v=29">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="page_utilisateur.js" defer></script>
-
 </head>
 <body>
 
@@ -40,14 +39,15 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
             <?= htmlspecialchars($nom_utilisateur) ?>
         </button>
 
-        <!-- Ajout IoT -->
+        <!-- Bouton pour ouvrir le panneau de sélection de graphique -->
         <button class="bouton-ajout-iot" onclick="toggleAjoutIot()">
-            <img src="image/ajout_iot.png" alt="Ajouter un IoT" class="icone-ajout-iot">
+            <img src="image/ajout_iot.png" alt="Sélectionner un graphique" class="icone-ajout-iot">
         </button>
 
-
+        <!-- Panneau de sélection de graphique -->
         <div id="conteneur-ajout-iot" class="conteneur-ajout-iot">
-            <p>Formulaire d’ajout IoT ici</p>
+            <h3>Sélectionner un graphique</h3>
+            <!-- Contenu à compléter plus tard avec des cases à cocher -->
         </div>
 
         <!-- Cloche notification -->
@@ -60,9 +60,7 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
             </form>
         </div>
     </div>
-
 </div>
-
 
 <div id="conteneur-droit" class="conteneur-droit">
     <p>Gestion des alertes</p>
@@ -170,10 +168,9 @@ function ajouterAlerte(message) {
         const p = document.createElement('p');
         p.textContent = message;
         p.style.color = 'red';
-        p.style.cursor = 'pointer'; // Indique que c'est cliquable
+        p.style.cursor = 'pointer';
         p.addEventListener('click', () => {
-            p.remove(); // Supprime la notification au clic
-            // Mettre à jour l'icône si plus aucune alerte
+            p.remove();
             const hasAlerts = container.children.length === 0;
             const boutonAlerte = document.getElementById('bouton-alerte');
             if (boutonAlerte && hasAlerts) {
