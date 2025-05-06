@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="image/logo.png" type="image/png">
     <title>Paramètres</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
     <style>
@@ -118,6 +119,10 @@
         .bouton-creationTopic {
             background: linear-gradient(45deg, #4CAF50, #66BB6A);
         }
+		
+		 .bouton-gestionUtilisateur {
+            background: linear-gradient(45deg,rgb(197, 244, 54),rgb(208, 229, 115));
+        }
 
         .bouton-action:hover {
             transform: scale(1.1);
@@ -192,7 +197,7 @@
             <button class="bouton-action bouton-creationIoT" 
                     onmouseover="afficherTexteBas('Cliquez pour ajouter un IoT')" 
                     onmouseout="cacherTexteBas()" 
-                    onclick="ouvrirIframe('Création d\'un IoT')">Création d'un IoT</button>
+                    onclick="ouvrirIframe('creation_iot.php')">Création d'un IoT</button>
             <button class="bouton-action bouton-creationTopic" 
                     onmouseover="afficherTexteBas('Cliquez pour ajouter un Topic')" 
                     onmouseout="cacherTexteBas()" 
@@ -202,14 +207,23 @@
             <button class="bouton-action bouton-modification" 
                     onmouseover="afficherTexteBas('Cliquez pour modifier un IoT')" 
                     onmouseout="cacherTexteBas()" 
-                    onclick="ouvrirIframe('Modification d\'un IoT')">Modification d'un IoT</button>
+                    onclick="ouvrirIframe('modif_iot.php')">Modification d'un IoT</button>
             <button class="bouton-action bouton-suppression" 
                     onmouseover="afficherTexteBas('Cliquez pour supprimer un IoT')" 
                     onmouseout="cacherTexteBas()" 
-                    onclick="ouvrirIframe('Suppression d\'un IoT')">Suppression d'un IoT</button>
+                    onclick="ouvrirIframe('suppression.php')">Suppression d'un IoT</button>
         </div>
-    </div>
 
+		<h2>Gestion Utilisateur</h2>
+        <div class="boutons-action">
+            <button class="bouton-action bouton-gestionUtilisateur" 
+                    onmouseover="afficherTexteBas('Cliquez pour créer un Utilisateur')" 
+                    onmouseout="cacherTexteBas()" 
+                    onclick="ouvrirIframe('creation_iot.php')">Création Utilisateur</button>
+        </div>
+		
+    </div>
+			
     <!-- Texte en bas -->
     <div class="texte-bas" id="texteBas"></div>
 

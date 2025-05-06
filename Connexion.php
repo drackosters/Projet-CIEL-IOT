@@ -43,6 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
+    <link rel="icon" href="image/logo.png" type="image/png">
     <link rel="stylesheet" href="Connexion.css">
     <script src="Connexion.js"></script>
 </head>

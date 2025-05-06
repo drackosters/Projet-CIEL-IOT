@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $unite = $_POST['unite_' . urlencode($jsonKey)] ?? '';
             $seuil_min = $_POST['seuil_min_' . urlencode($jsonKey)] ?? '';
             $seuil_max = $_POST['seuil_max_' . urlencode($jsonKey)] ?? '';
-            $fullTopic = $baseTopic . '/' . $jsonKey;
+            $fullTopic = $baseTopic . '-' . $jsonKey;
 
             try {
                 $sql = "INSERT INTO TOPICS (topic, unite, Seuil_MIN, Seuil_MAX) VALUES (:topic, :unite, :seuil_min, :seuil_max)";

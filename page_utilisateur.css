@@ -1,3 +1,4 @@
+/* ========== GÉNÉRAL ========== */
 body {
     font-family: Arial, sans-serif;
     background-image: url('image/fond.png');
@@ -9,20 +10,23 @@ body {
     overflow-x: hidden;
 }
 
+/* ========== EN-TÊTE ========== */
 .conteneur-haut {
-    width: 100%;
-    background-color: white;
+    width: 100vw;
+    height: 80px;
     padding: 20px;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 80px;
+    box-sizing: border-box;
+    position: relative; /* pour position: absolute des enfants */
+    z-index: 1;
 }
 
 .logo {
-    max-width: 150px; /*largeur */
-    max-height: 150px; /* hauteur */
+    max-width: 150px;
+    max-height: 150px;
     height: auto;
 }
 
@@ -33,38 +37,11 @@ body {
     padding-left: 10px;
 }
 
-.nom-utilisateur {
-    margin: 0;
-    margin-right: 4px;
-}
-
-.bouton-alerte {
-    width: 40px;
-    height: 40px;
-    background-image: url('/Projet-CIEL-IOT/image/notification.png');
-    background-size: cover;
-    border: none;
-    cursor: pointer;
-    fill: black;
-}
-
-.conteneur-droit {
-    width: 200px;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    padding: 20px;
-    position: absolute;
-    top: 135px;
-    right: -250px; /* Caché initialement à droite */
-    transition: right 0.2s ease-in-out; /* Transition sur la propriété 'right' */
-    border-radius: 20px;
-}
-
-.conteneur-droit.ouvert {
-    right: 0; /* Visible quand la classe 'ouvert' est présente */
-}
-
+/* ========== UTILISATEUR / BOUTONS ========== */
 .conteneur-utilisateur {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     position: relative;
     margin-left: 2px;
 }
@@ -73,24 +50,48 @@ body {
     background-color: #3498db;
     color: white;
     border: none;
-    margin-left: 35px;
-    margin-right: 25px;
+    border-radius: 50px;
     padding: 8px 16px;
-    text-align: center;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 50px;
     transition: background-color 0.3s ease;
+    margin-left: 15px;
+    margin-right: 25px;
 }
 
 .bouton-utilisateur:hover {
     background-color: #2980b9;
 }
 
+.bouton-ajout-iot {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 15px; /* éloigné du bouton cloche */
+}
+
+.icone-ajout-iot {
+    width: 35px;
+    height: 35px;
+}
+
+.bouton-alerte {
+    width: 48px;
+    height: 48px;
+    background: transparent url('/Projet-CIEL-IOT/image/notification_1.png') center/contain no-repeat;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* ========== PANNEAU DE DÉCONNEXION ========== */
 .panneau-deconnexion {
     display: none;
     position: absolute;
     top: 100%;
+    left: 0;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -103,10 +104,9 @@ body {
     color: white;
     border: none;
     padding: 8px 20px;
-    text-align: center;
     font-size: 14px;
-    cursor: pointer;
     border-radius: 15px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
@@ -114,34 +114,75 @@ body {
     background-color: #d32f2f;
 }
 
-.graphique {
-    background: white;
+/* ========== PANNEAU LATÉRAL DROIT ========== */
+.conteneur-droit {
+    width: 200px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 20px;
+    position: absolute;
+    top: 100px;
+    right: -250px; /* masqué par défaut */
+    transition: right 0.2s ease-in-out;
+}
+
+.conteneur-droit.ouvert {
+    right: 0; /* visible quand classe ajoutée */
+}
+
+/* ========== PANNEAU LATÉRAL AJOUT IOT ========== */
+
+.conteneur-ajout-iot {
+    position: absolute;
+    top: 100px; /* à ajuster selon ton layout */
+    right: -300px; /* caché initialement */
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 700px;
+    transition: right 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.conteneur-ajout-iot.ouvert {
+    right: 70px; /* ou 0px si tu veux qu’il s’aligne à droite */
+}
+
+
+
+/* ========== GRAPHIQUES ========== */
+.graphique {
+    background: white;
+    width: 650px;
+    padding: 20px;
+    border-radius: 20px;
     margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cadre-graph1 {
     background: white;
+    width: 40vw;
+    max-width: 650px;
+    padding: 20px;
+    margin: 40px auto 0 40px;
     border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    width: 700px;
-    margin: 50px auto;
-    margin: 80px 0 0 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .titre-graphique {
     font-size: 24px;
     font-weight: bold;
+    color: #333;
     text-align: center;
     margin-bottom: 30px;
-    color: #333;
 }
 
 .conteneur-canvas {
@@ -151,7 +192,7 @@ body {
 }
 
 #myChart {
-    width: 100%;
-    max-width: 600px;
-    height: 350px;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
 }

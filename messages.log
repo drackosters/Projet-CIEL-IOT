@@ -1,2 +1,854 @@
 [shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":853.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1744463639},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1744463639}}
 [shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908199},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908199}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908259},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908259}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908319},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908319}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908379},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908379}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908439},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908439}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908499},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908499}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908559},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908559}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908619},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908619}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908619},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908619}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908679},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908679}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908679},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908679}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908739},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908739}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908799},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908799}}
+[test] test
+[test] test
+[test] test
+[shelly/watt/online] true
+[tesgsed] tse
+[tesgsed] tse
+[tesgsed] tse
+[tesgsed] tse
+[tesgsed] tse
+[tesgsed] tse
+[tesgsed] tse
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908859},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908859}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908859},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908859}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908919},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908919}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908919},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908919}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908979},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908979}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908979},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745908979}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909039},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909039}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909099},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909099}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909159},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909159}}
+[shelly/watt/online] true
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909219},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909219}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909219},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909219}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909279},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909279}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909279},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909279}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909279},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909279}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909339},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909339}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909339},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909339}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909339},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909339}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909399},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909399}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909399},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909399}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909579},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909579}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909639},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909639}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909699},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909699}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909699},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909699}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909759},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909759}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909759},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909759}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909819},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909819}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909879},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745909879}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910239},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910239}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.6, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910299},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910299}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.6, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910299},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910299}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":252.0, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910359},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910359}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":252.0, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910359},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910359}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.6, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910419},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910419}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.6, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910419},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910419}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910479},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910479}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910659},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910659}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910719},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910719}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910719},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910719}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910779},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910779}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910779},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910779}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910779},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910779}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910839},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910839}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910839},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910839}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910839},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910839}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910899},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910899}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910899},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910899}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910899},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910899}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910959},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910959}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910959},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745910959}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911019},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911019}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911079},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911079}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911139},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911139}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911199},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911199}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911259},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911259}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911259},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911259}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911319},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911319}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911319},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911319}}
+[shelly/watt/online] true
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911379},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911379}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911379},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911379}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911379},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911379}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911379},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911379}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911439},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911439}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911439},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911439}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911499},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911499}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911499},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745911499}}
+[shelly/watt/online] true
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916779},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916779}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916779},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916779}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916839},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916839}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916839},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916839}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916899},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916899}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916899},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916899}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916899},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916899}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916959},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916959}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.035, "apower":2.8 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916986},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916986}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.035, "apower":2.8 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916986},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916986}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.160, "apower":16.7 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916987},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916987}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.160, "apower":16.7 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916987},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916987}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.282, "apower":32.7 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916988},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916988}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.282, "apower":32.7 ,"freq":50.0,"aenergy":{"total":1703.375,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916988},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745916988}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.191, "apower":20.2 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917002},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917002}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.191, "apower":20.2 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917002},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917002}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.021, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917003},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917003}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.021, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917003},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917003}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.108, "apower":10.7 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917006},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917006}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.108, "apower":10.7 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917006},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917006}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.266, "apower":31.1 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917007},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917007}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.266, "apower":31.1 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917007},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917007}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.114, "apower":10.6 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917013},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917013}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.114, "apower":10.6 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917013},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917013}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.030, "apower":2.2 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917014},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917014}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.030, "apower":2.2 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917014},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917014}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.177, "apower":19.0 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917015},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917015}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.177, "apower":19.0 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917015},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917015}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.279, "apower":32.5 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917016},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917016}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.279, "apower":32.5 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917016},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917016}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.277, "apower":32.6 ,"freq":50.0,"aenergy":{"total":1703.590,"by_minute":[214.930,0.000,0.000],"minute_ts":1745917019},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917019}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.280, "apower":32.8 ,"freq":50.0,"aenergy":{"total":1704.235,"by_minute":[644.791,214.930,0.000],"minute_ts":1745917079},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917079}}
+[capteur/vent] {"vitesse_vent":1.348329}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.284, "apower":32.8 ,"freq":50.0,"aenergy":{"total":1704.665,"by_minute":[429.861,644.791,214.930],"minute_ts":1745917139},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917139}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.285, "apower":32.8 ,"freq":50.0,"aenergy":{"total":1705.309,"by_minute":[644.791,429.861,644.791],"minute_ts":1745917199},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917199}}
+[capteur/vent] {"vitesse_vent":3.954765}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.290, "apower":32.7 ,"freq":50.0,"aenergy":{"total":1705.739,"by_minute":[429.861,644.791,429.861],"minute_ts":1745917259},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917259}}
+[capteur/vent] {"vitesse_vent":1.348329}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":249.7, "current":0.289, "apower":32.8 ,"freq":50.1,"aenergy":{"total":1706.384,"by_minute":[644.791,429.861,644.791],"minute_ts":1745917319},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917319}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":249.5, "current":0.286, "apower":32.8 ,"freq":50.0,"aenergy":{"total":1706.814,"by_minute":[429.861,644.791,429.861],"minute_ts":1745917379},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917379}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":249.8, "current":0.286, "apower":32.8 ,"freq":50.1,"aenergy":{"total":1707.459,"by_minute":[644.791,429.861,644.791],"minute_ts":1745917439},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917439}}
+[capteur/vent] {"vitesse_vent":0.045112}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.283, "apower":32.8 ,"freq":50.1,"aenergy":{"total":1707.889,"by_minute":[429.861,644.791,429.861],"minute_ts":1745917499},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917499}}
+[capteur/vent] {"vitesse_vent":0}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.285, "apower":32.9 ,"freq":50.0,"aenergy":{"total":1708.533,"by_minute":[644.791,429.861,644.791],"minute_ts":1745917559},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917559}}
+[capteur/vent] {"vitesse_vent":71.72209}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.121, "apower":11.1 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[429.861,644.791,429.861],"minute_ts":1745917618},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917618}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.121, "apower":11.1 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[429.861,644.791,429.861],"minute_ts":1745917618},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917618}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.022, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[429.861,644.791,429.861],"minute_ts":1745917619},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917619}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.022, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[429.861,644.791,429.861],"minute_ts":1745917619},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917619}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.022, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[429.861,644.791,429.861],"minute_ts":1745917619},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917619}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[0.000,429.861,644.791],"minute_ts":1745917623},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917623}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[0.000,429.861,644.791],"minute_ts":1745917624},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917624}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.114, "apower":11.1 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[0.000,429.861,644.791],"minute_ts":1745917627},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917627}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.114, "apower":11.1 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[0.000,429.861,644.791],"minute_ts":1745917627},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917627}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.274, "apower":31.5 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[0.000,429.861,644.791],"minute_ts":1745917628},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917628}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.274, "apower":31.5 ,"freq":50.0,"aenergy":{"total":1708.963,"by_minute":[0.000,429.861,644.791],"minute_ts":1745917628},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917628}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.209, "apower":22.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917630},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917630}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.209, "apower":22.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917630},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917630}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.023, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917631},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917631}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.023, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917631},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917631}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917636},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917636}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917638},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917638}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917641},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917641}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917642},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917642}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917643},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917643}}
+[capteur/vent] {"vitesse_vent":0}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917645},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917645}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917648},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917648}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917648},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917648}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.018, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917649},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917649}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917650},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917650}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.010, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917653},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917653}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917654},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917654}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917656},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917656}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917658},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917658}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917660},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917660}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917660},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917660}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917662},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917662}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917664},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917664}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917665},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917665}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917665},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917665}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.018, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917666},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917666}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917668},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917668}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917671},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917671}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917671},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917671}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917673},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917673}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917673},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917673}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.014, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917676},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917676}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917677},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917677}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917679},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917679}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917679},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917679}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.4, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[214.930,429.861,644.791],"minute_ts":1745917679},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917679}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917683},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917683}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917683},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917683}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917685},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917685}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917685},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917685}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917688},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917688}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917689},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917689}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.2, "current":0.017, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917691},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917691}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.1, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917692},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917692}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917695},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917695}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917695},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917695}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.017, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917696},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917696}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917698},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917698}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.011, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917700},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917700}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917701},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917701}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917702},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917702}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917704},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917704}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917706},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917706}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917706},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917706}}
+[capteur/vent] {"vitesse_vent":0}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.017, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917708},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917708}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917709},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917709}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917712},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917712}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917712},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917712}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.017, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917716},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917716}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917717},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917717}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.014, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917719},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917719}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917721},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917721}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917725},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917725}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917725},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917725}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917728},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917728}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917731},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917731}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917732},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917732}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917732},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917732}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917735},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917735}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917735},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917735}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917738},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917738}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917738},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917738}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,214.930,429.861],"minute_ts":1745917739},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917739}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917740},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917740}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917740},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917740}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917744},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917744}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917744},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917744}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917747},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917747}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.016, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917748},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917748}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917749},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917749}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917750},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917750}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917751},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917751}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917751},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917751}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.018, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917752},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917752}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917753},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917753}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917756},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917756}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917756},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917756}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917761},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917761}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917761},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917761}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917763},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917763}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917763},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917763}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917765},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917765}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917765},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917765}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917769},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917769}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917769},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917769}}
+[capteur/vent] {"vitesse_vent":1.348329}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917771},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917771}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917773},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917773}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917775},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917775}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917775},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917775}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917776},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917776}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917779},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917779}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917780},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917780}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917780},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917780}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917783},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917783}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917785},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917785}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917786},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917786}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917786},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917786}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917788},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917788}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917789},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917789}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917792},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917792}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917792},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917792}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917793},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917793}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.011, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917797},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917797}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,214.930],"minute_ts":1745917799},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917799}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917800},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917800}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917801},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917801}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917802},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917802}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917804},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917804}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917805},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917805}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917809},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917809}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917811},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917811}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917812},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917812}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917816},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917816}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917816},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917816}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917818},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917818}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917819},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917819}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917821},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917821}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917822},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917822}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917824},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917824}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917826},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917826}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917828},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917828}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917828},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917828}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917831},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917831}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917832},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917832}}
+[capteur/vent] {"vitesse_vent":0.045112}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917834},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917834}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917835},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917835}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917836},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917836}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917837},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917837}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917838},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917838}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.012, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917839},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917839}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917842},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917842}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.011, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917845},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917845}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917847},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917847}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917848},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917848}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917851},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917851}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917851},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917851}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.019, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917853},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917853}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917857},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917857}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.017, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917859},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917859}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.017, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917859},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917859}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917861},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917861}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917863},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917863}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917863},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917863}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917864},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917864}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917866},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917866}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917867},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917867}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917868},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917868}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.017, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917870},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917870}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917871},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917871}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917874},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917874}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917874},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917874}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917876},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917876}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917877},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917877}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917878},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917878}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.010, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917879},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917879}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917881},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917881}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917882},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917882}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917883},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917883}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917884},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917884}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917886},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917886}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917886},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917886}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917887},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917887}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917889},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917889}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917890},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917890}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917890},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917890}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917892},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917892}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917892},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917892}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.018, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917894},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917894}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917895},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917895}}
+[capteur/vent] {"vitesse_vent":0}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917898},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917898}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917898},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917898}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917899},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917899}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917900},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917900}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.017, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917901},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917901}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917903},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745917903}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918408},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918408}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918409},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918409}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918412},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918412}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918412},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918412}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918414},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918414}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918414},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918414}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.9, "current":0.011, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918417},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918417}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918418},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918418}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918420},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918420}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918421},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918421}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918424},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918424}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918424},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918424}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918425},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918425}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918428},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918428}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918431},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918431}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.021, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918432},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918432}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918435},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918435}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918435},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918435}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918437},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918437}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.178,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918438},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918438}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918441},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918441}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918441},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918441}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918443},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918443}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918443},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918443}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918446},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918446}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918447},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918447}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918448},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918448}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918453},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918453}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918455},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918455}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918456},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918456}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918458},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918458}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918459},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918459}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[214.930,0.000,0.000],"minute_ts":1745918459},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918459}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918461},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918461}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918462},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918462}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918464},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918464}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918464},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918464}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918467},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918467}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918470},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918470}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918473},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918473}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918473},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918473}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.8, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918476},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918476}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918477},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918477}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918480},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918480}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":251.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918484},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918484}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918488},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918488}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918490},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918490}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918492},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918492}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918492},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918492}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918497},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918497}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918497},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918497}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918498},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918498}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.014, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918499},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918499}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918500},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918500}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918500},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918500}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918502},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918502}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918502},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918502}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918504},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918504}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918505},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918505}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918508},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918508}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918508},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918508}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918510},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918510}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918510},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918510}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918514},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918514}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918514},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918514}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.017, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918516},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918516}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918517},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918517}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,214.930,0.000],"minute_ts":1745918519},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918519}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918520},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918520}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918520},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918520}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918521},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918521}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918522},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918522}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.010, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918525},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918525}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918526},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918526}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918527},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918527}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918528},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918528}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.014, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918531},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918531}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918532},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918532}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918533},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918533}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918537},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918537}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918539},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918539}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918540},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918540}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918543},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918543}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918543},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918543}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918544},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918544}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918545},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918545}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918548},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918548}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918548},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918548}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918550},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918550}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918550},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918550}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918554},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918554}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918554},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918554}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918556},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918556}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918556},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918556}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.011, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918560},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918560}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918561},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918561}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918565},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918565}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918565},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918565}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918568},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918568}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918569},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918569}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918571},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918571}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918571},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918571}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918573},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918573}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918573},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918573}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.012, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918576},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918576}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918577},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918577}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918579},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918579}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,214.930],"minute_ts":1745918579},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918579}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918580},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918580}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918581},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918581}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918582},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918582}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918583},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918583}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918583},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918583}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918584},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918584}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918587},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918587}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918588},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918588}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918588},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918588}}
+[shelly/watt/status/sys] {"mac":"54320453D92C","restart_required":false,"time":"11:23","unixtime":1745918589,"uptime":171652,"ram_size":261336,"ram_free":96608,"fs_size":1048576,"fs_free":712704,"cfg_rev":33,"kvs_rev":270,"schedule_rev":0,"webhook_rev":0,"available_updates":{"stable":{"version":"1.3.3"}},"reset_reason":1}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918591},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918591}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.021, "apower":1.4 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918594},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918594}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918595},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918595}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918595},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918595}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.017, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918596},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918596}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918599},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918599}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918600},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918600}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918600},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918600}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.016, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918602},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918602}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918604},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918604}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.013, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918606},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918606}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918607},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918607}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.017, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918608},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918608}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918610},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918610}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918612},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918612}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918612},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918612}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.020, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918614},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918614}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918616},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918616}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.012, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918617},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918617}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918618},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918618}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.010, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918619},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918619}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":249.9, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918620},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918620}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918623},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918623}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918624},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918624}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918625},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918625}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918627},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918627}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918629},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918629}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918629},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918629}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":249.9, "current":0.019, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918631},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918631}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918635},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918635}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":249.9, "current":0.017, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918636},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918636}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.019, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918639},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918639}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":249.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918640},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918640}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":249.9, "current":0.015, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918642},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918642}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918643},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918643}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918646},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918646}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918646},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918646}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918648},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918648}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918648},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918648}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918652},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918652}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918652},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918652}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918654},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918654}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918655},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918655}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918658},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918658}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918658},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918658}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918659},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918659}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918659},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918659}}
+[shelly/watt/status/sys] {"mac":"54320453D92C","restart_required":true,"time":"11:24","unixtime":1745918664,"uptime":171727,"ram_size":261500,"ram_free":100136,"fs_size":1048576,"fs_free":712704,"cfg_rev":34,"kvs_rev":270,"schedule_rev":0,"webhook_rev":0,"available_updates":{"stable":{"version":"1.3.3"}},"reset_reason":1}
+[shelly/watt/status/sys] {"mac":"54320453D92C","restart_required":true,"time":"11:24","unixtime":1745918664,"uptime":171727,"ram_size":261460,"ram_free":98932,"fs_size":1048576,"fs_free":712704,"cfg_rev":34,"kvs_rev":270,"schedule_rev":0,"webhook_rev":0,"available_updates":{"stable":{"version":"1.3.3"}},"reset_reason":1}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918663},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918663}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918664},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918664}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918665},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918665}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918669},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918669}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918670},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918670}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918673},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918673}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.011, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918674},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918674}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918675},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918675}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918676},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918676}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918676},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918676}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.016, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918678},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918678}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918679},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918679}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918680},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918680}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918680},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918680}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918682},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918682}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.016, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918684},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918684}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918685},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918685}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918686},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918686}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.018, "apower":1.1 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918688},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918688}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918690},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918690}}
+[shelly/watt/status/sys] {"mac":"54320453D92C","restart_required":true,"time":"11:24","unixtime":1745918691,"uptime":171754,"ram_size":261516,"ram_free":100340,"fs_size":1048576,"fs_free":712704,"cfg_rev":35,"kvs_rev":270,"schedule_rev":0,"webhook_rev":0,"available_updates":{"stable":{"version":"1.3.3"}},"reset_reason":1}
+[shelly/watt/status/sys] {"mac":"54320453D92C","restart_required":true,"time":"11:24","unixtime":1745918691,"uptime":171754,"ram_size":261476,"ram_free":99112,"fs_size":1048576,"fs_free":712704,"cfg_rev":35,"kvs_rev":270,"schedule_rev":0,"webhook_rev":0,"available_updates":{"stable":{"version":"1.3.3"}},"reset_reason":1}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.015, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918691},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918691}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918692},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918692}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.2, "current":0.019, "apower":1.2 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918693},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918693}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.3, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918694},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918694}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918697},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918697}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918697},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918697}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.017, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918699},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918699}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.7, "current":0.017, "apower":1.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918699},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918699}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.020, "apower":1.3 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918701},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918701}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.4, "current":0.014, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918703},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918703}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":250.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.393,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918704},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1745918704}}
+[shelly/watt/online] false
+[shelly/watt/online] false
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0.370916}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.370916}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":0.045112}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":3.012438}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":1.057612}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":1.022525}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[capteur/vent] {"vitesse_vent":0.045111}
+[shelly/watt/online] false
+[shelly/watt/online] false
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0.95527}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":3.924627}
+[capteur/vent] {"vitesse_vent":0.295413}
+[capteur/vent] {"vitesse_vent":0}
+[shelly/watt/online] false
+[shelly/watt/online] false
+[shelly/watt/online] true
+[shelly/watt/online] false
+[shelly/watt/online] false
+[shelly/watt/online] true
+[shelly/watt/status/ble] {}
+[shelly/watt/status/cloud] {"connected":true}
+[shelly/watt/status/mqtt] {"connected":true}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":237.9, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746006949},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746006949}}
+[shelly/watt/status/sys] {"mac":"54320453D92C","restart_required":false,"time":"11:55","unixtime":1746006951,"uptime":784,"ram_size":261532,"ram_free":102136,"fs_size":1048576,"fs_free":712704,"cfg_rev":37,"kvs_rev":274,"schedule_rev":0,"webhook_rev":0,"available_updates":{"stable":{"version":"1.3.3"}},"reset_reason":3}
+[shelly/watt/status/wifi] {"sta_ip":"172.17.3.233","status":"got ip","ssid":"Wifi-D02","rssi":-67}
+[shelly/watt/status/ws] {"connected":false}
+[shelly/watt/status/mqtt] {"connected":true}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746006959},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746006959}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.6, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007019},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007019}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.6, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007019},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007019}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.0, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007079},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007079}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.0, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007079},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007079}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.0, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007079},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007079}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007139},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007139}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007139},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007139}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007139},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007139}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.2, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007199},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007199}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.2, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007199},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007199}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.9, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007259},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007259}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.9, "current":0.000, "apower":0.0 ,"freq":50.1,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007259},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007259}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007319},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007319}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007379},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007379}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.6, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007379},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007379}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007439},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007439}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007439},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007439}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.5, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007439},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007439}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007499},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007499}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007499},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007499}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007499},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007499}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007559},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007559}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":234.3, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007559},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007559}}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007619},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007619}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007619},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007619}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007619},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007619}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007679},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007679}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007679},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007679}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.2, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007679},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007679}}
+[capteur/si7021] {"temperature":21.50104,"humidite":77.40836}
+[capteur/si7021] {"temperature":21.50104,"humidite":77.40836}
+[capteur/si7021] {"temperature":21.50104,"humidite":77.40836}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007739},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007739}}
+[capteur/si7021] {"temperature":21.51177,"humidite":77.45413}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007799},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007799}}
+[capteur/si7021] {"temperature":21.51177,"humidite":77.46939}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007859},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007859}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007859},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007859}}
+[capteur/si7021] {"temperature":21.50104,"humidite":77.53043}
+[capteur/si7021] {"temperature":21.50104,"humidite":77.53043}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007919},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007919}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.0, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007919},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007919}}
+[capteur/si7021] {"temperature":21.5225,"humidite":77.49991}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007979},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746007979}}
+[capteur/si7021] {"temperature":21.53322,"humidite":77.43124}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.1, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008039},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008039}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.0, "current":0.055, "apower":4.9 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008040},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008040}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.0, "current":0.055, "apower":4.9 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008040},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008040}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.0, "current":0.153, "apower":16.4 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008041},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008041}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.0, "current":0.153, "apower":16.4 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008041},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008041}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.0, "current":0.036, "apower":2.4 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008043},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008043}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.0, "current":0.036, "apower":2.4 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008043},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008043}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.9, "current":0.049, "apower":4.3 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008044},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008044}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.8, "current":0.135, "apower":14.3 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008045},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008045}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.8, "current":0.135, "apower":14.3 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008045},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008045}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.7, "current":0.155, "apower":16.6 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008046},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008046}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.3, "current":0.156, "apower":16.7 ,"freq":50.0,"aenergy":{"total":1709.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008052},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008052}}
+[capteur/si7021] {"temperature":21.55467,"humidite":77.5762}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.3, "current":0.151, "apower":16.0 ,"freq":50.0,"aenergy":{"total":1709.215,"by_minute":[214.930,0.000,0.000],"minute_ts":1746008099},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746008099}}
+[capteur/si7021] {"temperature":21.55467,"humidite":77.62961}
+[shelly/watt/online] true
+[shelly/watt/online] true
+[capteur/si7021] {"temperature":21.80135,"humidite":77.93478}
+[capteur/si7021] {"temperature":21.80135,"humidite":77.93478}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.2, "current":0.152, "apower":16.3 ,"freq":50.0,"aenergy":{"total":1713.514,"by_minute":[214.930,429.861,214.930],"minute_ts":1746009059},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746009059}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":236.2, "current":0.152, "apower":16.3 ,"freq":50.0,"aenergy":{"total":1713.514,"by_minute":[214.930,429.861,214.930],"minute_ts":1746009059},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746009059}}
+[shelly/watt/online] true
+[capteur/si7021] {"temperature":21.8228,"humidite":77.84323}
+[capteur/si7021] {"temperature":21.8228,"humidite":77.84323}
+[capteur/si7021] {"temperature":21.8228,"humidite":77.84323}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.5, "current":0.152, "apower":16.4 ,"freq":50.0,"aenergy":{"total":1713.728,"by_minute":[214.930,214.930,429.861],"minute_ts":1746009119},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746009119}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.7, "current":0.151, "apower":16.4 ,"freq":50.0,"aenergy":{"total":1714.158,"by_minute":[429.861,214.930,214.930],"minute_ts":1746009179},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746009179}}
+[capteur/si7021] {"temperature":21.84425,"humidite":77.99582}
+[shelly/watt/online] true
+[shelly/watt/online] true
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[shelly/watt/online] true
+[shelly/watt/online] true
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1795.187,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1795.187,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1795.187,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1795.187,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.9, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1795.187,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746168959}}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1795.187,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169019},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169019}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1795.187,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169019},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169019}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.8, "current":0.000, "apower":0.0 ,"freq":50.0,"aenergy":{"total":1795.187,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169019},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169019}}
+[shelly/watt/online] true
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.7, "current":0.151, "apower":16.3 ,"freq":50.0,"aenergy":{"total":1796.907,"by_minute":[429.861,214.930,214.930],"minute_ts":1746169799},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169799}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.7, "current":0.151, "apower":16.3 ,"freq":50.0,"aenergy":{"total":1796.907,"by_minute":[429.861,214.930,214.930],"minute_ts":1746169799},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169799}}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[shelly/watt/online] true
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.8, "current":0.150, "apower":16.3 ,"freq":50.0,"aenergy":{"total":1797.122,"by_minute":[214.930,429.861,214.930],"minute_ts":1746169859},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169859}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.8, "current":0.150, "apower":16.3 ,"freq":50.0,"aenergy":{"total":1797.122,"by_minute":[214.930,429.861,214.930],"minute_ts":1746169859},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169859}}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":238.8, "current":0.150, "apower":16.3 ,"freq":50.0,"aenergy":{"total":1797.122,"by_minute":[214.930,429.861,214.930],"minute_ts":1746169859},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169859}}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[shelly/watt/status/pm1:0] {"id":0, "voltage":235.6, "current":0.149, "apower":16.3 ,"freq":50.0,"aenergy":{"total":1797.336,"by_minute":[214.930,214.930,429.861],"minute_ts":1746169919},"ret_aenergy":{"total":0.000,"by_minute":[0.000,0.000,0.000],"minute_ts":1746169919}}
+[shelly/watt/online] false
+[shelly/watt/online] false
+[shelly/watt/online] false
+[capteur/pluie] {"rainfall":1.9558,"raw":7}
+[capteur/pluie] {"rainfall":1.9558,"raw":7}
+[capteur/pluie] {"rainfall":1.9558,"raw":7}
+[shelly/watt/online] false
+[shelly/watt/online] false
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":0,"raw":0}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.36419,"humidite":69.86288}
+[capteur/si7021] {"temperature":20.36419,"humidite":69.86288}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.22476,"humidite":69.47379}
+[capteur/si7021] {"temperature":20.22476,"humidite":69.47379}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.18186,"humidite":69.65689}
+[capteur/si7021] {"temperature":20.18186,"humidite":69.65689}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.13896,"humidite":69.90866}
+[capteur/si7021] {"temperature":20.13896,"humidite":69.90866}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.13896,"humidite":70.12228}
+[capteur/si7021] {"temperature":20.13896,"humidite":70.12228}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.14969,"humidite":70.23672}
+[shelly/watt/online] false
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.18186,"humidite":70.34354}
+[capteur/si7021] {"temperature":20.18186,"humidite":70.34354}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.18186,"humidite":70.22147}
+[capteur/si7021] {"temperature":20.18186,"humidite":70.22147}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.20331,"humidite":70.25198}
+[capteur/si7021] {"temperature":20.20331,"humidite":70.25198}
+[shelly/watt/online] false
+[shelly/watt/online] false
+[shelly/watt/online] false
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.24621,"humidite":70.32828}
+[capteur/si7021] {"temperature":20.24621,"humidite":70.32828}
+[capteur/si7021] {"temperature":20.24621,"humidite":70.32828}
+[capteur/si7021] {"temperature":20.24621,"humidite":70.32828}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/pluie] {"rainfall":6.985,"raw":25}
+[capteur/si7021] {"temperature":20.24621,"humidite":70.37405}
+[capteur/vent] {"vitesse_vent":0}
+[capteur/pluie] {"rainfall":6.985,"raw":25}

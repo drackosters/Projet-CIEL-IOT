@@ -3,6 +3,9 @@ require 'config.php';
 
 $topic = $_GET['topic'] ?? '';
 
+$isJson = false; // Initialisation par défaut
+$messageString = ''; // Initialisation par défaut
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $iotName = $_POST['iot_name'];
     $baseTopic = $topic;
@@ -83,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="conteneur-haut">
         <a href="index.php">
-            <img src="image/logo.png" alt="Logo" class="logo">
+            <img src="image/297f7e763fcbb4896d13120c4c8e3a2b365880689c0e614028de1f3637e0852d.png" alt="Logo" class="logo">
         </a>
         <h1 class="titre-iot">Ajouter un nouvel IoT</h1>
         <div class="conteneur-utilisateur">
@@ -126,60 +129,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        fetch('get_last_message.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ topic: '<?php echo htmlspecialchars($topic); ?>' })
-        })
-        .then(response => response.json())
-        .then(data => {
-            let messageContainer = document.getElementById('message-container');
-            if (data.success) {
-                try {
-                    let jsonMessage = JSON.parse(data.message);
-                    if (Object.keys(jsonMessage).length > 0) {
-                        let message = '<h2>Message JSON</h2><ul>';
-                        message += parseJsonMessage(jsonMessage, '');
-                        message += '</ul>';
-                        messageContainer.innerHTML = message;
-                    } else {
-                        throw new Error('Le message JSON ne contient pas de clés.');
-                    }
-                } catch (e) {
-                    console.log('Le message n\'est pas au format JSON ou ne contient pas de clés.');
-                    messageContainer.innerHTML = '<h2>Message non JSON ou JSON sans clés</h2><p>' + data.message + '</p>';
-                    messageContainer.innerHTML += '<label for="unite">Unité:</label><input type="text" id="unite" name="unite" required><br>';
-                    messageContainer.innerHTML += '<label for="seuil_min">Seuil Min:</label><input type="number" id="seuil_min" name="seuil_min" required><br>';
-                    messageContainer.innerHTML += '<label for="seuil_max">Seuil Max:</label><input type="number" id="seuil_max" name="seuil_max" required><br>';
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('get_last_message.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ topic: '<?php echo htmlspecialchars($topic); ?>' })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Réponse reçue:', data); // Ajoutez cette ligne pour afficher la réponse
+        let messageContainer = document.getElementById('message-container');
+        if (data.success) {
+            try {
+                let jsonMessage = JSON.parse(data.message);
+                if (Object.keys(jsonMessage).length > 0) {
+                    let message = '<h2>Message JSON</h2><ul>';
+                    message += parseJsonMessage(jsonMessage, '');
+                    message += '</ul>';
+                    messageContainer.innerHTML = message;
+                } else {
+                    throw new Error('Le message JSON ne contient pas de clés.');
                 }
+            } catch (e) {
+                console.log('Le message n\'est pas au format JSON ou ne contient pas de clés.');
+                messageContainer.innerHTML = '<h2>Message non JSON ou JSON sans clés</h2><p>' + data.message + '</p>';
+                messageContainer.innerHTML += '<label for="unite">Unité:</label><input type="text" id="unite" name="unite" required><br>';
+                messageContainer.innerHTML += '<label for="seuil_min">Seuil Min:</label><input type="number" id="seuil_min" name="seuil_min" required><br>';
+                messageContainer.innerHTML += '<label for="seuil_max">Seuil Max:</label><input type="number" id="seuil_max" name="seuil_max" required><br>';
             }
-        })
-        .catch((error) => {
-            console.error('Erreur:', error);
-        });
-    });
-
-    function parseJsonMessage(jsonMessage, parentKey) {
-        let message = '';
-        for (let key in jsonMessage) {
-            let fullKey = parentKey ? parentKey + '/' + key : key;
-            let encodedKey = encodeURIComponent(fullKey);
-
-            message += '<li>' + fullKey + ': ';
-            message += '<label for="unite_' + encodedKey + '">Unité:</label>';
-            message += '<input type="text" id="unite_' + encodedKey + '" name="unite_' + encodedKey + '" required><br>';
-            message += '<label for="seuil_min_' + encodedKey + '">Seuil Min:</label>';
-            message += '<input type="number" id="seuil_min_' + encodedKey + '" name="seuil_min_' + encodedKey + '" required><br>';
-            message += '<label for="seuil_max_' + encodedKey + '">Seuil Max:</label>';
-            message += '<input type="number" id="seuil_max_' + encodedKey + '" name="seuil_max_' + encodedKey + '" required><br>';
-            message += '</li>';
-            message += '<hr>'; // Ajout d'une ligne horizontale pour séparer les clés
+        } else {
+            messageContainer.innerHTML = '<h2>Erreur</h2><p>Impossible de récupérer le message.</p>';
         }
-        return message;
+    })
+    .catch((error) => {
+        console.error('Erreur:', error);
+        let messageContainer = document.getElementById('message-container');
+        messageContainer.innerHTML = '<h2>Erreur</h2><p>Une erreur est survenue lors de la récupération du message.</p>';
+    });
+});
+
+function parseJsonMessage(jsonMessage, parentKey) {
+    let message = '';
+    for (let key in jsonMessage) {
+        let fullKey = parentKey ? parentKey + '/' + key : key;
+        let encodedKey = encodeURIComponent(fullKey);
+
+        message += '<li>' + fullKey + ': ';
+        message += '<label for="unite_' + encodedKey + '">Unité:</label>';
+        message += '<input type="text" id="unite_' + encodedKey + '" name="unite_' + encodedKey + '" required><br>';
+        message += '<label for="seuil_min_' + encodedKey + '">Seuil Min:</label>';
+        message += '<input type="number" id="seuil_min_' + encodedKey + '" name="seuil_min_' + encodedKey + '" required><br>';
+        message += '<label for="seuil_max_' + encodedKey + '">Seuil Max:</label>';
+        message += '<input type="number" id="seuil_max_' + encodedKey + '" name="seuil_max_' + encodedKey + '" required><br>';
+        message += '</li>';
+        message += '<hr>'; // Ajout d'une ligne horizontale pour séparer les clés
     }
-    </script>
+    return message;
+}
+</script>
 </body>
 </html>

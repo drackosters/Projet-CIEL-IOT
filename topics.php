@@ -124,7 +124,7 @@ $stmt->execute();
     <div class="conteneur-haut">
         <!-- Logo -->
         <a href="index.php">
-            <img src="297f7e763fcbb4896d13120c4c8e3a2b365880689c0e614028de1f3637e0852d.png" alt="Logo" class="logo">
+            <img src="image/297f7e763fcbb4896d13120c4c8e3a2b365880689c0e614028de1f3637e0852d.png" alt="Logo" class="logo">
         </a>
         <h1 class="titre-iot">Gestion des Topics</h1>
     </div>
@@ -168,7 +168,7 @@ $stmt->execute();
 
     <script>
         function handleButtonClick(topic) {
-            window.location.href='add_topic.php'   
+            window.location.href = 'add_to_iot.php?topic=' + encodeURIComponent(topic);
 
         }
     </script>
