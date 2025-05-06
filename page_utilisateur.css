@@ -134,21 +134,12 @@ body {
 /* ========== PANNEAU LATÉRAL AJOUT IOT ========== */
 
 .conteneur-ajout-iot {
-    position: absolute;
-    top: 100px; /* à ajuster selon ton layout */
-    right: -300px; /* caché initialement */
-    width: 250px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    right: -300px; /* masqué */
     transition: right 0.3s ease-in-out;
-    z-index: 10;
 }
 
 .conteneur-ajout-iot.ouvert {
-    right: 70px; /* ou 0px si tu veux qu’il s’aligne à droite */
+    right: 70px; /* affiché */
 }
 
 
