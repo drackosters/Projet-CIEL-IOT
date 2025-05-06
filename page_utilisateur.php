@@ -138,31 +138,31 @@ function fetchAndUpdateChart() {
 
 function fetchAlertes() {
     fetch('alerte.php')
-        .then(res => {
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            return res.json();
-        })
-        .then(alertes => {
+        .then(res => res.json())
+        .then(data => {
             const container = document.getElementById('message-alerte');
             container.innerHTML = '';
 
-            if (!Array.isArray(alertes)) {
-                ajouterAlerte("⚠️ Format inattendu reçu depuis alerte.php");
-                console.error("Réponse inattendue :", alertes);
+            if (data.error) {
+                ajouterAlerte("⚠️ " + data.error);
                 return;
             }
 
-            alertes.forEach(ajouterAlerte);
+            if (!Array.isArray(data)) {
+                ajouterAlerte("⚠️ Format inattendu reçu depuis alerte.php");
+                console.error("Donnée reçue :", data);
+                return;
+            }
+
+            data.forEach(ajouterAlerte);
         })
         .catch(error => {
             const container = document.getElementById('message-alerte');
             container.innerHTML = '';
-            ajouterAlerte("⚠️ Erreur lors de la récupération des alertes : " + error.message);
+            ajouterAlerte("⚠️ Erreur JS ou réseau : " + error.message);
             console.error("Erreur fetch alertes :", error);
         });
 }
-
-
 
 function ajouterAlerte(message) {
     const p = document.createElement('p');

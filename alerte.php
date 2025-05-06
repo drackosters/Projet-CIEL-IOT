@@ -1,7 +1,9 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+
 require 'config.php';
+
+ini_set('display_errors', 0);
+error_reporting(E_ALL);
 
 try {
     $stmt = $pdo->query("SELECT topic, Seuil_Min, Seuil_Max FROM TOPICS");
