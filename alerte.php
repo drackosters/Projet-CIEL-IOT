@@ -1,4 +1,10 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+header('Content-Type: application/json');
+
 require 'config.php';
 
 // Ne pas afficher les erreurs HTML brutes
@@ -47,8 +53,9 @@ try {
     echo json_encode($alertes);
     exit;
 
-} catch (Exception $e) {
-    http_response_code(500);
-    echo json_encode(["error" => "Erreur serveur : " . $e->getMessage()]);
-    exit;
+    catch (Exception $e) {
+        http_response_code(500);
+        echo json_encode(["error" => $e->getMessage()]);
+        exit;
+    }
 }
