@@ -138,7 +138,10 @@ function fetchAndUpdateChart() {
 
 function fetchAlertes() {
     fetch('alerte.php')
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return res.json();
+        })
         .then(alertes => {
             const container = document.getElementById('message-alerte');
             container.innerHTML = '';
@@ -158,6 +161,7 @@ function fetchAlertes() {
             console.error("Erreur fetch alertes :", error);
         });
 }
+
 
 
 function ajouterAlerte(message) {
