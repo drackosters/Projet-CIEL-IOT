@@ -16,9 +16,7 @@ try {
 
 //Connexion InfluxDB
 $host = "http://132.220.210.127:8086";
-$db = "iot_data";    
-$query = "SELECT mean(apower) AS value FROM mqtt_consumer " .
-"WHERE topic = '$topic' AND time >= now() - 24h " .
-"GROUP BY time(1h) fill(none) ORDER BY time DESC LIMIT 24";
+$db = "iot_data";
+$query = "SELECT apower FROM mqtt_consumer WHERE time > now() - 1h";
 $url = "$host/query?db=$db&q=" . urlencode($query);
 ?>
