@@ -10,6 +10,7 @@ body {
     overflow-x: hidden;
 }
 
+
 /* ========== EN-TÊTE ========== */
 .conteneur-haut {
     width: 100vw;
@@ -24,11 +25,13 @@ body {
     z-index: 1;
 }
 
+
 .logo {
     max-width: 150px;
     max-height: 150px;
     height: auto;
 }
+
 
 .conteneur-haut h1 {
     margin: 0;
@@ -36,6 +39,7 @@ body {
     text-align: center;
     padding-left: 10px;
 }
+
 
 /* ========== UTILISATEUR / BOUTONS ========== */
 .conteneur-utilisateur {
@@ -45,6 +49,7 @@ body {
     position: relative;
     margin-left: 2px;
 }
+
 
 .bouton-utilisateur {
     background-color: #3498db;
@@ -59,9 +64,11 @@ body {
     margin-right: 25px;
 }
 
+
 .bouton-utilisateur:hover {
     background-color: #2980b9;
 }
+
 
 .bouton-ajout-iot {
     width: 48px;
@@ -72,10 +79,12 @@ body {
     padding: 0;
 }
 
+
 .icone-ajout-iot {
     width: 35px;
     height: 35px;
 }
+
 
 .bouton-alerte {
     width: 48px;
@@ -85,6 +94,7 @@ body {
     cursor: pointer;
     padding: 0;
 }
+
 
 /* ========== PANNEAU DE DÉCONNEXION ========== */
 .panneau-deconnexion {
@@ -99,6 +109,7 @@ body {
     z-index: 10;
 }
 
+
 .bouton-deconnexion {
     background-color: #f44336;
     color: white;
@@ -110,9 +121,11 @@ body {
     transition: background-color 0.3s ease;
 }
 
+
 .bouton-deconnexion:hover {
     background-color: #d32f2f;
 }
+
 
 /* ========== PANNEAU LATÉRAL DROIT ========== */
 .conteneur-droit {
@@ -123,15 +136,18 @@ body {
     border-radius: 20px;
     position: absolute;
     top: 100px;
-    right: -250px; /* masqué par défaut */
+    right: -250px;
     transition: right 0.2s ease-in-out;
 }
 
+
 .conteneur-droit.ouvert {
-    right: 0; /* visible quand classe ajoutée */
+    right: 0;
 }
 
+
 /* ========== PANNEAU LATÉRAL AJOUT IOT ========== */
+
 
 #conteneur-ajout-iot.conteneur-droit {
     display: none;
@@ -141,14 +157,13 @@ body {
     padding: 10px;
     z-index: 10;
     right: 10px;
-    top: 100px; /* Ajustez pour éviter le chevauchement */
+    top: 100px;
 }
+
 
 #conteneur-ajout-iot.conteneur-droit.ouvert {
     display: block;
 }
-
-
 
 /* ========== GRAPHIQUES ========== */
 .graphique {
@@ -159,6 +174,7 @@ body {
     margin: 50px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .cadre-graph1 {
     background: white;
@@ -172,8 +188,9 @@ body {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    display: block; /* Par défaut visible, sera contrôlé par JS */
+    display: block;
 }
+
 
 .titre-graphique {
     font-size: 24px;
@@ -183,11 +200,13 @@ body {
     margin-bottom: 30px;
 }
 
+
 .conteneur-canvas {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 
 #myChart {
     width: 100% !important;

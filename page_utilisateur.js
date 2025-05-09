@@ -5,10 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
     fermerAjoutIotSiClickExterieur();
     attacherEvenements();
 
+
     // Rendre les fonctions accessibles globalement
     window.togglePanneauDeconnexion = togglePanneauDeconnexion;
     window.toggleConteneur = toggleConteneur;
     window.toggleAjoutIot = toggleAjoutIot;
+
 
     // Fonction pour basculer le panneau de déconnexion
     function togglePanneauDeconnexion() {
@@ -18,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+
     // Fonction pour basculer le conteneur de droite
     function toggleConteneur() {
         const conteneurDroit = document.getElementById('conteneur-droit');
@@ -25,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             conteneurDroit.classList.toggle('ouvert');
         }
     }
+
 
     // Nouvelle fonction pour basculer le conteneur de sélection de graphique
     function toggleAjoutIot() {
@@ -34,11 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+
     // Fonction pour observer les changements dans le conteneur droit
     function observerConteneur() {
         const conteneur = document.getElementById('conteneur-droit');
         const boutonAlerte = document.getElementById('bouton-alerte');
-    
+   
         if (conteneur && boutonAlerte) {
             const observer = new MutationObserver(mutations => {
                 const messageAlerte = conteneur.querySelector('#message-alerte');
@@ -49,18 +54,19 @@ document.addEventListener("DOMContentLoaded", function () {
                         : "url('/Projet-CIEL-IOT/image/notification_1.png')";
                 }
             });
-    
+   
             observer.observe(conteneur, { childList: true, subtree: true });
         } else {
             console.warn("conteneur-droit ou bouton-alerte est introuvable dans le DOM.");
         }
     }
 
+
     // Nouvelle fonction pour observer les changements dans conteneur-ajout-iot (optionnel pour l'instant)
     function observerAjoutIot() {
         const conteneur = document.getElementById('conteneur-ajout-iot');
         const boutonAjout = document.querySelector('.bouton-ajout-iot');
-    
+   
         if (conteneur && boutonAjout) {
             // Pour l'instant, pas de logique complexe, juste une observation
             console.log("observerAjoutIot actif");
@@ -69,21 +75,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+
     // Fermer le panneau d'ajout IoT si clic à l'extérieur
     function fermerAjoutIotSiClickExterieur() {
         document.addEventListener('click', function (event) {
             const panneau = document.getElementById('conteneur-ajout-iot');
             const boutonAjout = document.querySelector('.bouton-ajout-iot');
 
+
             if (!panneau || !boutonAjout) return;
 
+
             const isClickInside = panneau.contains(event.target) || boutonAjout.contains(event.target);
+
 
             if (!isClickInside) {
                 panneau.classList.remove('ouvert');
             }
         });
     }
+
 
     // Attacher les événements
     function attacherEvenements() {
@@ -95,3 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+
+
