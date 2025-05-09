@@ -50,7 +50,7 @@ try {
         $response = @file_get_contents($url);
 
         if ($response === false) {
-            $alertes[] = "Erreur : InfluxDB inaccessible pour le topic {$topic['topic']}";
+            $alertes[] = "Impossible de récupérer la consommation d'énergie pour l'appareil associé à {$topic['topic']}. Veuillez vérifier la connexion de l'appareil ou contactez le support.";
             continue;
         }
 
