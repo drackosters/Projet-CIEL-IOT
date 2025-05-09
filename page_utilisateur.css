@@ -87,14 +87,15 @@ body {
 
 
 .bouton-alerte {
-    width: 48px;
-    height: 48px;
-    background: transparent url('/Projet-CIEL-IOT/image/notification_1.png') center/contain no-repeat;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
+    background-color: transparent;
     cursor: pointer;
-    padding: 0;
 }
-
 
 /* ========== PANNEAU DE DÉCONNEXION ========== */
 .panneau-deconnexion {
