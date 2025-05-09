@@ -81,15 +81,16 @@ document.addEventListener("DOMContentLoaded", function () {
         document.addEventListener('click', function (event) {
             const panneau = document.getElementById('conteneur-ajout-iot');
             const boutonAjout = document.querySelector('.bouton-ajout-iot');
-
-
+    
             if (!panneau || !boutonAjout) return;
-
-
-            const isClickInside = panneau.contains(event.target) || boutonAjout.contains(event.target);
-
-
-            if (!isClickInside) {
+    
+            // Ne rien faire si le clic provient du bouton ou de l'intérieur du panneau
+            if (panneau.contains(event.target) || boutonAjout.contains(event.target)) {
+                return;
+            }
+    
+            // Fermer uniquement si le panneau est ouvert
+            if (panneau.classList.contains('ouvert')) {
                 panneau.classList.remove('ouvert');
             }
         });
