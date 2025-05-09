@@ -2,14 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const PRIX_KWH = 0.2016; // Prix en €/kWh (France, mai 2025)
     let chartInstance = null;
 
-
     // Initialisation
     observerConteneur();
     observerAjoutIot();
     fermerAjoutIotSiClickExterieur();
     attacherEvenements();
     initialiserGraphique();
-
 
     // Rendre les fonctions accessibles globalement
     window.togglePanneauDeconnexion = togglePanneauDeconnexion;
@@ -18,19 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
     window.fetchAndUpdateChart = fetchAndUpdateChart;
     window.fetchAlertes = fetchAlertes;
 
-
     function fetchAndUpdateChart() {
-        const intervalle = document.getElementById('intervalle').value;
         const spinner = document.getElementById('spinner');
         if (spinner) spinner.style.display = 'block';
 
-
-        fetch(`data.php?intervalle=${intervalle}`)
+        fetch(`data.php`)
             .then(res => res.json())
             .then(data => {
                 const canvas = document.getElementById('myChart');
                 const ctx = canvas.getContext('2d');
-
 
                 if (!Array.isArray(data) || data.length === 0 || !data.every(p => p.time && typeof p.value === 'number')) {
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -45,10 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     return;
                 }
 
-
                 const labels = data.map(p => new Date(p.time).toLocaleTimeString());
                 const values = data.map(p => p.value);
-
 
                 let totalKWh = 0;
                 for (let i = 1; i < data.length; i++) {
@@ -59,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 const cout = (totalKWh * PRIX_KWH).toFixed(2);
                 document.getElementById('cout-energetique').textContent = cout;
-
 
                 if (chartInstance) {
                     chartInstance.data.labels = labels;
@@ -99,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     }
 
-
     function fetchAlertes() {
         const checkboxEnergie = document.getElementById('checkbox-energie');
         const energieActive = checkboxEnergie ? checkboxEnergie.checked : false;
@@ -110,19 +100,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 const container = document.getElementById('message-alerte');
                 container.innerHTML = '';
 
-
                 if (data.error) {
                     ajouterAlerte("⚠️ " + data.error);
                     return;
                 }
-
 
                 if (!Array.isArray(data)) {
                     ajouterAlerte("⚠️ Format inattendu reçu depuis alerte.php");
                     console.error("Donnée reçue :", data);
                     return;
                 }
-
 
                 data.forEach(ajouterAlerte);
             })
@@ -133,7 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error("Erreur fetch alertes :", error);
             });
     }
-
 
     function ajouterAlerte(message) {
         const container = document.getElementById('message-alerte');
@@ -154,14 +140,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-
     function togglePanneauDeconnexion() {
         const panneauDeconnexion = document.getElementById('panneau-deconnexion');
         if (panneauDeconnexion) {
             panneauDeconnexion.style.display = (panneauDeconnexion.style.display === 'block') ? 'none' : 'block';
         }
     }
-
 
     function toggleConteneur() {
         const conteneurDroit = document.getElementById('conteneur-droit');
@@ -170,14 +154,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-
     function toggleAjoutIot() {
         const conteneurAjout = document.getElementById('conteneur-ajout-iot');
         if (conteneurAjout) {
             conteneurAjout.classList.toggle('ouvert');
         }
     }
-
 
     function observerConteneur() {
         const conteneur = document.getElementById('conteneur-droit');
@@ -198,7 +180,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-
     function observerAjoutIot() {
         const conteneur = document.getElementById('conteneur-ajout-iot');
         const boutonAjout = document.querySelector('.bouton-ajout-iot');
@@ -208,7 +189,6 @@ document.addEventListener("DOMContentLoaded", function () {
             console.warn("conteneur-ajout-iot ou bouton-ajout-iot est introuvable dans le DOM.");
         }
     }
-
 
     function fermerAjoutIotSiClickExterieur() {
         document.addEventListener('click', function (event) {
@@ -224,7 +204,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-
     function attacherEvenements() {
         const boutonAjout = document.querySelector('.bouton-ajout-iot');
         if (boutonAjout) {
@@ -233,7 +212,6 @@ document.addEventListener("DOMContentLoaded", function () {
             console.warn("Bouton .bouton-ajout-iot non trouvé");
         }
     }
-
 
     function initialiserGraphique() {
         const checkboxEnergie = document.getElementById('checkbox-energie');

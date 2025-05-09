@@ -2,16 +2,10 @@
 session_start();
 require 'config.php';
 
-
-
-
 if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
     header("Location: Connexion.php");
     exit();
 }
-
-
-
 
 $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur inconnu");
 ?>
@@ -22,33 +16,20 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des IoT</title>
     <link rel="icon" href="image/logo.png" type="image/png">
-    <link rel="stylesheet" href="page_utilisateur.css?v=40"> <!-- Incrémenter la version pour forcer le rechargement -->
+    <link rel="stylesheet" href="page_utilisateur.css?v=40">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="page_utilisateur.js" defer></script>
 </head>
 <body>
 
-
-
-
 <div class="conteneur-haut">
-
-
-
-
     <!-- Logo -->
     <a href="https://www.citeconnect.com/citecaas/" target="_blank">
         <img src="image/297f7e763fcbb4896d13120c4c8e3a2b365880689c0e614028de1f3637e0852d.png" alt="Logo" class="logo">
     </a>
 
-
-
-
     <!-- Titre -->
     <h1 class="titre-iot">Gestion des IoT</h1>
-
-
-
 
     <!-- Zone utilisateur -->
     <div class="conteneur-utilisateur">
@@ -57,16 +38,10 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
             <?= htmlspecialchars($nom_utilisateur) ?>
         </button>
 
-
-
-
         <!-- Bouton pour ouvrir le panneau de sélection de graphique -->
         <button class="bouton-ajout-iot">
             <img src="image/ajout_iot.png" alt="Sélectionner un graphique" class="icone-ajout-iot">
         </button>
-
-
-
 
         <!-- Panneau de sélection de graphique -->
         <div id="conteneur-ajout-iot" class="conteneur-iot">
@@ -78,14 +53,8 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
             </div>
         </div>
 
-
-
-
         <!-- Cloche notification -->
         <button id="bouton-alerte" class="bouton-alerte" onclick="toggleConteneur()"></button>
-
-
-
 
         <!-- Panneau de déconnexion -->
         <div id="panneau-deconnexion" class="panneau-deconnexion">
@@ -96,27 +65,13 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
     </div>
 </div>
 
-
-
-
 <div id="conteneur-droit" class="conteneur-droit">
     <p>Gestion des alertes</p>
     <div id="message-alerte"></div>
 </div>
 
-
-
-
 <div class="cadre-graph1">
     <div class="titre-graphique">Consommation d'énergie</div>
-    <div class="intervalle-selection">
-        <label for="intervalle">Intervalle de temps : </label>
-        <select id="intervalle" onchange="fetchAndUpdateChart()">
-            <option value="3h">3 dernières heures</option>
-            <option value="15h">15 dernières heures</option>
-            <option value="24h">24 dernières heures</option>
-        </select>
-    </div>
     <div class="cout-energetique">
         Coût estimé : <span id="cout-energetique">0.00</span> €
     </div>
@@ -125,24 +80,19 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
     </div>
 </div>
 
-
 <script>
 let chartInstance = null;
 const PRIX_KWH = 0.2016; // Prix en €/kWh (France, mai 2025)
 
-
 function fetchAndUpdateChart() {
-    const intervalle = document.getElementById('intervalle').value;
     const spinner = document.getElementById('spinner');
     if (spinner) spinner.style.display = 'block';
 
-
-    fetch(`data.php?intervalle=${intervalle}`)
+    fetch(`data.php`)
         .then(res => res.json())
         .then(data => {
             const canvas = document.getElementById('myChart');
             const ctx = canvas.getContext('2d');
-
 
             if (!Array.isArray(data) || data.length === 0) {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -157,10 +107,8 @@ function fetchAndUpdateChart() {
                 return;
             }
 
-
             const labels = data.map(p => new Date(p.time).toLocaleTimeString());
             const values = data.map(p => p.value);
-
 
             // Calcul du coût énergétique
             let totalKWh = 0;
@@ -171,7 +119,6 @@ function fetchAndUpdateChart() {
             }
             const cout = (totalKWh * PRIX_KWH).toFixed(2);
             document.getElementById('cout-energetique').textContent = cout;
-
 
             if (chartInstance) {
                 chartInstance.data.labels = labels;
@@ -211,7 +158,6 @@ function fetchAndUpdateChart() {
         });
 }
 
-
 function fetchAlertes() {
     fetch('alerte.php')
         .then(res => res.json())
@@ -219,25 +165,16 @@ function fetchAlertes() {
             const container = document.getElementById('message-alerte');
             container.innerHTML = '';
 
-
-
-
             if (data.error) {
                 ajouterAlerte("⚠️ " + data.error);
                 return;
             }
-
-
-
 
             if (!Array.isArray(data)) {
                 ajouterAlerte("⚠️ Format inattendu reçu depuis alerte.php");
                 console.error("Donnée reçue :", data);
                 return;
             }
-
-
-
 
             data.forEach(ajouterAlerte);
         })
@@ -248,9 +185,6 @@ function fetchAlertes() {
             console.error("Erreur fetch alertes :", error);
         });
 }
-
-
-
 
 function ajouterAlerte(message) {
     const container = document.getElementById('message-alerte');
@@ -271,9 +205,6 @@ function ajouterAlerte(message) {
     }
 }
 
-
-
-
 function toggleConteneur() {
     console.log("toggleConteneur appelé");
     const conteneurDroit = document.getElementById('conteneur-droit');
@@ -282,9 +213,6 @@ function toggleConteneur() {
         console.log("Classe 'ouvert' pour conteneur-droit :", conteneurDroit.classList.contains('ouvert'));
     }
 }
-
-
-
 
 function toggleAjoutIot() {
     console.log("toggleAjoutIot appelé");
@@ -297,23 +225,14 @@ function toggleAjoutIot() {
     }
 }
 
-
-
-
 // Ajout de l'écouteur pour la case à cocher
 document.addEventListener('DOMContentLoaded', () => {
     const checkboxEnergie = document.getElementById('checkbox-energie');
     const graphiqueEnergie = document.querySelector('.cadre-graph1');
 
-
-
-
     if (checkboxEnergie && graphiqueEnergie) {
         // Initialisation : le graphique est visible si la case est cochée
         graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
-
-
-
 
         // Écouteur pour les changements
         checkboxEnergie.addEventListener('change', () => {
@@ -325,22 +244,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
-
-
 // Initialisation
 fetchAndUpdateChart();
 setInterval(fetchAndUpdateChart, 30000);
 
-
-
-
 fetchAlertes();
 setInterval(fetchAlertes, 10000);
 </script>
-
-
-
 
 </body>
 </html>
