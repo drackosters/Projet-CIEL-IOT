@@ -107,17 +107,38 @@ function fetchAndUpdateChart() {
                 return;
             }
 
-            const labels = data.map(p => {
-            const date = new Date(p.time);
-            return `${date.getHours().toString().padStart(2, '0')}h`;
+            // Regrouper les données par heure
+            const regrouped = {};
+            for (let h = 0; h < 24; h++) {
+                regrouped[h] = [];
+            }
+
+            data.forEach(p => {
+                const date = new Date(p.time);
+                const hour = date.getHours();
+                regrouped[hour].push(p.value);
             });
-            const values = data.map(p => p.value);
+
+            const labels = [];
+            const values = [];
+
+            for (let h = 0; h < 24; h++) {
+                const heureStr = h.toString().padStart(2, '0') + 'h';
+                labels.push(heureStr);
+
+                if (regrouped[h].length > 0) {
+                    const moy = regrouped[h].reduce((sum, v) => sum + v, 0) / regrouped[h].length;
+                    values.push(parseFloat(moy.toFixed(2)));
+                } else {
+                    values.push(0); // ou null pour un trou dans la courbe
+                }
+            }
 
             // Calcul du coût énergétique
             let totalKWh = 0;
             for (let i = 1; i < data.length; i++) {
-                const timeDiffHours = (new Date(data[i].time) - new Date(data[i-1].time)) / 1000 / 3600;
-                const avgPowerWatts = (data[i].value + data[i-1].value) / 2;
+                const timeDiffHours = (new Date(data[i].time) - new Date(data[i - 1].time)) / 1000 / 3600;
+                const avgPowerWatts = (data[i].value + data[i - 1].value) / 2;
                 totalKWh += (avgPowerWatts * timeDiffHours) / 1000;
             }
             const cout = (totalKWh * PRIX_KWH).toFixed(2);
@@ -160,6 +181,7 @@ function fetchAndUpdateChart() {
             if (spinner) spinner.style.display = 'none';
         });
 }
+
 
 function fetchAlertes() {
     fetch('alerte.php')
