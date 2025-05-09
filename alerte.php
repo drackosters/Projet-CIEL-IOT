@@ -56,7 +56,7 @@ try {
 
         $data = json_decode($response, true);
         if (!isset($data['results'][0]['series'][0]['values'][0][1])) {
-            $alertes[] = "Erreur : Donnée manquante pour le topic {$topic['topic']}";
+            $alertes[] ="Impossible de récupérer la consommation d'énergie pour l'appareil associé à {$topic['topic']}. Veuillez vérifier la connexion de l'appareil ou contactez le support.";
             continue;
         }
 
