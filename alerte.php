@@ -1,14 +1,16 @@
 <?php
-// Affichage des erreurs pour débogage
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+ini_set('error_log', '/chemin/vers/error.log');
 
 header('Content-Type: application/json');
 
 require 'config.php';
 
 try {
+    // Vérifier si le graphique d'énergie est actif
+    $energie_active = isset($_GET['energie_active']) && $_GET['energie_active'] == '1';
+
     // Récupérer les topics et leurs seuils depuis la BDD MySQL
     $stmt = $conn->query("SELECT topic, Seuil_Min, Seuil_Max FROM TOPICS");
     $topics = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -39,8 +41,13 @@ try {
             continue;
         }
 
-        // Vérifier uniquement les topics liés à apower
+        // Ignorer les topics non liés à apower
         if (!str_contains($topic['topic'], 'apower')) {
+            continue;
+        }
+
+        // Ignorer le topic de consommation d'énergie si le graphique n'est pas actif
+        if (!$energie_active && $topic['topic'] === 'shelly/watt/status/pm1:0-apower') {
             continue;
         }
 
@@ -50,13 +57,14 @@ try {
         $response = @file_get_contents($url);
 
         if ($response === false) {
-            $alertes[] = "Impossible de récupérer la consommation d'énergie pour l'appareil associé à {$topic['topic']}. Veuillez vérifier la connexion de l'appareil ou contactez le support.";
+            $alertes[] = "Erreur : InfluxDB inaccessible pour le topic {$topic['topic']}";
             continue;
         }
 
         $data = json_decode($response, true);
         if (!isset($data['results'][0]['series'][0]['values'][0][1])) {
-            $alertes[] = "Impossible de récupérer la consommation d'énergie pour l'appareil associé à {$topic['topic']}. Veuillez vérifier la connexion de l'appareil ou contactez le support.";
+            $nom_appareil = str_contains($topic['topic'], 'shelly/watt/status/pm1:0-apower') ? 'Appareil Shelly PM1' : 'Appareil inconnu';
+            $alertes[] = "Impossible de récupérer la consommation d'énergie pour {$nom_appareil}. Veuillez vérifier la connexion de l'appareil ou contactez le support.";
             continue;
         }
 
