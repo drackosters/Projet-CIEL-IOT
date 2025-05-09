@@ -18,7 +18,7 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des IoT</title>
     <link rel="icon" href="image/logo.png" type="image/png">
-    <link rel="stylesheet" href="page_utilisateur.css?v=37"> <!-- Incrémenter la version pour forcer le rechargement -->
+    <link rel="stylesheet" href="page_utilisateur.css?v=38"> <!-- Incrémenter la version pour forcer le rechargement -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="page_utilisateur.js" defer></script>
 </head>
@@ -53,7 +53,7 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
 
 
         <!-- Panneau de sélection de graphique -->
-        <div id="conteneur-ajout-iot" class="conteneur-droit">
+        <div id="conteneur-ajout-iot" class="conteneur-iot">
             <p>Sélectionner un graphique</p>
             <div id="message-ajout-iot">
                 <label>
