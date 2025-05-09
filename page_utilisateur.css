@@ -235,3 +235,21 @@ body {
     height: auto !important;
     max-width: 100%;
 }
+
+.intervalle-selection {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.intervalle-selection select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.cout-energetique {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+}
