@@ -18,7 +18,7 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des IoT</title>
     <link rel="icon" href="image/logo.png" type="image/png">
-    <link rel="stylesheet" href="page_utilisateur.css?v=34"> <!-- Incrémenter la version pour forcer le rechargement -->
+    <link rel="stylesheet" href="page_utilisateur.css?v=35"> <!-- Incrémenter la version pour forcer le rechargement -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="page_utilisateur.js" defer></script>
 </head>
@@ -64,9 +64,7 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
 
 
         <!-- Cloche notification -->
-        <button id="bouton-alerte" class="bouton-alerte" onclick="toggleConteneur()">
-            <img src="/Projet-CIEL-IOT/image/notification_1.png" alt="Notifications">
-        </button>
+        <button id="bouton-alerte" class="bouton-alerte" onclick="toggleConteneur()"></button>
 
 
         <!-- Panneau de déconnexion -->
