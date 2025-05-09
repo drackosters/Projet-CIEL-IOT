@@ -17,11 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
     window.fetchAlertes = fetchAlertes;
 
     function fetchAndUpdateChart() {
-        const intervalle = document.getElementById('intervalle').value;
+        const checkboxEnergie = document.getElementById('checkbox-energie');
+        if (!checkboxEnergie || !checkboxEnergie.checked) {
+            return; // Ne pas récupérer les données si le graphique est masqué
+        }
+
         const spinner = document.getElementById('spinner');
         if (spinner) spinner.style.display = 'block';
 
-        fetch(`data.php?intervalle=${intervalle}`)
+        fetch(`data.php`)
             .then(res => res.json())
             .then(data => {
                 const canvas = document.getElementById('myChart');
@@ -223,6 +227,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
                 console.log("Graphique 'Consommateur d'énergie' :", checkboxEnergie.checked ? "visible" : "masqué");
                 fetchAlertes(); // Mettre à jour les alertes lorsque la case change
+                if (checkboxEnergie.checked) {
+                    fetchAndUpdateChart();
+                }
             });
         } else {
             console.error("checkbox-energie ou cadre-graph1 introuvable dans le DOM");
