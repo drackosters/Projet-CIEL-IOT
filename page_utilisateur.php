@@ -84,24 +84,37 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
 
 
 <div class="cadre-graph1">
-    <div class="titre-graphique">Consommation d'énergie - Dernière heure</div>
+    <div class="titre-graphique">Consommation d'énergie</div>
+    <div class="intervalle-selection">
+        <label for="intervalle">Intervalle de temps : </label>
+        <select id="intervalle" onchange="fetchAndUpdateChart()">
+            <option value="3h">3 dernières heures</option>
+            <option value="15h">15 dernières heures</option>
+            <option value="24h">24 dernières heures</option>
+        </select>
+    </div>
+    <div class="cout-energetique">
+        Coût estimé : <span id="cout-energetique">0.00</span> €
+    </div>
     <div class="conteneur-canvas">
         <canvas id="myChart"></canvas>
     </div>
 </div>
 
-
 <script>
 let chartInstance = null;
-
+const PRIX_KWH = 0.2016; // Prix en €/kWh (France, mai 2025)
 
 function fetchAndUpdateChart() {
-    fetch('data.php')
+    const intervalle = document.getElementById('intervalle').value;
+    const spinner = document.getElementById('spinner');
+    if (spinner) spinner.style.display = 'block';
+
+    fetch(`data.php?intervalle=${intervalle}`)
         .then(res => res.json())
         .then(data => {
             const canvas = document.getElementById('myChart');
             const ctx = canvas.getContext('2d');
-
 
             if (!Array.isArray(data) || data.length === 0) {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -109,18 +122,25 @@ function fetchAndUpdateChart() {
                 ctx.fillStyle = 'gray';
                 ctx.textAlign = 'center';
                 ctx.fillText("Aucune donnée n'a pu être récupérée", canvas.width / 2, canvas.height / 2);
-
-
                 if (chartInstance) chartInstance.destroy();
                 chartInstance = null;
                 ajouterAlerte("⚠️ Aucune donnée n'a pu être récupérée depuis InfluxDB.");
+                document.getElementById('cout-energetique').textContent = '0.00';
                 return;
             }
-
 
             const labels = data.map(p => new Date(p.time).toLocaleTimeString());
             const values = data.map(p => p.value);
 
+            // Calcul du coût énergétique
+            let totalKWh = 0;
+            for (let i = 1; i < data.length; i++) {
+                const timeDiffHours = (new Date(data[i].time) - new Date(data[i-1].time)) / 1000 / 3600;
+                const avgPowerWatts = (data[i].value + data[i-1].value) / 2;
+                totalKWh += (avgPowerWatts * timeDiffHours) / 1000;
+            }
+            const cout = (totalKWh * PRIX_KWH).toFixed(2);
+            document.getElementById('cout-energetique').textContent = cout;
 
             if (chartInstance) {
                 chartInstance.data.labels = labels;
@@ -153,9 +173,12 @@ function fetchAndUpdateChart() {
             document.getElementById('message-alerte').innerHTML = '';
             ajouterAlerte("⚠️ Erreur lors de la récupération des données : " + error.message);
             console.error("Erreur de fetch data.php :", error);
+            document.getElementById('cout-energetique').textContent = '0.00';
+        })
+        .finally(() => {
+            if (spinner) spinner.style.display = 'none';
         });
 }
-
 
 function fetchAlertes() {
     fetch('alerte.php')
