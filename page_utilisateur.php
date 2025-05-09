@@ -107,7 +107,10 @@ function fetchAndUpdateChart() {
                 return;
             }
 
-            const labels = data.map(p => new Date(p.time).toLocaleTimeString());
+            const labels = data.map(p => {
+            const date = new Date(p.time);
+            return `${date.getHours().toString().padStart(2, '0')}h`;
+            });
             const values = data.map(p => p.value);
 
             // Calcul du coût énergétique
