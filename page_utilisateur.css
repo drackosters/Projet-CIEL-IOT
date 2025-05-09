@@ -79,6 +79,13 @@ body {
     padding: 0;
 }
 
+#conteneur-ajout-iot {
+    display: none;
+}
+
+#conteneur-ajout-iot.ouvert {
+    display: block;
+}
 
 .icone-ajout-iot {
     width: 35px;
