@@ -291,26 +291,4 @@ setInterval(fetchAlertes, 10000);
 </script>
 
 </body>
-</html>cochée
-        graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
-
-        // Écouteur pour les changements
-        checkboxEnergie.addEventListener('change', () => {
-            graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
-            console.log("Graphique 'Consommateur d'énergie' :", checkboxEnergie.checked ? "visible" : "masqué");
-        });
-    } else {
-        console.error("checkbox-energie ou cadre-graph1 introuvable dans le DOM");
-    }
-});
-
-// Initialisation
-fetchAndUpdateChart();
-setInterval(fetchAndUpdateChart, 30000);
-
-fetchAlertes();
-setInterval(fetchAlertes, 10000);
-</script>
-
-</body>
 </html>
