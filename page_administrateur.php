@@ -10,12 +10,12 @@ if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte
 $nom_admin = "Administrateur inconnu";
 
 if (isset($_SESSION['Utilisateur'])) {
-    $stmt = $conn->prepare("SELECT Nom FROM administrateur WHERE Nom = ?");
+    $stmt = $conn->prepare("SELECT nom FROM administrateur WHERE nom = ?");
     $stmt->execute([$_SESSION['Utilisateur']]);
     $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($admin && isset($admin['Nom'])) {
-        $nom_admin = htmlspecialchars($admin['Nom']);
+    if ($admin && isset($admin['nom'])) {
+        $nom_admin = htmlspecialchars($admin['nom']);
     }
 }
 ?>
