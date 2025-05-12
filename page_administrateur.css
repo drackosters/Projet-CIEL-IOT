@@ -110,8 +110,8 @@ body {
 }
 
 .bouton-parametres img {
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    height: 50px;
     object-fit: contain; /* ou 'cover' si tu préfères remplir */
     aspect-ratio: 1 / 1;  /* force un ratio carré */
 }
