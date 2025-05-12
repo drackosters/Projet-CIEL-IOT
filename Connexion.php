@@ -1,4 +1,4 @@
-<?phputilisateur_connecte
+<?php
 session_start();
 
 //connexion BDD
