@@ -38,6 +38,8 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
             <?= htmlspecialchars($nom_utilisateur) ?>
         </button>
 
+        
+
         <!-- Bouton pour ouvrir le panneau de sélection de graphique -->
         <button class="bouton-ajout-iot">
             <img src="image/ajout_iot.png" alt="Sélectionner un graphique" class="icone-ajout-iot">
