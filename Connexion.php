@@ -1,4 +1,4 @@
-<?php
+<?phputilisateur_connecte
 session_start();
 
 //connexion BDD
@@ -17,6 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
 
         if ($utilisateur && $utilisateur['mots_de_passe'] == $mot_de_passe) {
             $_SESSION['utilisateur_connecte'] = true;
+            $_SESSION['login_admin'] = $admin['Nom'];
             $_SESSION['Utilisateur'] = $utilisateur['nom'];
             $_SESSION['type_utilisateur'] = $type;
 

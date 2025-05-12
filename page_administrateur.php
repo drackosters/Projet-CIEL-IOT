@@ -2,22 +2,22 @@
 session_start();
 require 'config.php';
 
-if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
-    header("Location: Connexion.php");
-    exit();
-}
+$nom_utilisateur = "Utilisateur inconnu";
 
-$nom_admin = "Administrateur inconnu";
+if (isset($_SESSION['utilisateur_connecte']) && $_SESSION['utilisateur_connecte'] === true) {
+    
+    $login_admin = $_SESSION['login_admin'] ?? null;
 
-if (isset($_SESSION['Utilisateur'])) {
-    $stmt = $conn->prepare("SELECT nom FROM administrateur WHERE nom = ?");
-    $stmt->execute([$_SESSION['Utilisateur']]);
-    $admin = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    if ($admin && isset($admin['nom'])) {
-        $nom_admin = htmlspecialchars($admin['nom']);
+    if ($login_admin) {
+        $stmt = $pdo->prepare("SELECT Nom FROM administrateur WHERE Nom = :login");
+        $stmt->execute(['login' => $login_admin]);
+        $admin = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($admin) {
+            $nom_utilisateur = $admin['Nom'];
+        }
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
