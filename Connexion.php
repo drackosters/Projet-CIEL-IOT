@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
 
         if ($utilisateur && $utilisateur['mots_de_passe'] == $mot_de_passe) {
             $_SESSION['utilisateur_connecte'] = true;
-            $_SESSION['login_admin'] = $admin['Nom'];
+            $_SESSION['login_admin'] = $utilisateur['Nom'];
             $_SESSION['Utilisateur'] = $utilisateur['nom'];
             $_SESSION['type_utilisateur'] = $type;
 
