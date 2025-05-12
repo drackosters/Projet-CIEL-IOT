@@ -97,6 +97,28 @@ body {
     cursor: pointer;
 }
 
+.bouton-parametres {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    margin: 0 8px;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.bouton-parametres img {
+    width: 32px;
+    height: 32px;
+}
+
+.bouton-parametres:hover {
+    transform: scale(1.1);
+}
+
+
 /* ========== PANNEAU DE DÉCONNEXION ========== */
 .panneau-deconnexion {
     display: none;

@@ -45,11 +45,10 @@ $nom_utilisateur = htmlspecialchars($_SESSION['login_admin'] ?? $_COOKIE['nom_ut
         </button>
 
         <!-- Bouton paramètres -->
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="settings.php">
-            <img src="image/paramètre.png" alt="Paramètres" style="width: 40px; height: 40px; cursor: pointer;">
+        <a href="settings.php" class="bouton-parametres" title="Paramètres">
+            <img src="image/paramètre.png" alt="Paramètres">
         </a>
-    </div>
+
 
         <!-- Bouton pour ouvrir le panneau de sélection de graphique -->
         <button class="bouton-ajout-iot">
