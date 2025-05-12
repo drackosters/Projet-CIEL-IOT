@@ -2,23 +2,19 @@
 session_start();
 require 'config.php';
 
-$nom_utilisateur = "Utilisateur inconnu";
-
-if (isset($_SESSION['utilisateur_connecte']) && $_SESSION['utilisateur_connecte'] === true) {
-    
-    $login_admin = $_SESSION['login_admin'] ?? null;
-
-    if ($login_admin) {
-        $stmt = $pdo->prepare("SELECT Nom FROM administrateur WHERE Nom = :login");
-        $stmt->execute(['login' => $login_admin]);
-        $admin = $stmt->fetch(PDO::FETCH_ASSOC);
-        if ($admin) {
-            $nom_utilisateur = $admin['Nom'];
-        }
-    }
+// Redirection si l'utilisateur n'est pas connecté ou pas admin
+if (
+    !isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true ||
+    $_SESSION['type_utilisateur'] !== 'admin'
+) {
+    header("Location: Connexion.php");
+    exit();
 }
 
+// Récupération du nom depuis session ou cookie
+$nom_utilisateur = htmlspecialchars($_SESSION['login_admin'] ?? $_COOKIE['nom_utilisateur'] ?? "Administrateur inconnu");
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -274,6 +270,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (checkboxEnergie && graphiqueEnergie) {
         // Initialisation : le graphique est visible si la case est cochée
+        graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
+
+        // Écouteur pour les changements
+        checkboxEnergie.addEventListener('change', () => {
+            graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
+            console.log("Graphique 'Consommateur d'énergie' :", checkboxEnergie.checked ? "visible" : "masqué");
+        });
+    } else {
+        console.error("checkbox-energie ou cadre-graph1 introuvable dans le DOM");
+    }
+});
+
+// Initialisation
+fetchAndUpdateChart();
+setInterval(fetchAndUpdateChart, 30000);
+
+fetchAlertes();
+setInterval(fetchAlertes, 10000);
+</script>
+
+</body>
+</html>cochée
         graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
 
         // Écouteur pour les changements
