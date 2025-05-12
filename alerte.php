@@ -7,6 +7,28 @@ header('Content-Type: application/json');
 
 require 'config.php';
 
+if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
+    echo json_encode(["error" => "Utilisateur non connecté."]);
+    exit;
+}
+
+$nom_utilisateur = $_COOKIE['nom_utilisateur'] ?? null;
+
+if (!$nom_utilisateur) {
+    echo json_encode(["error" => "Nom d'utilisateur introuvable."]);
+    exit;
+}
+
+// Récupérer l'e-mail de l'utilisateur
+$stmt = $conn->prepare("SELECT email FROM Utilisateur WHERE nom = :nom");
+$stmt->execute(['nom' => $nom_utilisateur]);
+$email = $stmt->fetchColumn();
+
+if (!$email) {
+    echo json_encode(["error" => "E-mail introuvable pour l'utilisateur."]);
+    exit;
+}
+
 try {
     // Vérifier si le graphique d'énergie est actif
     $energie_active = isset($_GET['energie_active']) && $_GET['energie_active'] == '1';
@@ -77,6 +99,18 @@ try {
         }
     }
 
+    if (!empty($alertes)) {
+        $sujet = "Alertes IoT détectées";
+        $message = "Bonjour $nom_utilisateur,\n\nVoici les alertes détectées sur vos appareils IoT :\n\n";
+        $message .= implode("\n", $alertes);
+        $message .= "\n\nVeuillez vérifier vos équipements ou contacter le support technique.";
+    
+        $headers = "From: iot-system@tondomaine.com\r\n";
+        $headers .= "Content-Type: text/plain; charset=utf-8";
+    
+        mail($email, $sujet, $message, $headers);
+    }
+    
     echo json_encode($alertes);
     exit;
 
