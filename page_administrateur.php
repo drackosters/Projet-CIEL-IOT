@@ -7,7 +7,17 @@ if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte
     exit();
 }
 
-$nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur inconnu");
+$nom_admin = "Administrateur inconnu";
+
+if (isset($_SESSION['Utilisateur'])) {
+    $stmt = $conn->prepare("SELECT Nom FROM administrateur WHERE Nom = ?");
+    $stmt->execute([$_SESSION['Utilisateur']]);
+    $admin = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($admin && isset($admin['Nom'])) {
+        $nom_admin = htmlspecialchars($admin['Nom']);
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
