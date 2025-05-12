@@ -3,6 +3,7 @@ session_start();
 
 //connexion BDD
 require 'config.php'; // Inclure le fichier de configuration pour la connexion à la base de données
+
 //définir les variables de connexion
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
     $login = $_POST['login'];
@@ -18,11 +19,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
             $_SESSION['utilisateur_connecte'] = true;
             $_SESSION['Utilisateur'] = $utilisateur['nom'];
             $_SESSION['type_utilisateur'] = $type;
-            header("Location: page_utilisateur.php");
 
-                    // Stocker un cookie qui expire dans 1 jour
+            // Stocker un cookie qui expire dans 1 jour
             setcookie("nom_utilisateur", $utilisateur['nom'], time() + 86400, "/");
-            exit(); //86400
+
+            // Rediriger selon le type d'utilisateur
+            if ($type === 'admin') {
+                header("Location: page_administrateur.php");
+            } else {
+                header("Location: page_utilisateur.php");
+            }
+            exit();
         }
         return false;
     }
@@ -36,6 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
