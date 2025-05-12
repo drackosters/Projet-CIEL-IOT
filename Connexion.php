@@ -1,30 +1,24 @@
 <?php
 session_start();
+require 'config.php'; // Connexion à la BDD
 
-//connexion BDD
-require 'config.php'; // Inclure le fichier de configuration pour la connexion à la base de données
-
-//définir les variables de connexion
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
     $login = $_POST['login'];
     $mot_de_passe = $_POST['pswd'];
 
-    // Fonction pour vérifier la connexion
     function verifierConnexion($conn, $table, $login, $mot_de_passe, $type) {
         $stmt = $conn->prepare("SELECT * FROM $table WHERE nom = ?");
         $stmt->execute([$login]);
         $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($utilisateur && $utilisateur['mots_de_passe'] == $mot_de_passe) {
+        if ($utilisateur && $utilisateur['mots_de_passe'] === $mot_de_passe) {
             $_SESSION['utilisateur_connecte'] = true;
-            $_SESSION['login_admin'] = $utilisateur['Nom'];
+            $_SESSION['login_admin'] = $utilisateur['nom'];
             $_SESSION['Utilisateur'] = $utilisateur['nom'];
             $_SESSION['type_utilisateur'] = $type;
 
-            // Stocker un cookie qui expire dans 1 jour
             setcookie("nom_utilisateur", $utilisateur['nom'], time() + 86400, "/");
 
-            // Rediriger selon le type d'utilisateur
             if ($type === 'admin') {
                 header("Location: page_administrateur.php");
             } else {
@@ -32,19 +26,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
             }
             exit();
         }
+
         return false;
     }
 
-    // Vérifier si administrateur
     if (!verifierConnexion($conn, 'administrateur', $login, $mot_de_passe, 'admin')) {
-        // Si ce n'est pas un administrateur, vérifier l'utilisateur
-        if (!verifierConnexion($conn, 'Utilisateur', $login, $mot_de_passe, 'utilisateur')) {
+        if (!verifierConnexion($conn, 'utilisateur', $login, $mot_de_passe, 'utilisateur')) {
             $erreur_connexion = "Nom d'utilisateur ou mot de passe incorrect.";
         }
     }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
