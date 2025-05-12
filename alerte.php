@@ -5,6 +5,7 @@ ini_set('error_log', '/chemin/vers/error.log');
 
 header('Content-Type: application/json');
 
+session_start();
 require 'config.php';
 
 if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
