@@ -22,7 +22,7 @@ $nom_utilisateur = htmlspecialchars($_SESSION['login_admin'] ?? $_COOKIE['nom_ut
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des IoT</title>
     <link rel="icon" href="image/logo.png" type="image/png">
-    <link rel="stylesheet" href="page_administrateur.css?v=6">
+    <link rel="stylesheet" href="page_administrateur.css?v=7">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="page_utilisateur.js" defer></script>
 </head>
