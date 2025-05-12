@@ -10,6 +10,13 @@ body {
     overflow-x: hidden;
 }
 
+.titre-iot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    margin: 0;
+}
 
 /* ========== EN-TÊTE ========== */
 .conteneur-haut {
