@@ -84,12 +84,6 @@ try {
             continue;
         }
 
-        $data = json_decode($response, true);
-        if (!isset($data['results'][0]['series'][0]['values'][0][1])) {
-            $nom_appareil = str_contains($topic['topic'], 'shelly/watt/status/pm1:0-apower') ? 'Appareil Shelly PM1' : 'Appareil inconnu';
-            $alertes[] = "Impossible de récupérer la consommation d'énergie pour {$nom_appareil}. Veuillez vérifier la connexion de l'appareil ou contactez le support.";
-            continue;
-        }
 
         $valeur = $data['results'][0]['series'][0]['values'][0][1];
 
