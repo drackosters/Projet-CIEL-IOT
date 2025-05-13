@@ -132,6 +132,9 @@ function fetchAndUpdateChart() {
                 }
             }
 
+            // Trier les données par ordre chronologique
+            data.sort((a, b) => new Date(a.time) - new Date(b.time));
+
             // Calcul du coût énergétique (kWh = (W × durée en h) / 1000)
             let totalKWh = 0;
             for (let i = 1; i < data.length; i++) {

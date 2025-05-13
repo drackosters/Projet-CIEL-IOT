@@ -33,7 +33,7 @@ try {
     }, $values);
 
     // Inverser les résultats pour afficher du plus ancien au plus récent
-    $results = array_reverse($results);
+  //  $results = array_reverse($results);
 
     echo json_encode($results);
     exit;
