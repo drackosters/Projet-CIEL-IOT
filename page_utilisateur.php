@@ -97,6 +97,7 @@ function fetchAndUpdateChart() {
             const ctx = canvas.getContext('2d');
 
             if (!Array.isArray(data) || data.length === 0) {
+                console.warn("⚠️ Données reçues invalides ou vides :", data);
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 ctx.font = '18px Arial';
                 ctx.fillStyle = 'gray';
@@ -115,7 +116,7 @@ function fetchAndUpdateChart() {
 
             data.forEach(p => {
                 const date = new Date(p.time);
-                const hour = date.getUTCHours();
+                const hour = date.getHours(); //Heure local
                 regrouped[hour].push(parseFloat(p.value));
             });
 
