@@ -115,7 +115,7 @@ function fetchAndUpdateChart() {
 
             data.forEach(p => {
                 const date = new Date(p.time);
-                const hour = date.getHours();
+                const hour = date.getUTCHours();
                 regrouped[hour].push(parseFloat(p.value));
             });
 
