@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const container = document.getElementById('message-alerte');
                 container.innerHTML = '';
                 ajouterAlerte("⚠️ Erreur JS ou réseau : " + error.message);
-                console.error("Erreur fetch alertes :", error);
             });
     }
     
