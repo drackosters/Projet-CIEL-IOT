@@ -60,20 +60,21 @@ if (
             color: #ffffff;
         }
 
-        .bouton-utilisateur {
-            background: none;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-        }
+    .bouton-utilisateur {
+        background: none;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin-left: auto; /* Décale le bouton utilisateur vers la gauche */
+    }
 
-        .bouton-utilisateur:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
+    .bouton-utilisateur:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 
         /* Contenu principal */
         .conteneur-principal {
