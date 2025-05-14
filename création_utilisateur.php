@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créer un utilisateur</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="topics.css">
 </head>
 <body>
     <div class="conteneur-haut">
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br>
 
-            <button type="submit" class="bouton-alerte">Créer</button>
+            <button type="submit" class="bouton-utilisateur">Créer</button>
         </form>
     </div>
 </body>
