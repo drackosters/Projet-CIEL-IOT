@@ -1,9 +1,15 @@
 <?php
+// Nettoyage des tampons de sortie
 ob_start();
-ini_set('display_errors', 0);
-ini_set('log_errors', 1);
-ini_set('error_log', __DIR__ . '/php-error.log');
-error_reporting(E_ALL);
+
+// Configuration des erreurs
+ini_set('display_errors', 0); // Ne pas afficher dans le navigateur
+ini_set('log_errors', 1);     // Activer la journalisation
+ini_set('error_log', __DIR__ . '/alerte-error.log'); // Cible du log
+error_reporting(E_ALL);       // Tout signaler
+
+// Forcer un log pour test (à commenter ensuite)
+// trigger_error("Test d'erreur manuelle dans alerte.php", E_USER_WARNING);
 
 header('Content-Type: application/json');
 
@@ -13,15 +19,15 @@ use PHPMailer\PHPMailer\Exception;
 session_start();
 
 try {
-    if (!file_exists('vendor/autoload.php')) {
+    if (!file_exists(__DIR__ . '/vendor/autoload.php')) {
         throw new Exception("Fichier vendor/autoload.php introuvable.");
     }
-    if (!file_exists('config.php')) {
+    if (!file_exists(__DIR__ . '/config.php')) {
         throw new Exception("Fichier config.php introuvable.");
     }
 
-    require 'vendor/autoload.php';
-    require 'config.php';
+    require __DIR__ . '/vendor/autoload.php';
+    require __DIR__ . '/config.php';
 
     if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
         throw new Exception("Utilisateur non connecté.");
@@ -88,11 +94,11 @@ try {
 
         if (!is_numeric($valeur)) {
             $alertes[] = "Erreur : données non valides pour {$topic['topic']}";
+            error_log("Valeur invalide pour topic : {$topic['topic']} - valeur brute : " . print_r($data, true));
             continue;
         }
 
-        // 🔧 Test volontaire :
-        // $valeur = $topic['Seuil_Max'] + 50;
+        // $valeur = $topic['Seuil_Max'] + 50; // Forçage de dépassement pour test
 
         if ($valeur > $topic['Seuil_Max']) {
             $alertes[] = "{$topic['topic']} : $valeur W dépasse le seuil max ({$topic['Seuil_Max']})";
@@ -122,7 +128,7 @@ try {
             $mail->isHTML(false);
             $mail->send();
         } catch (Exception $e) {
-            error_log("Erreur mail : " . $mail->ErrorInfo);
+            error_log("Erreur envoi email : " . $mail->ErrorInfo);
         }
     }
 
