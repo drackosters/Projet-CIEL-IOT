@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <div class="conteneur-principal">
-        <form method="POST" action="creation_utilisateur.php" class="formulaire">
+            <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="formulaire">
             <label for="nom">Nom:</label>
             <input type="text" id="nom" name="nom" required><br>
 
