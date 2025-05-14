@@ -8,9 +8,6 @@ ini_set('log_errors', 1);     // Activer la journalisation
 ini_set('error_log', __DIR__ . '/alerte-error.log'); // Cible du log
 error_reporting(E_ALL);       // Tout signaler
 
-// Forcer un log pour test (à commenter ensuite)
-// trigger_error("Test d'erreur manuelle dans alerte.php", E_USER_WARNING);
-
 header('Content-Type: application/json');
 
 use PHPMailer\PHPMailer\PHPMailer;
