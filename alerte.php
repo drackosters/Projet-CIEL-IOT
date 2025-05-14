@@ -90,9 +90,9 @@ try {
         }
 
         $data = json_decode($response, true);
-        $valeur = $data['results'][0]['series'][0]['values'][0][1] ?? null;
+        //$valeur = $data['results'][0]['series'][0]['values'][0][1] ?? null;
 
-        // $valeur = $topic['Seuil_Max'] + 50; // Forçage de dépassement pour test
+        $valeur = $topic['Seuil_Max'] + 50; // Forçage de dépassement pour test
 
         if ($valeur > $topic['Seuil_Max']) {
             $alertes[] = "{$topic['topic']} : $valeur W dépasse le seuil max ({$topic['Seuil_Max']})";
