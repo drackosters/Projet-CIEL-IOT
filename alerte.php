@@ -92,12 +92,6 @@ try {
         $data = json_decode($response, true);
         $valeur = $data['results'][0]['series'][0]['values'][0][1] ?? null;
 
-        if (!is_numeric($valeur)) {
-            $alertes[] = "Erreur : données non valides pour {$topic['topic']}";
-            error_log("Valeur invalide pour topic : {$topic['topic']} - valeur brute : " . print_r($data, true));
-            continue;
-        }
-
         // $valeur = $topic['Seuil_Max'] + 50; // Forçage de dépassement pour test
 
         if ($valeur > $topic['Seuil_Max']) {
