@@ -273,13 +273,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("checkbox-energie ou cadre-graph1 introuvable dans le DOM");
     }
 });
-
-// Initialisation
-fetchAndUpdateChart();
-setInterval(fetchAndUpdateChart, 30000);
-
-fetchAlertes();
-setInterval(fetchAlertes, 10000);
 </script>
 
 </body>
