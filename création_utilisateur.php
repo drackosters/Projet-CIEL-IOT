@@ -8,10 +8,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!empty($nom) && !empty($mots_de_passe) && !empty($email)) {
         try {
+            // Chiffrement du mot de passe
+            $hashed_password = password_hash($mots_de_passe, PASSWORD_DEFAULT);
+
             $sql = "INSERT INTO Utilisateur (nom, mots_de_passe, email) VALUES (:nom, :mots_de_passe, :email)";
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':nom', $nom);
-            $stmt->bindParam(':mots_de_passe', $mots_de_passe);
+            $stmt->bindParam(':mots_de_passe', $hashed_password); // Utilisation du mot de passe chiffré
             $stmt->bindParam(':email', $email);
 
             if ($stmt->execute()) {
@@ -45,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <div class="conteneur-principal">
-            <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="formulaire">
+        <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="formulaire">
             <label for="nom">Nom:</label>
             <input type="text" id="nom" name="nom" required><br>
 
