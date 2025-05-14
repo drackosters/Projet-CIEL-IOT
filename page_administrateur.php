@@ -119,40 +119,72 @@ function fetchAndUpdateChart() {
                 return;
             }
 
-            // Regrouper les données par heure
-            const regrouped = {};
-            for (let h = 0; h < 24; h++) {
-                regrouped[h] = [];
-            }
+            // 📅 Récupérer la date la plus récente
+            const latestDate = new Date(Math.max(...data.map(p => new Date(p.time))));
+            const latestDateStr = latestDate.toISOString().split('T')[0];
 
-            data.forEach(p => {
+            // 🧹 Ne conserver que les données de cette date
+            const filteredData = data.filter(p => p.time.startsWith(latestDateStr));
+
+            // ⏱️ Supprimer les données dans le futur (par rapport à l’heure actuelle locale)
+            const now = new Date();
+            const nowHour = now.getHours();
+            const nowDateStr = now.toISOString().split('T')[0];
+
+            const dataOfToday = filteredData.filter(p => {
                 const date = new Date(p.time);
                 const hour = date.getHours();
-                regrouped[hour].push(p.value);
+                const dateStr = date.toISOString().split('T')[0];
+                return dateStr === nowDateStr && hour <= nowHour;
+            });
+
+            if (dataOfToday.length === 0 || dataOfToday.every(p => p.value === 0 || p.value === null)) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.font = '18px Arial';
+                ctx.fillStyle = 'gray';
+                ctx.textAlign = 'center';
+                ctx.fillText("Aucune donnée récente disponible", canvas.width / 2, canvas.height / 2);
+                if (chartInstance) chartInstance.destroy();
+                chartInstance = null;
+                ajouterAlerte("⚠️ Aucune donnée disponible pour aujourd’hui.");
+                document.getElementById('cout-energetique').textContent = '0.00';
+                return;
+            }
+
+            // ⏳ Regrouper les données par heure de la journée
+            const regrouped = {};
+            for (let h = 0; h <= nowHour; h++) regrouped[h] = [];
+
+            dataOfToday.forEach(p => {
+                const date = new Date(p.time);
+                const hour = date.getHours();
+                regrouped[hour].push(parseFloat(p.value));
             });
 
             const labels = [];
             const values = [];
 
-            for (let h = 0; h < 24; h++) {
-                const heureStr = h.toString().padStart(2, '0') + 'h';
-                labels.push(heureStr);
-
+            for (let h = 0; h <= nowHour; h++) {
+                labels.push(h.toString().padStart(2, '0') + 'h');
                 if (regrouped[h].length > 0) {
                     const moy = regrouped[h].reduce((sum, v) => sum + v, 0) / regrouped[h].length;
                     values.push(parseFloat(moy.toFixed(2)));
                 } else {
-                    values.push(0); // ou null pour un trou dans la courbe
+                    values.push(0);
                 }
             }
 
-            // Calcul du coût énergétique
+            // 💰 Calcul du coût énergétique
             let totalKWh = 0;
-            for (let i = 1; i < data.length; i++) {
-                const timeDiffHours = (new Date(data[i].time) - new Date(data[i - 1].time)) / 1000 / 3600;
-                const avgPowerWatts = (data[i].value + data[i - 1].value) / 2;
-                totalKWh += (avgPowerWatts * timeDiffHours) / 1000;
+            for (let i = 1; i < dataOfToday.length; i++) {
+                const time1 = new Date(dataOfToday[i - 1].time);
+                const time2 = new Date(dataOfToday[i].time);
+                const diffHours = (time2 - time1) / 1000 / 3600;
+                const avgPowerW = (parseFloat(dataOfToday[i].value) + parseFloat(dataOfToday[i - 1].value)) / 2;
+                const kWh = (avgPowerW * diffHours) / 1000;
+                totalKWh += kWh;
             }
+
             const cout = (totalKWh * PRIX_KWH).toFixed(2);
             document.getElementById('cout-energetique').textContent = cout;
 
@@ -191,35 +223,6 @@ function fetchAndUpdateChart() {
         })
         .finally(() => {
             if (spinner) spinner.style.display = 'none';
-        });
-}
-
-
-function fetchAlertes() {
-    fetch('alerte.php')
-        .then(res => res.json())
-        .then(data => {
-            const container = document.getElementById('message-alerte');
-            container.innerHTML = '';
-
-            if (data.error) {
-                ajouterAlerte("⚠️ " + data.error);
-                return;
-            }
-
-            if (!Array.isArray(data)) {
-                ajouterAlerte("⚠️ Format inattendu reçu depuis alerte.php");
-                console.error("Donnée reçue :", data);
-                return;
-            }
-
-            data.forEach(ajouterAlerte);
-        })
-        .catch(error => {
-            const container = document.getElementById('message-alerte');
-            container.innerHTML = '';
-            ajouterAlerte("⚠️ Erreur JS ou réseau : " + error.message);
-            console.error("Erreur fetch alertes :", error);
         });
 }
 
