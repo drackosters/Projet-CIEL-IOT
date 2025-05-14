@@ -19,6 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->Password = 'Pl@gI0T-@lert3'; // Votre mot de passe email
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Utilisez STARTTLS
             $mail->Port = 587; // Port pour TLS
+            $mail->SMTPDebug = 2; // Niveau de débogage
+$mail->Debugoutput = 'html'; // Format de sortie
 
             // Désactiver la vérification SSL (si nécessaire)
             $mail->SMTPOptions = [
