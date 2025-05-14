@@ -60,21 +60,22 @@ if (
             font-weight: bold;
             color: #ffffff;
         }
+    .bouton-utilisateur {
+        position: absolute;
+        right: 20px; /* Place le nom de l'utilisateur à droite */
+        background: none;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
 
-        .bouton-utilisateur {
-            background: none;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .bouton-utilisateur:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
+    .bouton-utilisateur:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 
         /* Contenu principal */
         .conteneur-principal {
@@ -191,21 +192,23 @@ if (
             background: #ff1a1a;
         }
 
-                .bouton-retour {
-            background: none;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            margin-right: 10px;
-        }
 
-        .bouton-retour:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
+    .bouton-retour {
+        position: absolute;
+        left: 20px; /* Place le bouton de retour à gauche */
+        background: none;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .bouton-retour:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
     </style>
 </head>
 <body>
