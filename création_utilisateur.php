@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $mail->Username = 'alerte@plagiot.tech'; // Votre adresse email
                     $mail->Password = 'Pl@gI0T-@lert3'; // Votre mot de passe email
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                    $mail->Port = 465  ;
+                    $mail->Port = 587  ;
 
                     // Destinataires
                     $mail->setFrom('noreply@example.com', 'Votre Application');
@@ -51,9 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $mail->isHTML(true);
                     $mail->Subject = 'Création de compte réussie';
                     $mail->Body = "Bonjour <b>$nom</b>,<br><br>Votre compte a été créé avec succès.<br><br>Cordialement,<br>L'équipe.";
-                    $mail->SMTPDebug = 2; // Niveau de débogage
-                    $mail->Debugoutput = 'html'; // Format de sortie
-
+                    
                     $mail->send();
                     echo "Utilisateur créé avec succès. Un email de confirmation a été envoyé.";
                 } catch (Exception $e) {
