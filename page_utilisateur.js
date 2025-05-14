@@ -19,24 +19,37 @@ document.addEventListener("DOMContentLoaded", function () {
     function fetchAlertes() {
         const checkboxEnergie = document.getElementById('checkbox-energie');
         const energieActive = checkboxEnergie ? checkboxEnergie.checked : false;
-       
+    
         fetch(`alerte.php?energie_active=${energieActive ? 1 : 0}`)
-            .then(res => res.json())
+            .then(res => {
+                const contentType = res.headers.get("content-type");
+                if (!res.ok) {
+                    throw new Error(`Erreur HTTP : ${res.status}`);
+                }
+                if (contentType && contentType.includes("application/json")) {
+                    return res.json();
+                } else {
+                    return res.text().then(text => {
+                        console.error("Réponse non-JSON brute :", text);
+                        throw new Error("La réponse n'est pas du JSON");
+                    });
+                }
+            })
             .then(data => {
                 const container = document.getElementById('message-alerte');
                 container.innerHTML = '';
-
+    
                 if (data.error) {
                     ajouterAlerte("⚠️ " + data.error);
                     return;
                 }
-
+    
                 if (!Array.isArray(data)) {
                     ajouterAlerte("⚠️ Format inattendu reçu depuis alerte.php");
                     console.error("Donnée reçue :", data);
                     return;
                 }
-
+    
                 data.forEach(ajouterAlerte);
             })
             .catch(error => {
@@ -46,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error("Erreur fetch alertes :", error);
             });
     }
+    
 
     function ajouterAlerte(message) {
         const container = document.getElementById('message-alerte');
