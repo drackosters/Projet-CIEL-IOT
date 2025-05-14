@@ -41,7 +41,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $mail->Username = 'alerte@plagiot.tech'; // Votre adresse email
                     $mail->Password = 'Pl@gI0T-@lert3'; // Votre mot de passe email
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                    $mail->Port = 587  ;
+                    $mail->Port = 465  ;
+
+                    // Désactiver la vérification SSL
+                    $mail->SMTPOptions = [
+                        'ssl' => [
+                            'verify_peer' => false,
+                            'verify_peer_name' => false,
+                            'allow_self_signed' => true,
+                        ],
+                    ];
 
                     // Destinataires
                     $mail->setFrom('noreply@example.com', 'Votre Application');
