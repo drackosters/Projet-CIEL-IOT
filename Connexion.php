@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -15,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
         $stmt->execute([$login]);
         $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($utilisateur && $utilisateur['mots_de_passe'] == $mot_de_passe) {
+        if ($utilisateur && password_verify($mot_de_passe, $utilisateur['mots_de_passe'])) {
             $_SESSION['utilisateur_connecte'] = true;
             $_SESSION['login_admin'] = $utilisateur['Nom'];
             $_SESSION['Utilisateur'] = $utilisateur['nom'];
@@ -65,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
 
         <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> " style="display: flex; flex-direction: column; width: 300px; margin: auto;">
 
-            <input type="text" name="login" placeholder="Nom d'utilisateur"
+            <input type="text" name="login" placeholder="Nom d'utilisateur ou adresse e-mail"
              required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
 
             <input type="password" name="pswd" placeholder="Mot de passe"
