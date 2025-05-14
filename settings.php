@@ -34,47 +34,46 @@ if (
         }
 
         /* Barre du haut */
-    .conteneur-haut {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 20px 40px;
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-    }
+        .conteneur-haut {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
         .logo {
             height: 50px;
         }
 
-    .titre-iot {
-        font-size: 32px;
-        font-weight: bold;
-        color: #ffffff;
-        margin: 0 auto; /* Centre le titre */
-    }
+        .titre-iot {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+        }
 
-    .bouton-utilisateur {
-        background: none;
-        border: 2px solid #ffffff;
-        color: #ffffff;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        margin-left: auto; /* Décale le bouton utilisateur vers la gauche */
-    }
+        .bouton-utilisateur {
+            background: none;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
 
-    .bouton-utilisateur:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
+        .bouton-utilisateur:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
 
         /* Contenu principal */
         .conteneur-principal {
@@ -143,23 +142,6 @@ if (
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
         }
 
-                .bouton-retour {
-            background: none;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            margin-right: 10px;
-        }
-
-        .bouton-retour:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-
         /* Texte en bas */
         .texte-bas {
             position: fixed;
@@ -211,14 +193,13 @@ if (
 </head>
 <body>
     <!-- Barre du haut -->
-    <!-- Barre du haut -->
     <div class="conteneur-haut">
-        <a href="page_administrateur.php">
-            <button class="bouton-retour">← Retour</button>
+        <a href="index.php">
+            <img src="297f7e763fcbb4896d13120c4c8e3a2b365880689c0e614028de1f3637e0852d.png" alt="Logo" class="logo">
         </a>
         <h1 class="titre-iot">Paramètres</h1>
         <button class="bouton-utilisateur">
-            <?= $nom_utilisateur ?>
+            <?php echo htmlspecialchars($_SESSION['nom_utilisateur'] ?? 'Utilisateur'); ?>
         </button>
     </div>
 
