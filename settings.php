@@ -9,6 +9,9 @@ if (
     header("Location: Connexion.php");
     exit();
 }
+
+$nom_utilisateur = htmlspecialchars($_SESSION['login_admin'] ?? $_COOKIE['nom_utilisateur'] ?? "Administrateur inconnu");
+
 ?>
 
 <!DOCTYPE html>
