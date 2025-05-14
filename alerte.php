@@ -87,7 +87,9 @@ try {
             continue;
         }
 
-        $valeur = $data['results'][0]['series'][0]['values'][0][1];
+        //$valeur = $data['results'][0]['series'][0]['values'][0][1];
+        $valeur = $topic['Seuil_Max'] + 50; // Fausse alerte : dépassement volontaire
+
 
         if ($valeur > $topic['Seuil_Max']) {
             $alertes[] = "{$topic['topic']} : $valeur W dépasse le seuil max ({$topic['Seuil_Max']})";
