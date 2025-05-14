@@ -34,31 +34,31 @@ if (
         }
 
         /* Barre du haut */
-        .conteneur-haut {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 20px 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-        }
-
+    .conteneur-haut {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
         .logo {
             height: 50px;
         }
 
-        .titre-iot {
-            font-size: 32px;
-            font-weight: bold;
-            color: #ffffff;
-        }
+    .titre-iot {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0 auto; /* Centre le titre */
+    }
 
     .bouton-utilisateur {
         background: none;
