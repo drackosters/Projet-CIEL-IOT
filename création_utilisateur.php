@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $mail->Username = 'alerte@plagiot.tech'; // Votre adresse email
                     $mail->Password = 'Pl@gI0T-@lert3'; // Votre mot de passe email
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                    $mail->Port = 587;
+                    $mail->Port = 25;
 
                     // Destinataires
                     $mail->setFrom('noreply@example.com', 'Votre Application');
