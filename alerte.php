@@ -1,5 +1,7 @@
 <?php
-ini_set('display_errors', 1);
+ob_start();
+ini_set('display_errors', 0); // Empêche les erreurs HTML visibles
+ini_set('log_errors', 1);     // Log dans error_log
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
@@ -8,9 +10,20 @@ header('Content-Type: application/json');
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
-
 session_start();
+
+if (!file_exists('vendor/autoload.php')) {
+    http_response_code(500);
+    echo json_encode(["error" => "Fichier vendor/autoload.php introuvable."]);
+    exit;
+}
+if (!file_exists('config.php')) {
+    http_response_code(500);
+    echo json_encode(["error" => "Fichier config.php introuvable."]);
+    exit;
+}
+
+require 'vendor/autoload.php';
 require 'config.php';
 
 if (!isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true) {
@@ -70,9 +83,10 @@ try {
         $query = "SELECT LAST(apower) FROM mqtt_consumer WHERE topic = '" . preg_replace('/[^a-zA-Z0-9_\/+-]/', '', $topic['topic']) . "'";
         $url = "$host/query?db=$db&q=" . urlencode($query);
 
-        $response = @file_get_contents($url);
+        $response = file_get_contents($url);
         if ($response === false) {
             $alertes[] = "Erreur : InfluxDB inaccessible pour le topic {$topic['topic']}";
+            error_log("Échec InfluxDB URL: $url");
             continue;
         }
 
@@ -130,3 +144,4 @@ try {
     error_log("alerte.php erreur : " . $e->getMessage());
     exit;
 }
+ob_end_clean();
