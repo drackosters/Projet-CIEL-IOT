@@ -1,11 +1,13 @@
 <?php
 session_start();
 
-// Vérifie si l'utilisateur est connecté et s'il est administrateur
-if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !== true) {
-    // Redirige vers une page d'erreur ou la page de connexion
-    header('Location: erreur.php'); // Remplacez "erreur.php" par la page souhaitée
-    exit;
+// Redirection si l'utilisateur n'est pas connecté ou pas admin
+if (
+    !isset($_SESSION['utilisateur_connecte']) || $_SESSION['utilisateur_connecte'] !== true ||
+    $_SESSION['type_utilisateur'] !== 'admin'
+) {
+    header("Location: Connexion.php");
+    exit();
 }
 ?>
 
