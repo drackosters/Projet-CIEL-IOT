@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
     'PhpMqtt\\Client\\' => array($vendorDir . '/php-mqtt/client/src'),
+    'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'MyCLabs\\Enum\\' => array($vendorDir . '/myclabs/php-enum/src'),
 );

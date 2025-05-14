@@ -11,6 +11,7 @@ class ComposerStaticInit5b37e3b82fd5c3b4c1a76ef8e09d7b6c
         array (
             'Psr\\Log\\' => 8,
             'PhpMqtt\\Client\\' => 15,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
         array (
@@ -26,6 +27,10 @@ class ComposerStaticInit5b37e3b82fd5c3b4c1a76ef8e09d7b6c
         'PhpMqtt\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-mqtt/client/src',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'MyCLabs\\Enum\\' => 
         array (
