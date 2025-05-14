@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 try {
                     // Configuration du serveur SMTP
                     $mail->isSMTP();
-                    $mail->Host = 'smtp.titan.com'; // Remplacez par votre serveur SMTP
+                    $mail->Host = 'SMTP.titan.email'; // Remplacez par votre serveur SMTP
                     $mail->SMTPAuth = true;
                     $mail->Username = 'alerte@plagiot.tech'; // Votre adresse email
                     $mail->Password = 'Pl@gI0T-@lert3'; // Votre mot de passe email
