@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if ($stmt->execute()) {
                 echo "Utilisateur créé avec succès.";
-                header('Location: utilisateurs.php');
                 exit;
             } else {
                 echo "Erreur lors de la création de l'utilisateur.";
