@@ -193,13 +193,13 @@ if (
 </head>
 <body>
     <!-- Barre du haut -->
-    <div class="conteneur-haut">
-        <a href="index.php">
-            <img src="297f7e763fcbb4896d13120c4c8e3a2b365880689c0e614028de1f3637e0852d.png" alt="Logo" class="logo">
+   <div class="conteneur-haut">
+        <a href="page_administrateur.php">
+            <button class="bouton-retour">← Retour</button>
         </a>
         <h1 class="titre-iot">Paramètres</h1>
         <button class="bouton-utilisateur">
-            <?php echo htmlspecialchars($_SESSION['nom_utilisateur'] ?? 'Utilisateur'); ?>
+            <?= $nom_utilisateur ?>
         </button>
     </div>
 
