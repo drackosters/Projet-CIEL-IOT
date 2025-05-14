@@ -5,6 +5,11 @@ ini_set('error_log', '/chemin/vers/error.log');
 
 header('Content-Type: application/json');
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+
 session_start();
 require 'config.php';
 
@@ -59,17 +64,14 @@ try {
     $db = "iot_data";
 
     foreach ($topics as $topic) {
-        // Ignorer les topics non pertinents
         if (in_array($topic['topic'], $topics_ignores)) {
             continue;
         }
 
-        // Ignorer les topics non liés à apower
         if (!str_contains($topic['topic'], 'apower')) {
             continue;
         }
 
-        // Ignorer le topic de consommation d'énergie si le graphique n'est pas actif
         if (!$energie_active && $topic['topic'] === 'shelly/watt/status/pm1:0-apower') {
             continue;
         }
@@ -78,12 +80,12 @@ try {
         $url = "$host/query?db=$db&q=" . urlencode($query);
 
         $response = @file_get_contents($url);
+        $data = json_decode($response, true);
 
-        if ($response === false) {
+        if ($response === false || !isset($data['results'][0]['series'][0]['values'][0][1])) {
             $alertes[] = "Erreur : InfluxDB inaccessible pour le topic {$topic['topic']}";
             continue;
         }
-
 
         $valeur = $data['results'][0]['series'][0]['values'][0][1];
 
@@ -99,13 +101,29 @@ try {
         $message = "Bonjour $nom_utilisateur,\n\nVoici les alertes détectées sur vos appareils IoT :\n\n";
         $message .= implode("\n", $alertes);
         $message .= "\n\nVeuillez vérifier vos équipements ou contacter le support technique.";
-    
-        $headers = "From: iot-system@tondomaine.com\r\n";
-        $headers .= "Content-Type: text/plain; charset=utf-8";
-    
-        mail($email, $sujet, $message, $headers);
+
+        $mail = new PHPMailer(true);
+        try {
+            $mail->isSMTP();
+            $mail->Host = 'smtp.titan.email';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'alerte@plagiot.tech'; 
+            $mail->Password = 'Pl@gI0T-@lert3';        
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587;
+
+            $mail->setFrom('alerte@plagiot.tech', 'Système IoT');
+            $mail->addAddress($email);
+            $mail->Subject = $sujet;
+            $mail->Body = $message;
+            $mail->isHTML(false);
+
+            $mail->send();
+        } catch (Exception $e) {
+            error_log("Erreur PHPMailer : {$mail->ErrorInfo}");
+        }
     }
-    
+
     echo json_encode($alertes);
     exit;
 
