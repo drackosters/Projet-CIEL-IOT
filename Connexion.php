@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -15,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['connexion'])) {
         $stmt->execute([$login]);
         $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($utilisateur && $utilisateur['mots_de_passe'] == $mot_de_passe) {
+        if ($utilisateur && password_verify($mot_de_passe, $utilisateur['mots_de_passe'])) {
             $_SESSION['utilisateur_connecte'] = true;
             $_SESSION['login_admin'] = $utilisateur['Nom'];
             $_SESSION['Utilisateur'] = $utilisateur['nom'];
