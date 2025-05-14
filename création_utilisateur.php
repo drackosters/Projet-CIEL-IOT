@@ -1,5 +1,12 @@
 <?php
 require 'config.php';
+require 'vendor/autoload.php'; // Charge PHPMailer via Composer
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+$mail->SMTPDebug = 2; // Affiche les détails du débogage SMTP
+$mail->Debugoutput = 'html'; // Format de sortie
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nom = $_POST['nom'] ?? '';
@@ -26,7 +33,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->bindParam(':email', $email);
 
             if ($stmt->execute()) {
-                echo "Utilisateur créé avec succès.";
+                                // Envoi de l'email de confirmation avec PHPMailer
+                $mail = new PHPMailer(true);
+
+                try {
+                    // Configuration du serveur SMTP
+                    $mail->isSMTP();
+                    $mail->Host = 'smtp.titan.com'; // Remplacez par votre serveur SMTP
+                    $mail->SMTPAuth = true;
+                    $mail->Username = 'alerte@plagiot.tech'; // Votre adresse email
+                    $mail->Password = 'Pl@gI0T-@lert3'; // Votre mot de passe email
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+                    $mail->Port = 587;
+
+                    // Destinataires
+                    $mail->setFrom('noreply@example.com', 'Votre Application');
+                    $mail->addAddress($email, $nom);
+
+                    // Contenu de l'email
+                    $mail->isHTML(true);
+                    $mail->Subject = 'Création de compte réussie';
+                    $mail->Body = "Bonjour <b>$nom</b>,<br><br>Votre compte a été créé avec succès.<br><br>Cordialement,<br>L'équipe.";
+
+                    $mail->send();
+                    echo "Utilisateur créé avec succès. Un email de confirmation a été envoyé.";
+                } catch (Exception $e) {
+                    echo "Utilisateur créé avec succès, mais l'email n'a pas pu être envoyé. Erreur : {$mail->ErrorInfo}";
+                }
             } else {
                 echo "Erreur lors de la création de l'utilisateur.";
             }
