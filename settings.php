@@ -142,6 +142,23 @@ if (
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
         }
 
+                .bouton-retour {
+            background: none;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin-right: 10px;
+        }
+
+        .bouton-retour:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+
         /* Texte en bas */
         .texte-bas {
             position: fixed;
