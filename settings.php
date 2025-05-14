@@ -212,15 +212,20 @@ if (
 </head>
 <body>
     <!-- Barre du haut -->
-   <div class="conteneur-haut">
-        <a href="page_administrateur.php">
-            <button class="bouton-retour">← Retour</button>
-        </a>
-        <h1 class="titre-iot">Paramètres</h1>
-        <button class="bouton-utilisateur">
-            <?= $nom_utilisateur ?>
-        </button>
-    </div>
+<div class="conteneur-haut">
+    <!-- Bouton de retour -->
+    <a href="page_administrateur.php">
+        <button class="bouton-retour">← Retour</button>
+    </a>
+
+    <!-- Titre centré -->
+    <h1 class="titre-iot">Paramètres</h1>
+
+    <!-- Nom de l'utilisateur à droite -->
+    <button class="bouton-utilisateur">
+        <?= htmlspecialchars($nom_utilisateur) ?>
+    </button>
+</div>
 
     <!-- Contenu principal -->
     <div class="conteneur-principal">
