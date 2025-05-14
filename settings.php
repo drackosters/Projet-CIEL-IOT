@@ -60,22 +60,21 @@ if (
             font-weight: bold;
             color: #ffffff;
         }
-    .bouton-utilisateur {
-        position: absolute;
-        right: 20px; /* Place le nom de l'utilisateur à droite */
-        background: none;
-        border: 2px solid #ffffff;
-        color: #ffffff;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
 
-    .bouton-utilisateur:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
+        .bouton-utilisateur {
+            background: none;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .bouton-utilisateur:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
 
         /* Contenu principal */
         .conteneur-principal {
