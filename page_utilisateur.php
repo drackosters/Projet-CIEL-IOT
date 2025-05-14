@@ -216,45 +216,6 @@ function fetchAndUpdateChart() {
         });
 }
 
-function ajouterAlerte(message) {
-    const container = document.getElementById('message-alerte');
-    if (!Array.from(container.children).some(p => p.textContent === message)) {
-        const p = document.createElement('p');
-        p.textContent = message;
-        p.style.color = 'red';
-        p.style.cursor = 'pointer';
-        p.addEventListener('click', () => {
-            p.remove();
-            const hasAlerts = container.children.length === 0;
-            const boutonAlerte = document.getElementById('bouton-alerte');
-            if (boutonAlerte && hasAlerts) {
-                boutonAlerte.style.backgroundImage = "url('/Projet-CIEL-IOT/image/notification_1.png')";
-            }
-        });
-        container.appendChild(p);
-    }
-}
-
-function toggleConteneur() {
-    console.log("toggleConteneur appelé");
-    const conteneurDroit = document.getElementById('conteneur-droit');
-    if (conteneurDroit) {
-        conteneurDroit.classList.toggle('ouvert');
-        console.log("Classe 'ouvert' pour conteneur-droit :", conteneurDroit.classList.contains('ouvert'));
-    }
-}
-
-function toggleAjoutIot() {
-    console.log("toggleAjoutIot appelé");
-    const conteneurAjout = document.getElementById('conteneur-ajout-iot');
-    if (conteneurAjout) {
-        conteneurAjout.classList.toggle('ouvert');
-        console.log("Classe 'ouvert' pour conteneur-ajout-iot :", conteneurAjout.classList.contains('ouvert'));
-    } else {
-        console.error("conteneur-ajout-iot introuvable dans le DOM");
-    }
-}
-
 // Ajout de l'écouteur pour la case à cocher
 document.addEventListener('DOMContentLoaded', () => {
     const checkboxEnergie = document.getElementById('checkbox-energie');

@@ -81,9 +81,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function toggleAjoutIot() {
+        console.log("toggleAjoutIot appelé");
         const conteneurAjout = document.getElementById('conteneur-ajout-iot');
         if (conteneurAjout) {
             conteneurAjout.classList.toggle('ouvert');
+            console.log("Classe 'ouvert' pour conteneur-ajout-iot :", conteneurAjout.classList.contains('ouvert'));
+        } else {
+            console.error("conteneur-ajout-iot introuvable dans le DOM");
         }
     }
 
