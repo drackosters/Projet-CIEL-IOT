@@ -62,7 +62,7 @@ if (
         }
     .bouton-utilisateur {
         position: absolute;
-        right: 20px; /* Place le nom de l'utilisateur à droite */
+        right: 200px; /* Place le nom de l'utilisateur à droite */
         background: none;
         border: 2px solid #ffffff;
         color: #ffffff;
