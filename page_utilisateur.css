@@ -12,7 +12,7 @@ body {
 
 
 /* ========== EN-TÊTE ========== */
-.conteneur-haut {
+  .conteneur-haut {
     width: 100vw;
     height: 80px;
     padding: 20px;
@@ -188,6 +188,34 @@ body {
     display: block;
 }
 /* ========== GRAPHIQUES ========== */
+
+.conteneur-graphiques {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 40px;
+}
+
+.cadre-graph1,
+.cadre-graph2 {
+    background: white;
+    width: 40vw;
+    max-width: 650px;
+    min-width: 300px;
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* ========== GRAPHIQUES 1 ========== */
 .graphique {
     background: white;
     width: 650px;
@@ -196,23 +224,6 @@ body {
     margin: 50px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-.cadre-graph1 {
-    background: white;
-    width: 40vw;
-    max-width: 650px;
-    padding: 20px;
-    margin: 40px auto 0 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    display: block;
-}
-
 
 .titre-graphique {
     font-size: 24px;
@@ -230,7 +241,7 @@ body {
 }
 
 
-#myChart {
+#conso_elec {
     width: 100% !important;
     height: auto !important;
     max-width: 100%;
@@ -268,4 +279,26 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* ========== GRAPHIQUE TEMPÉRATURE / HUMIDITÉ ========== */
+
+.titre-graphique-temp-humid {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.conteneur-canvas-temp-humid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#temp_humid {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
 }

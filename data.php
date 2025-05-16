@@ -7,9 +7,7 @@ header('Content-Type: application/json');
 require 'config.php';
 
 try {
-    // Appel API
     $response = @file_get_contents($url);
-
     if ($response === false) {
         error_log("Erreur InfluxDB : impossible de se connecter à $url");
         throw new Exception("Impossible de se connecter à InfluxDB");
@@ -17,25 +15,27 @@ try {
 
     $data = json_decode($response, true);
 
-    // Vérifier si des données sont disponibles
-    $values = $data['results'][0]['series'][0]['values'] ?? null;
-    if (!$values) {
-        error_log("Aucune donnée trouvée pour la requête : $query");
-        throw new Exception("Aucune donnée trouvée pour les 24 dernières heures.");
+    // Traitement des 3 séries : apower, temperature, humidite
+    $series = $data['results'][0]['series'] ?? [];
+
+    $result = [
+        'apower' => [],
+        'temperature' => [],
+        'humidite' => []
+    ];
+
+    foreach ($series as $serie) {
+        $field = $serie['columns'][1]; // le nom du champ : apower, temperature ou humidite
+
+        foreach ($serie['values'] as $point) {
+            $result[$field][] = [
+                'time' => $point[0],
+                'value' => $point[1]
+            ];
+        }
     }
 
-    // Formatage des données
-    $results = array_map(function($point) {
-        return [
-            'time' => $point[0],
-            'value' => $point[1]
-        ];
-    }, $values);
-
-    // Inverser les résultats pour afficher du plus ancien au plus récent
-  //  $results = array_reverse($results);
-
-    echo json_encode($results);
+    echo json_encode($result);
     exit;
 
 } catch (Exception $e) {

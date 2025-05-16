@@ -16,7 +16,7 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des IoT</title>
     <link rel="icon" href="image/logo.png" type="image/png">
-    <link rel="stylesheet" href="page_utilisateur.css?v=40">
+    <link rel="stylesheet" href="page_utilisateur.css?v=47">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="page_utilisateur.js" defer></script>
 </head>
@@ -72,13 +72,23 @@ $nom_utilisateur = htmlspecialchars($_COOKIE['nom_utilisateur'] ?? "Utilisateur 
     <div id="message-alerte"></div>
 </div>
 
-<div class="cadre-graph1">
-    <div class="titre-graphique">Consommation d'énergie</div>
-    <div class="cout-energetique">
-        Coût estimé : <span id="cout-energetique">0.00</span> €
+
+<div class="conteneur-graphiques">
+    <div class="cadre-graph1">
+        <div class="titre-graphique">Consommation d'énergie</div>
+        <div class="cout-energetique">
+            Coût estimé : <span id="cout-energetique">0.00</span> €
+        </div>
+     <div class="conteneur-canvas">
+            <canvas id="conso_elec"></canvas>
+        </div>
     </div>
-    <div class="conteneur-canvas">
-        <canvas id="myChart"></canvas>
+
+    <div class="cadre-graph2">
+        <div class="titre-graphique-temp-humid">Température & Humidité</div>
+        <div class="conteneur-canvas-temp-humid">
+            <canvas id="temp_humid"></canvas>
+        </div>
     </div>
 </div>
 
@@ -93,117 +103,104 @@ function fetchAndUpdateChart() {
     fetch(`data.php`)
         .then(res => res.json())
         .then(data => {
-            const canvas = document.getElementById('myChart');
-            const ctx = canvas.getContext('2d');
-
-            if (!Array.isArray(data) || data.length === 0) {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.font = '18px Arial';
-                ctx.fillStyle = 'gray';
-                ctx.textAlign = 'center';
-                ctx.fillText("Aucune donnée n'a pu être récupérée", canvas.width / 2, canvas.height / 2);
-                if (chartInstance) chartInstance.destroy();
-                chartInstance = null;
-                ajouterAlerte("⚠️ Aucune donnée n'a pu être récupérée depuis InfluxDB.");
-                document.getElementById('cout-energetique').textContent = '0.00';
-                return;
+            if (!data.apower || !Array.isArray(data.apower)) {
+                throw new Error("Structure des données invalide ou vide");
             }
 
-            // 📅 Récupérer la date la plus récente
-            const latestDate = new Date(Math.max(...data.map(p => new Date(p.time))));
+            // === Traitement graphique consommation élec ===
+            const consoCanvas = document.getElementById('conso_elec');
+            const consoCtx = consoCanvas.getContext('2d');
+            const consoData = data.apower;
+
+            const latestDate = new Date(Math.max(...consoData.map(p => new Date(p.time))));
             const latestDateStr = latestDate.toISOString().split('T')[0];
+            const filteredData = consoData.filter(p => p.time.startsWith(latestDateStr));
 
-            // 🧹 Ne conserver que les données de cette date
-            const filteredData = data.filter(p => p.time.startsWith(latestDateStr));
-
-            // ⏱️ Supprimer les données dans le futur (par rapport à l’heure actuelle locale)
             const now = new Date();
             const nowHour = now.getHours();
             const nowDateStr = now.toISOString().split('T')[0];
 
             const dataOfToday = filteredData.filter(p => {
                 const date = new Date(p.time);
-                const hour = date.getHours();
-                const dateStr = date.toISOString().split('T')[0];
-                return dateStr === nowDateStr && hour <= nowHour;
+                return date.toISOString().split('T')[0] === nowDateStr && date.getHours() <= nowHour;
             });
 
             if (dataOfToday.length === 0 || dataOfToday.every(p => p.value === 0 || p.value === null)) {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.font = '18px Arial';
-                ctx.fillStyle = 'gray';
-                ctx.textAlign = 'center';
-                ctx.fillText("Aucune donnée récente disponible", canvas.width / 2, canvas.height / 2);
+                consoCtx.clearRect(0, 0, consoCanvas.width, consoCanvas.height);
+                consoCtx.font = '18px Arial';
+                consoCtx.fillStyle = 'gray';
+                consoCtx.textAlign = 'center';
+                consoCtx.fillText("Aucune donnée récente disponible", consoCanvas.width / 2, consoCanvas.height / 2);
                 if (chartInstance) chartInstance.destroy();
                 chartInstance = null;
                 ajouterAlerte("⚠️ Aucune donnée disponible pour aujourd’hui.");
                 document.getElementById('cout-energetique').textContent = '0.00';
-                return;
-            }
+            } else {
+                const regrouped = {};
+                for (let h = 0; h <= nowHour; h++) regrouped[h] = [];
 
-            // ⏳ Regrouper les données par heure de la journée
-            const regrouped = {};
-            for (let h = 0; h <= nowHour; h++) regrouped[h] = [];
+                dataOfToday.forEach(p => {
+                    const date = new Date(p.time);
+                    const hour = date.getHours();
+                    regrouped[hour].push(parseFloat(p.value));
+                });
 
-            dataOfToday.forEach(p => {
-                const date = new Date(p.time);
-                const hour = date.getHours();
-                regrouped[hour].push(parseFloat(p.value));
-            });
+                const labels = [];
+                const values = [];
 
-            const labels = [];
-            const values = [];
+                for (let h = 0; h <= nowHour; h++) {
+                    labels.push(h.toString().padStart(2, '0') + 'h');
+                    if (regrouped[h].length > 0) {
+                        const moy = regrouped[h].reduce((sum, v) => sum + v, 0) / regrouped[h].length;
+                        values.push(parseFloat(moy.toFixed(2)));
+                    } else {
+                        values.push(0);
+                    }
+                }
 
-            for (let h = 0; h <= nowHour; h++) {
-                labels.push(h.toString().padStart(2, '0') + 'h');
-                if (regrouped[h].length > 0) {
-                    const moy = regrouped[h].reduce((sum, v) => sum + v, 0) / regrouped[h].length;
-                    values.push(parseFloat(moy.toFixed(2)));
+                let totalKWh = 0;
+                for (let i = 1; i < dataOfToday.length; i++) {
+                    const time1 = new Date(dataOfToday[i - 1].time);
+                    const time2 = new Date(dataOfToday[i].time);
+                    const diffHours = (time2 - time1) / 1000 / 3600;
+                    const avgPowerW = (parseFloat(dataOfToday[i].value) + parseFloat(dataOfToday[i - 1].value)) / 2;
+                    const kWh = (avgPowerW * diffHours) / 1000;
+                    totalKWh += kWh;
+                }
+
+                const cout = (totalKWh * PRIX_KWH).toFixed(2);
+                document.getElementById('cout-energetique').textContent = cout;
+
+                if (chartInstance) {
+                    chartInstance.data.labels = labels;
+                    chartInstance.data.datasets[0].data = values;
+                    chartInstance.update();
                 } else {
-                    values.push(0);
+                    chartInstance = new Chart(consoCtx, {
+                        type: 'line',
+                        data: {
+                            labels,
+                            datasets: [{
+                                label: 'apower (W)',
+                                data: values,
+                                borderColor: 'rgb(75, 192, 192)',
+                                tension: 0.3,
+                                fill: false
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                x: { title: { display: true, text: 'Heure' } },
+                                y: { title: { display: true, text: 'Puissance (W)' } }
+                            }
+                        }
+                    });
                 }
             }
 
-            // 💰 Calcul du coût énergétique
-            let totalKWh = 0;
-            for (let i = 1; i < dataOfToday.length; i++) {
-                const time1 = new Date(dataOfToday[i - 1].time);
-                const time2 = new Date(dataOfToday[i].time);
-                const diffHours = (time2 - time1) / 1000 / 3600;
-                const avgPowerW = (parseFloat(dataOfToday[i].value) + parseFloat(dataOfToday[i - 1].value)) / 2;
-                const kWh = (avgPowerW * diffHours) / 1000;
-                totalKWh += kWh;
-            }
-
-            const cout = (totalKWh * PRIX_KWH).toFixed(2);
-            document.getElementById('cout-energetique').textContent = cout;
-
-            if (chartInstance) {
-                chartInstance.data.labels = labels;
-                chartInstance.data.datasets[0].data = values;
-                chartInstance.update();
-            } else {
-                chartInstance = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels,
-                        datasets: [{
-                            label: 'apower (W)',
-                            data: values,
-                            borderColor: 'rgb(75, 192, 192)',
-                            tension: 0.3,
-                            fill: false
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        scales: {
-                            x: { title: { display: true, text: 'Heure' } },
-                            y: { title: { display: true, text: 'Puissance (W)' } }
-                        }
-                    }
-                });
-            }
+            // === Mise à jour graphique température/humidité ===
+            updateTempHumidChart(data.temperature || [], data.humidite || []);
         })
         .catch(error => {
             document.getElementById('message-alerte').innerHTML = '';
@@ -216,25 +213,92 @@ function fetchAndUpdateChart() {
         });
 }
 
-// Ajout de l'écouteur pour la case à cocher
+// === Température et Humidité ===
+const ctxTempHumid = document.getElementById('temp_humid').getContext('2d');
+const tempHumidChart = new Chart(ctxTempHumid, {
+    type: 'line',
+    data: {
+        labels: [],
+        datasets: [
+            {
+                label: 'Température (°C)',
+                data: [],
+                borderColor: 'rgba(255, 99, 132, 1)',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                yAxisID: 'y',
+            },
+            {
+                label: 'Humidité (%)',
+                data: [],
+                borderColor: 'rgba(54, 162, 235, 1)',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                yAxisID: 'y1',
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        interaction: {
+            mode: 'index',
+            intersect: false,
+        },
+        stacked: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Température et Humidité'
+            }
+        },
+        scales: {
+            y: {
+                type: 'linear',
+                position: 'left',
+                title: { display: true, text: 'Température (°C)' }
+            },
+            y1: {
+                type: 'linear',
+                position: 'right',
+                grid: { drawOnChartArea: false },
+                title: { display: true, text: 'Humidité (%)' }
+            }
+        }
+    }
+});
+
+function updateTempHumidChart(tempData, humidData) {
+    const labels = [];
+    const tempValues = [];
+    const humidValues = [];
+
+    // Assumons que les deux tableaux sont alignés dans le temps
+    for (let i = 0; i < tempData.length; i++) {
+        const t = new Date(tempData[i].time);
+        labels.push(t.getHours().toString().padStart(2, '0') + 'h');
+        tempValues.push(parseFloat(tempData[i].value || 0));
+        humidValues.push(parseFloat((humidData[i]?.value) || 0));
+    }
+
+    tempHumidChart.data.labels = labels;
+    tempHumidChart.data.datasets[0].data = tempValues;
+    tempHumidChart.data.datasets[1].data = humidValues;
+    tempHumidChart.update();
+}
+
+// Affichage/Masquage du graphique conso
 document.addEventListener('DOMContentLoaded', () => {
     const checkboxEnergie = document.getElementById('checkbox-energie');
     const graphiqueEnergie = document.querySelector('.cadre-graph1');
 
     if (checkboxEnergie && graphiqueEnergie) {
-        // Initialisation : le graphique est visible si la case est cochée
         graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
-
-        // Écouteur pour les changements
         checkboxEnergie.addEventListener('change', () => {
             graphiqueEnergie.style.display = checkboxEnergie.checked ? 'block' : 'none';
             console.log("Graphique 'Consommateur d'énergie' :", checkboxEnergie.checked ? "visible" : "masqué");
         });
-    } else {
-        console.error("checkbox-energie ou cadre-graph1 introuvable dans le DOM");
     }
 });
 </script>
+
 
 </body>
 </html>
